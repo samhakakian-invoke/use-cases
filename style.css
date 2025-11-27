@@ -1,0 +1,115 @@
+/* ---------- Global ---------- */
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background: #ffffff;
+  color: #3d3e3e;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: #e8792b;
+  font-weight: 600;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 18px;
+}
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.hero {
+  padding: 120px 20px 90px;
+  text-align: center;
+  background: #f6f8fb;
+}
+
+.hero h1 {
+  font-size: 46px;
+}
+
+.subtext {
+  font-size: 20px;
+  color: #525960;
+  max-width: 750px;
+  margin: 12px auto 0;
+}
+
+/* Use Case Listing Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 32px;
+  margin-top: 50px;
+}
+
+.card {
+  padding: 26px 28px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  transition: 0.25s ease;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 28px rgba(0,0,0,0.08);
+  border-color: #e8792b;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 10px;
+}
+
+.card-desc {
+  color: #4d4d4d;
+}
+
+/* Section Title Lines */
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.section-title:after {
+  content: "";
+  height: 3px;
+  width: 60px;
+  background: #e8792b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+/* Value Bullets */
+.value-list li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+}
