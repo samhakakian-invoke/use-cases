@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 
+  INSTRUCTION: Replace with use case specific title 
+  Format: "[Use Case Name] | INVOKE"
+  Example: "Predictive Maintenance for Packaging | INVOKE"
+  -->
+  <title>{{USE_CASE_TITLE}} | INVOKE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="stylesheet" href="./usecase_style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="../index.html" class="logo">
+          <img src="../images/invoke-logo.svg" alt="INVOKE" />
+        </a>
+        <nav class="nav">
+          <a href="../index.html" class="nav__link">Solutions</a>
+          <a href="https://www.invokeinc.com/aboutus.html" class="nav__link">About</a>
+          <a href="https://www.invokeinc.com/contact.html" class="nav__link">Contact</a>
+          <div class="nav__lang">
+            <span class="is-active" data-lang="en">EN</span>
+            <span data-lang="fr">FR</span>
+          </div>
+        </nav>
+        <button class="nav__menu-toggle">☰</button>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <!-- 
+    INSTRUCTION: Select the most appropriate background image from available photos:
+    - ../images/photos/agreement_or_legal.jpg (Legal/compliance use cases)
+    - ../images/photos/auto.jpg (Automotive/manufacturing use cases)
+    - ../images/photos/business_meeting.jpg (Business strategy/management use cases)
+    - ../images/photos/calculating.jpg (Finance/analytics use cases)
+    - ../images/photos/cash_kid_with_money.jpg (Consumer finance use cases)
+    - ../images/photos/dr_with_clipboard.jpg (Healthcare/medical use cases)
+    - ../images/photos/finance.jpg (Financial services use cases)
+    - ../images/photos/medical.png (Healthcare/clinical use cases)
+    - ../images/photos/paperwork.jpg (Document processing/administrative use cases)
+    - ../images/photos/shipping_and_logistics.jpg (Supply chain/logistics use cases)
+    
+    Replace {{HERO_IMAGE}} with the selected image path
+    Replace {{INDUSTRY_CATEGORY}} with: "Intelligent Automation & Digital Transformation" OR specific industry like "Supply Chain & Logistics" or "Healthcare Solutions"
+    Replace {{USE_CASE_TITLE}} with the main heading (2-5 words)
+    Replace {{USE_CASE_DESCRIPTION}} with a 1-2 sentence description of the use case and its value proposition
+    -->
+    <section class="hero" style="background-image: url('{{HERO_IMAGE}}');">
+      <div class="container hero__inner">
+        <div class="hero__kicker">{{INDUSTRY_CATEGORY}}</div>
+        <h1 class="hero__title">{{USE_CASE_TITLE}}</h1>
+        <p class="hero__subtitle">
+          {{USE_CASE_DESCRIPTION}}
+        </p>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- PROBLEM/CHALLENGE SECTION -->
+    <!-- 
+    INSTRUCTION: 
+    Replace {{CHALLENGE_HEADING}} with a question or statement about the problem (e.g., "Struggling with inventory forecasting?")
+    Replace {{CHALLENGE_INTRO}} with 1-2 sentences introducing the challenges
+    Replace {{CHALLENGE_ITEMS}} with 4-6 bullet points describing specific challenges
+    Each bullet should have:
+    - A bolded challenge name followed by a colon
+    - A brief description of the challenge
+    Format: <li><strong>Challenge Name:</strong> Description of the challenge.</li>
+    -->
+    <section class="section problem">
+      <div class="container">
+        <h2 class="problem__heading">{{CHALLENGE_HEADING}}</h2>
+        <p class="problem__intro">
+          {{CHALLENGE_INTRO}}
+        </p>
+        <div class="problem__list-wrapper">
+          <ul class="problem__list">
+            {{CHALLENGE_ITEMS}}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- HOW IT WORKS SECTION -->
+    <!-- 
+    INSTRUCTION:
+    Replace {{SOLUTION_SUBTITLE}} with brief explanation (1 sentence)
+    
+    For the process flow, customize these 3 boxes:
+    
+    INPUT BOX:
+    - Replace {{INPUT_HEADING}} with what data/sources are used (e.g., "Data Sources", "Input Systems")
+    - Replace {{INPUT_DESCRIPTION}} with brief label (e.g., "Historical Data", "Multiple Sources")
+    - Replace {{INPUT_ITEMS}} with 3-4 <li> items of specific inputs
+    Format: <li>Item name</li>
+    
+    CENTER BOX (Automation):
+    - Replace {{AUTOMATION_ITEMS}} with 4-5 <li> items describing the automation technologies/processes
+    - Replace {{AUTOMATION_DETAIL}} with a brief explanation of the key technology or process
+    
+    OUTPUT BOX:
+    - Replace {{OUTPUT_HEADING}} with what is produced (e.g., "Key Benefits", "Deliverables")
+    - Replace {{OUTPUT_LABEL}} with the main system/output (e.g., "✓ Forecasting Dashboard")
+    - Replace {{OUTPUT_ITEMS}} with 3-4 <li> items of specific outcomes/benefits
+    -->
+    <section class="section how-it-works">
+      <div class="container">
+        <h2 class="section__title">How it works</h2>
+        <div class="process-diagram">
+          <h3>Intelligent Automation: {{SOLUTION_SUBTITLE}}</h3>
+          <div class="process-flow">
+            <div class="process-box">
+              <h4>{{INPUT_HEADING}}</h4>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">{{INPUT_DESCRIPTION}}</p>
+              <ul style="margin-top: 1rem;">
+                {{INPUT_ITEMS}}
+              </ul>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-box center">
+              <h4>Intelligent Automation</h4>
+              <ul style="margin-top: 1.5rem;">
+                {{AUTOMATION_ITEMS}}
+              </ul>
+              <p style="margin-top: 1.5rem;"><strong>{{AUTOMATION_DETAIL}}</strong></p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-box">
+              <h4>{{OUTPUT_HEADING}}</h4>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">{{OUTPUT_LABEL}}</p>
+              <ul style="margin-top: 1rem;">
+                {{OUTPUT_ITEMS}}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- SOLUTION FEATURES SECTION -->
+    <!-- 
+    INSTRUCTION:
+    Replace {{FEATURES_TITLE}} with heading (e.g., "Why Choose Our Solution?", "Key Capabilities")
+    Replace {{FEATURES_SUBTITLE}} with 1-2 sentences about what makes the solution unique
+    
+    For each feature card (create 4 cards):
+    - Select appropriate icon from available icons (see list below)
+    - Replace {{FEATURE_ICON_N}} with icon path
+    - Replace {{FEATURE_TITLE_N}} with feature name (2-4 words)
+    - Replace {{FEATURE_DESCRIPTION_N}} with 1-2 sentence description
+    
+    AVAILABLE ICONS (choose most relevant):
+    - ../images/icons/ai-robustness.svg (AI/ML capabilities)
+    - ../images/icons/automation-services.svg (Automation features)
+    - ../images/icons/chart-bubble-line.svg (Analytics/reporting)
+    - ../images/icons/chart-custom.svg (Custom analytics)
+    - ../images/icons/chart-multi-type.svg (Multi-dimensional analysis)
+    - ../images/icons/cloud-upload.svg (Cloud integration)
+    - ../images/icons/connect.svg (Integration capabilities)
+    - ../images/icons/connected-nodes-to-the-cloud.svg (Connected systems)
+    - ../images/icons/customer-service.svg (User support)
+    - ../images/icons/devops.svg (Development/operations)
+    - ../images/icons/goals.svg (Goal achievement)
+    - ../images/icons/growth.svg (Business growth)
+    - ../images/icons/innovate.svg (Innovation)
+    - ../images/icons/insights.svg (Data insights)
+    - ../images/icons/it-infrastructure-software.svg (IT infrastructure)
+    - ../images/icons/key-users.svg (User management)
+    - ../images/icons/machine-learning-01.svg (ML capabilities)
+    - ../images/icons/machine-learning-06.svg (Advanced ML)
+    - ../images/icons/network-services.svg (Network/connectivity)
+    - ../images/icons/notification-user.svg (Alerts/notifications)
+    - ../images/icons/presentation.svg (Reporting/dashboards)
+    - ../images/icons/process.svg (Process optimization)
+    - ../images/icons/protect-critical-assets.svg (Security)
+    - ../images/icons/reduced-cost.svg (Cost reduction)
+    - ../images/icons/reset-settings.svg (Configuration)
+    - ../images/icons/server-operating-systems.svg (System architecture)
+    - ../images/icons/speedometer.svg (Performance/speed)
+    - ../images/icons/strategy-play.svg (Strategic planning)
+    - ../images/icons/user-analytics.svg (User analytics)
+    - ../images/icons/user-experience-design.svg (UX/design)
+    - ../images/icons/video-chat.svg (Collaboration)
+    -->
+    <section class="section differentiators">
+      <div class="container">
+        <h2 class="section__title">{{FEATURES_TITLE}}</h2>
+        <p class="section__subtitle">
+          {{FEATURES_SUBTITLE}}
+        </p>
+        <div class="diff-grid">
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="{{FEATURE_ICON_1}}" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">{{FEATURE_TITLE_1}}</h3>
+            <p class="diff-card__body">
+              {{FEATURE_DESCRIPTION_1}}
+            </p>
+          </article>
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="{{FEATURE_ICON_2}}" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">{{FEATURE_TITLE_2}}</h3>
+            <p class="diff-card__body">
+              {{FEATURE_DESCRIPTION_2}}
+            </p>
+          </article>
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="{{FEATURE_ICON_3}}" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">{{FEATURE_TITLE_3}}</h3>
+            <p class="diff-card__body">
+              {{FEATURE_DESCRIPTION_3}}
+            </p>
+          </article>
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="{{FEATURE_ICON_4}}" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">{{FEATURE_TITLE_4}}</h3>
+            <p class="diff-card__body">
+              {{FEATURE_DESCRIPTION_4}}
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- VALUE/RESULTS SECTION -->
+    <!-- 
+    INSTRUCTION:
+    Replace {{VALUE_TITLE}} with heading (e.g., "Expected Results", "Value Delivered")
+    Replace {{VALUE_SUBTITLE}} with 1 sentence about the impact
+    
+    For each value card (4 cards total):
+    - Replace {{VALUE_METRIC_N}} with a metric (percentage, number, or word like "Scalable")
+    - Replace {{VALUE_LABEL_N}} with description of what the metric represents
+    
+    Examples:
+    - 85% | Forecast accuracy improvement
+    - 40% | Reduction in stockouts
+    - $2M | Annual cost savings
+    - Real-time | Decision-making capability
+    -->
+    <section class="section value">
+      <div class="container">
+        <h2 class="section__title">{{VALUE_TITLE}}</h2>
+        <p class="section__subtitle">
+          {{VALUE_SUBTITLE}}
+        </p>
+        <div class="value-grid">
+          <div class="value-card">
+            <div class="value-card__value">{{VALUE_METRIC_1}}</div>
+            <div class="value-card__label">{{VALUE_LABEL_1}}</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__value">{{VALUE_METRIC_2}}</div>
+            <div class="value-card__label">{{VALUE_LABEL_2}}</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__value">{{VALUE_METRIC_3}}</div>
+            <div class="value-card__label">{{VALUE_LABEL_3}}</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__value">{{VALUE_METRIC_4}}</div>
+            <div class="value-card__label">{{VALUE_LABEL_4}}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <!-- 
+    INSTRUCTION:
+    Replace {{CTA_TITLE}} with call-to-action heading
+    Replace {{CTA_SUBTITLE}} with 1-2 sentences encouraging contact
+    -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="cta-band__title">{{CTA_TITLE}}</h2>
+        <p class="cta-band__subtitle">
+          {{CTA_SUBTITLE}}
+        </p>
+        <a href="mailto:info@invokeinc.com" class="btn btn--primary">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-brand__logo">
+              <img src="../images/invoke-logo.svg" alt="INVOKE" />
+            </div>
+            <p class="footer-brand__text">
+              Atlanta, GA &bull; (770) 376-0606<br />
+              <a href="mailto:info@invokeinc.com">info@invokeinc.com</a>
+            </p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <div class="footer-links__group-title">Company</div>
+              <ul>
+                <li><a class="footer-link" href="https://www.invokeinc.com/aboutus.html">About</a></li>
+                <li><a class="footer-link" href="../index.html">Solutions</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="footer-links__group-title">Resources</div>
+              <ul>
+                <li><a class="footer-link" href="#careers">Careers</a></li>
+                <li><a class="footer-link" href="https://www.invokeinc.com/contact.html">Contact us</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="footer-links__group-title">Legal</div>
+              <ul>
+                <li><a class="footer-link" href="#privacy">Privacy Policy</a></li>
+                <li><a class="footer-link" href="#vulnerability">Vulnerability Disclosure</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div><span>Copyright &copy; 2024 INVOKE Inc. All rights reserved.</span></div>
+          <div><a href="https://www.linkedin.com" aria-label="LinkedIn" class="footer-badge">in</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const langToggles = document.querySelectorAll('.nav__lang span');
+      langToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          const lang = this.getAttribute('data-lang');
+          langToggles.forEach(t => t.classList.remove('is-active'));
+          this.classList.add('is-active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

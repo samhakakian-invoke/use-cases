@@ -1,22 +1,17 @@
 [
   {
-    "name": "Automated WERCS compliance - INVOKE | INTELLIGENT AUTOMATION &amp; DIGITAL TRANSFORMATION | RPA",
-    "slug": "wercs",
+    "name": "Intelligent Production Scheduling | INVOKE",
+    "slug": "Production Scheduling Optimization",
     "description": "AI & automation use case."
   },
   {
-    "name": "Intelligent Production Scheduling Optimization",
-    "slug": "production-scheduling-optimization",
-    "description": "Production scheduling in consumer goods manufacturing is a high-constraint\n    optimization challenge. Planners must account for changeovers, sanitation,\n    allergen risk, crew availability, packaging readiness, equipment capacity,\n    mai"
+    "name": "Predictive Demand Forecasting | INVOKE",
+    "slug": "Predictive Demand Forecasting",
+    "description": "AI & automation use case."
   },
   {
-    "name": "Predictive Demand Forecasting & Production Planning",
-    "slug": "predictive-demand-forecasting",
-    "description": "Consumer goods manufacturers operate in volatile demand cycles influenced by\n    seasonality, promotion velocity, retail replenishment, macro trends, and shifting\n    consumer sentiment. Traditional forecasting methods are backward-looking,"
-  },
-  {
-    "name": "Predictive Maintenance for Packaging & Line Equipment",
-    "slug": "predictive-maintenance-packaging",
-    "description": "Most consumer goods throughput losses originate from unplanned failures across\n    filling, capping, sealing, labeling, wrapping, and packaging equipment. Traditional\n    maintenance schedules are reactive or based on fixed intervals \u2014 not "
+    "name": "Predictive Equipment Maintenance | INVOKE",
+    "slug": "Predictive Equipment Maintenance",
+    "description": "AI & automation use case."
   }
 ]
