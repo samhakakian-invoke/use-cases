@@ -35,6 +35,7 @@ def main():
         entries.append({
             "name": title,
             "slug": slug,
+            "category": "RPA",
             "description": description
         })
 
