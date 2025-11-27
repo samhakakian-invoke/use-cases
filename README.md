@@ -1,1 +1,1 @@
-# use-cases
+Go to https://samhakakian-invoke.github.io/use-cases/
