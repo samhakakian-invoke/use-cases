@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Use Case Explorer</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    input { width: 300px; padding: 10px; margin-bottom: 20px; }
+    .grid { display: flex; flex-wrap: wrap; gap: 20px; }
+    .card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      width: 250px;
+      border-radius: 6px;
+    }
+    .card a { font-size: 20px; font-weight: bold; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <h1>Explore Use Cases</h1>
+  <input type="text" id="search" placeholder="Search use cases...">
+
+  <div class="grid" id="grid"></div>
+
+  <script>
+    async function loadUseCases() {
+      const res = await fetch('usecases.json');
+      const data = await res.json();
+      
+      const grid = document.getElementById('grid');
+      const search = document.getElementById('search');
+
+      function render(filter = "") {
+        grid.innerHTML = "";
+        data
+          .filter(u => u.name.toLowerCase().includes(filter.toLowerCase()))
+          .forEach(u => {
+            grid.innerHTML += `
+              <div class="card">
+                <a href="usecases/${u.slug}.html">${u.name}</a>
+                <p>${u.description}</p>
+              </div>
+            `;
+          });
+      }
+
+      search.addEventListener("input", e => render(e.target.value));
+      render();
+    }
+
+    loadUseCases();
+  </script>
+
+</body>
+</html>

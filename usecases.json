@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Predictive Demand Forecasting & Production Planning",
+    "slug": "predictive-demand-forecasting",
+    "description": "AI-driven demand forecasting that automates production, inventory, and capacity planning."
+  },
+  {
+    "name": "Intelligent Production Scheduling Optimization",
+    "slug": "production-scheduling-optimization",
+    "description": "AI-optimized manufacturing schedules reducing changeovers, downtime, and planner workload."
+  },
+  {
+    "name": "Predictive Maintenance for Filling, Packaging & Line Equipment",
+    "slug": "predictive-maintenance-packaging",
+    "description": "AI-enabled equipment failure detection to prevent costly line stoppages and downtime."
+  }
+]
