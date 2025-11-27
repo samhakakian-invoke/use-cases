@@ -1,55 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Use Case Explorer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manufacturing AI Use Case Explorer</title>
+
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    input { width: 300px; padding: 10px; margin-bottom: 20px; }
-    .grid { display: flex; flex-wrap: wrap; gap: 20px; }
-    .card {
-      border: 1px solid #ddd;
-      padding: 20px;
-      width: 250px;
-      border-radius: 6px;
+    /* ---------- Global ---------- */
+    body {
+      margin: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: #f6f8fb;
+      color: #1a1f36;
     }
-    .card a { font-size: 20px; font-weight: bold; text-decoration: none; }
+
+    a { text-decoration: none; }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 24px;
+    }
+
+    /* ---------- Hero Section ---------- */
+    .hero {
+      text-align: center;
+      padding: 90px 24px 70px;
+      background: linear-gradient(135deg, #0038ff, #00c2ff);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      opacity: 0.9;
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.5;
+    }
+
+    /* ---------- Search ---------- */
+    #search {
+      width: 100%;
+      max-width: 520px;
+      padding: 16px 20px;
+      border-radius: 10px;
+      font-size: 17px;
+      border: 1px solid #d5d9e2;
+      margin: 50px auto;
+      display: block;
+      transition: 0.25s ease;
+    }
+
+    #search:focus {
+      border-color: #0052ff;
+      box-shadow: 0 0 0 4px rgba(0, 82, 255, 0.15);
+      transform: scale(1.02);
+      outline: none;
+    }
+
+    /* ---------- Use Case Grid ---------- */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 32px;
+    }
+
+    /* ---------- Card ---------- */
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 32px;
+      border: 1px solid #e2e6ee;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+      transition: 0.25s ease;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.08);
+      border-color: #0052ff;
+    }
+
+    .card a {
+      font-size: 20px;
+      font-weight: 600;
+      color: #0b1b40;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #4d5875;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    /* ---------- Empty State ---------- */
+    .empty-state {
+      text-align: center;
+      color: #7c879c;
+      font-size: 18px;
+      margin-top: 60px;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      text-align: center;
+      padding: 45px 20px;
+      font-size: 14px;
+      color: #7c879c;
+      margin-top: 60px;
+    }
+
+    /* ---------- Animations ---------- */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(14px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
+
 <body>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Manufacturing AI Use Cases</h1>
+    <p>
+      Explore high-value automation opportunities for production, operations,
+      planning, quality, and supply chain teams — backed by measurable outcomes.
+    </p>
+  </section>
 
-  <h1>Explore Use Cases</h1>
-  <input type="text" id="search" placeholder="Search use cases...">
+  <div class="container">
+    <input
+      type="text"
+      id="search"
+      placeholder="Search by use case, capability, value, industry..."
+    />
 
-  <div class="grid" id="grid"></div>
+    <div class="grid" id="grid"></div>
+    <p class="empty-state" id="empty" style="display:none;">
+      No matching use cases found. Try another keyword.
+    </p>
+  </div>
+
+  <footer>
+    © 2025 Manufacturing AI Use Case Library — All Rights Reserved
+  </footer>
 
   <script>
     async function loadUseCases() {
-      const res = await fetch('usecases.json');
-      const data = await res.json();
-      
-      const grid = document.getElementById('grid');
-      const search = document.getElementById('search');
+      try {
+        const res = await fetch('./usecases.json');
+        const data = await res.json();
 
-      function render(filter = "") {
-        grid.innerHTML = "";
-        data
-          .filter(u => u.name.toLowerCase().includes(filter.toLowerCase()))
-          .forEach(u => {
-            grid.innerHTML += `
-              <div class="card">
-                <a href="usecases/${u.slug}.html">${u.name}</a>
-                <p>${u.description}</p>
-              </div>
+        const grid = document.getElementById('grid');
+        const search = document.getElementById('search');
+        const empty = document.getElementById('empty');
+
+        function render(filter = "") {
+          grid.innerHTML = "";
+
+          const filtered = data.filter(u =>
+            u.name.toLowerCase().includes(filter.toLowerCase()) ||
+            u.description.toLowerCase().includes(filter.toLowerCase())
+          );
+
+          empty.style.display = filtered.length ? "none" : "block";
+
+          filtered.forEach(u => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+              <a href="usecases/${u.slug}.html">${u.name}</a>
+              <p>${u.description}</p>
             `;
+            grid.appendChild(card);
           });
-      }
+        }
 
-      search.addEventListener("input", e => render(e.target.value));
-      render();
+        render();
+        search.addEventListener("input", e => render(e.target.value));
+      } catch (err) {
+        document.getElementById('grid').innerHTML =
+          "<p style='color:red;'>⚠️ Could not load usecases.json — check file path.</p>";
+      }
     }
 
     loadUseCases();
   </script>
-
 </body>
 </html>
