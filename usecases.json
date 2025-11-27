@@ -1,17 +1,17 @@
 [
   {
-    "name": "Intelligent Production Scheduling | INVOKE",
-    "slug": "Production Scheduling Optimization",
+    "name": "Intelligent Production Scheduling Optimization | INVOKE",
+    "slug": "use_case_2_production_scheduling",
     "description": "AI & automation use case."
   },
   {
-    "name": "Predictive Demand Forecasting | INVOKE",
-    "slug": "Predictive Demand Forecasting",
+    "name": "Predictive Demand Forecasting & Production Planning | INVOKE",
+    "slug": "use_case_1_demand_forecasting",
     "description": "AI & automation use case."
   },
   {
-    "name": "Predictive Equipment Maintenance | INVOKE",
-    "slug": "Predictive Equipment Maintenance",
+    "name": "Predictive Maintenance for Packaging Equipment | INVOKE",
+    "slug": "use_case_7_predictive_maintenance",
     "description": "AI & automation use case."
   }
 ]
