@@ -3,15 +3,56 @@
 ## Overview
 You will be provided with a use case description and need to generate a complete HTML page using this template. The template uses the INVOKE brand styling with orange (#f36a3d) as the primary accent color, black text on white backgrounds, and professional typography.
 
+## File Structure (IMPORTANT)
+```
+use-cases/
+├── fonts/                          # Font files
+│   ├── font.css                   # Lato font imports
+│   └── [font files].woff2
+├── generator/                      # Templates and docs
+│   ├── usecase_template.html     # This template
+│   ├── usecase_style.css         # Shared stylesheet
+│   └── LLM_INSTRUCTIONS.md       # This file
+├── images/
+│   ├── photos/                    # Hero backgrounds
+│   └── icons/                     # Feature icons
+└── usecases/                       # WHERE YOU SAVE GENERATED FILES
+    └── [your-use-case].html       # Your output goes here
+```
+
+**CRITICAL PATH INFORMATION:**
+When saving to `usecases/` folder, all paths must use `../` to go up one level:
+- Fonts: `../fonts/font.css`
+- Styles: `../generator/usecase_style.css`
+- Images: `../images/photos/` and `../images/icons/`
+- Logo: `../images/invoke-logo.svg`
+
 ## Template Variables to Replace
 
-### Page Title Section
-- `{{USE_CASE_TITLE}}` - The name of the use case (2-5 words, e.g., "Predictive Demand Forecasting")
+### Meta Tags (Required for Homepage)
+These appear in the `<head>` section and are used by `update_usecases.py` to generate the homepage:
+
+- `{{USE_CASE_TITLE}}` - The name of the use case (2-5 words)
+  - Example: "Predictive Demand Forecasting"
+  - Used in: `<title>` tag and `<meta name="use-case-name">`
+  
+- `{{USE_CASE_CATEGORY}}` - Industry or functional area
+  - Examples: "Supply Chain", "Finance", "Manufacturing", "Healthcare", "Legal", "HR", "Compliance"
+  - Used in: `<meta name="use-case-category">`
+  - This determines which category filter it appears under on the homepage
+  
+- `{{USE_CASE_DESCRIPTION}}` - Brief 1-2 sentence description (150-240 characters)
+  - Example: "AI-powered demand forecasting that predicts customer needs with 85% accuracy, reducing stockouts and overstock by 40%."
+  - Used in: `<meta name="description">`
+  - This appears on the homepage card and in search results
+
+**IMPORTANT:** These three variables must be filled in every use case for the homepage to work correctly.
 
 ### Hero Section
 - `{{HERO_IMAGE}}` - Select from available photos based on industry/use case
-- `{{INDUSTRY_CATEGORY}}` - Industry or category label (e.g., "Supply Chain & Logistics", "Healthcare Solutions", or default "Intelligent Automation & Digital Transformation")
-- `{{USE_CASE_DESCRIPTION}}` - 1-2 sentence value proposition
+- `{{INDUSTRY_CATEGORY}}` - Industry or category label for display on page (can be longer/more descriptive than USE_CASE_CATEGORY)
+  - Example: "Supply Chain & Logistics" (display) vs "Supply Chain" (category for filtering)
+- `{{USE_CASE_DESCRIPTION}}` - 1-2 sentence value proposition (used in both meta tag and hero section)
 
 ### Challenge/Problem Section
 - `{{CHALLENGE_HEADING}}` - Engaging question or statement (e.g., "Struggling with demand forecasting?")
@@ -61,7 +102,7 @@ Choose the most appropriate:
 1. `../images/photos/agreement_or_legal.jpg` - Legal/compliance
 2. `../images/photos/auto.jpg` - Automotive/manufacturing
 3. `../images/photos/business_meeting.jpg` - Business strategy
-4. `../images/photos/calculating.jpg` - Finance/analytics
+4. `../images/photos/calculating.jpg` - analytics
 5. `../images/photos/cash_kid_with_money.jpg` - Consumer finance
 6. `../images/photos/dr_with_clipboard.jpg` - Healthcare
 7. `../images/photos/finance.jpg` - Financial services

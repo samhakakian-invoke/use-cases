@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <!-- 
-  INSTRUCTION: Replace with use case specific title 
-  Format: "[Use Case Name] | INVOKE"
-  Example: "Predictive Maintenance for Packaging | INVOKE"
+  INSTRUCTION: Replace these meta tags with use case information
+  
+  NAME: The full use case title (e.g., "Predictive Demand Forecasting")
+  SLUG: Auto-generated from filename, don't include in template
+  CATEGORY: Industry or function (e.g., "Supply Chain", "Finance", "Manufacturing", "Healthcare", "Legal", "HR")
+  DESCRIPTION: Brief 1-2 sentence description (150-240 characters)
+  
+  These meta tags are used by update_usecases.py to generate the homepage JSON
   -->
-  <title>{{USE_CASE_TITLE}} | INVOKE</title>
+  <title>{{USE_CASE_TITLE}}</title>
+  <meta name="use-case-name" content="{{USE_CASE_TITLE}}" />
+  <meta name="use-case-category" content="{{USE_CASE_CATEGORY}}" />
+  <meta name="description" content="{{USE_CASE_DESCRIPTION}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <link rel="stylesheet" href="../generator/usecase_style.css" />
@@ -15,23 +23,24 @@
 <body>
   <div class="page-wrapper">
     <!-- HEADER -->
-    <header class="site-header">
-      <div class="container site-header__inner">
-        <a href="../index.html" class="logo">
-          <img src="../images/invoke-logo.svg" alt="INVOKE" />
-        </a>
-        <nav class="nav">
-          <a href="../index.html" class="nav__link">Solutions</a>
-          <a href="https://www.invokeinc.com/aboutus.html" class="nav__link">About</a>
-          <a href="https://www.invokeinc.com/contact.html" class="nav__link">Contact</a>
-          <div class="nav__lang">
-            <span class="is-active" data-lang="en">EN</span>
-            <span data-lang="fr">FR</span>
-          </div>
-        </nav>
-        <button class="nav__menu-toggle">☰</button>
+  <header class="header">
+    <div class="header-inner">
+      <a href="./" class="logo">
+        <img src="../images/invoke-logo.svg" alt="INVOKE" />
+      </a>
+      <nav class="nav-links">
+        <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
+        <a href="../index.html">SOLUTIONS</a>
+        <a href="https://www.invokepublic.com">INDUSTRIES</a>
+        <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
+        <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
+      </nav>
+      <div class="lang-toggle">
+        <span class="active" data-lang="en">EN</span>
+        <span data-lang="fr">FR</span>
       </div>
-    </header>
+    </div>
+  </header>
 
     <!-- HERO SECTION -->
     <!-- 
@@ -39,8 +48,8 @@
     - ../images/photos/agreement_or_legal.jpg (Legal/compliance use cases)
     - ../images/photos/auto.jpg (Automotive/manufacturing use cases)
     - ../images/photos/business_meeting.jpg (Business strategy/management use cases)
-    - ../images/photos/calculating.jpg (Finance/analytics use cases)
-    - ../images/photos/cash_kid_with_money.jpg (Consumer finance use cases)
+    - ../images/photos/calculating.jpg (analytics use cases)
+    - ../images/photos/cash_kid_with_money.jpg (Finance use cases)
     - ../images/photos/dr_with_clipboard.jpg (Healthcare/medical use cases)
     - ../images/photos/finance.jpg (Financial services use cases)
     - ../images/photos/medical.png (Healthcare/clinical use cases)
@@ -100,9 +109,28 @@
     <!-- HOW IT WORKS SECTION -->
     <!-- 
     INSTRUCTION:
+    This section has TWO parts:
+    
+    PART 1: VISUAL PROCESS DIAGRAM (Optional but recommended)
+    - Create a custom SVG diagram showing the automation workflow
+    - Choose from 6 diagram types: Linear Flow, Multi-Input Pipeline, Cycle, Decision Tree, Hub & Spoke, or Layered Architecture
+    - Use INVOKE orange (#f36a3d) for arrows and emphasis
+    - Keep it simple: 3-7 main elements
+    - See generator/LLM_INSTRUCTIONS.md for complete diagram guide and examples
+    - If you don't want a diagram, delete the entire <svg>...</svg> block and the separator
+    
+    PART 2: PROCESS TEXT BOXES (Required)
+    - Three boxes showing: Input → Automation → Output
+    - Fill in the variables as described below
+    
+    SEPARATOR (Required if using visual diagram):
+    - Labeled divider between diagram and text boxes
+    - Clearly separates visual from detailed text
+    - Do not modify the separator HTML
+    
     Replace {{SOLUTION_SUBTITLE}} with brief explanation (1 sentence)
     
-    For the process flow, customize these 3 boxes:
+    For the process flow boxes, customize these 3 boxes:
     
     INPUT BOX:
     - Replace {{INPUT_HEADING}} with what data/sources are used (e.g., "Data Sources", "Input Systems")
@@ -124,6 +152,43 @@
         <h2 class="section__title">How it works</h2>
         <div class="process-diagram">
           <h3>Intelligent Automation: {{SOLUTION_SUBTITLE}}</h3>
+          
+          <!-- VISUAL DIAGRAM SECTION (Optional - Delete if not using) -->
+          <!-- 
+          INSTRUCTION: Replace this placeholder with your custom SVG diagram
+          Example structure:
+          
+          <svg viewBox="0 0 1000 400" style="width: 100%; height: auto; margin: 2rem 0;">
+            <rect x="50" y="150" width="200" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
+            <text x="150" y="205" text-anchor="middle" font-family="Lato" font-size="16" font-weight="bold">Input</text>
+            
+            <path d="M 270 200 L 350 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
+            
+            <rect x="370" y="150" width="260" height="100" fill="#1a1a1a" stroke="#f36a3d" stroke-width="3" rx="10"/>
+            <text x="500" y="205" text-anchor="middle" font-family="Lato" font-size="16" font-weight="bold" fill="white">AI Processing</text>
+            
+            <path d="M 650 200 L 730 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
+            
+            <rect x="750" y="150" width="200" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
+            <text x="850" y="205" text-anchor="middle" font-family="Lato" font-size="16" font-weight="bold">Output</text>
+            
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#f36a3d"/>
+              </marker>
+            </defs>
+          </svg>
+          
+          See generator/LLM_INSTRUCTIONS.md for complete diagram examples
+          -->
+          
+          <!-- SEPARATOR BETWEEN DIAGRAM AND TEXT BOXES -->
+          <!-- REQUIRED if using visual diagram above - DELETE if no diagram -->
+          <div style="border-top: 2px solid #e0e0e0; margin: 3rem 0 2rem 0; position: relative;">
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;">PROCESS DETAILS</div>
+          </div>
+          
+          <!-- PROCESS TEXT BOXES (Three boxes with details) -->
           <div class="process-flow">
             <div class="process-box">
               <h4>{{INPUT_HEADING}}</h4>
@@ -310,7 +375,7 @@
         <p class="cta-band__subtitle">
           {{CTA_SUBTITLE}}
         </p>
-        <a href="mailto:info@invokeinc.com" class="btn btn--primary">Contact Us</a>
+        <a href="/cdn-cgi/l/email-protection#1d74737b725d74736b72767874737e337e7270" class="btn btn--primary">Contact Us</a>
       </div>
     </section>
 
@@ -324,7 +389,7 @@
             </div>
             <p class="footer-brand__text">
               Atlanta, GA &bull; (770) 376-0606<br />
-              <a href="mailto:info@invokeinc.com">info@invokeinc.com</a>
+              <a href="/cdn-cgi/l/email-protection#4d24232b220d24233b22262824232e632e2220"><span class="__cf_email__" data-cfemail="4920272f260920273f26222c20272a672a2624">[email&#160;protected]</span></a>
             </p>
           </div>
           <div class="footer-links">
@@ -359,9 +424,8 @@
     </footer>
   </div>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     document.addEventListener('DOMContentLoaded', function() {
-      const langToggles = document.querySelectorAll('.nav__lang span');
       langToggles.forEach(toggle => {
         toggle.addEventListener('click', function() {
           const lang = this.getAttribute('data-lang');

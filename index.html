@@ -7,17 +7,23 @@
   <link rel="stylesheet" href="./index_style.css" />
 </head>
 <body>
-  <!-- Header -->
+    <!-- Header -->
   <header class="header">
     <div class="header-inner">
       <a href="./" class="logo">
         <img src="./images/invoke-logo.svg" alt="INVOKE" />
       </a>
       <nav class="nav-links">
-        <a href="./">Solutions</a>
-        <a href="https://www.invokeinc.com/aboutus.html">About</a>
-        <a href="https://www.invokeinc.com/contact.html">Contact</a>
+        <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
+        <a href="../index.html">SOLUTIONS</a>
+        <a href="https://www.invokepublic.com">INDUSTRIES</a>
+        <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
+        <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
       </nav>
+      <div class="lang-toggle">
+        <span class="active" data-lang="en">EN</span>
+        <span data-lang="fr">FR</span>
+      </div>
     </div>
   </header>
 
@@ -47,7 +53,7 @@
   <section class="stats-bar">
     <div class="stats-container">
       <div class="stat">
-        <div class="stat-value" id="total-use-cases">0</div>
+        <div class="stat-value" id="total-use-cases">0+</div>
         <div class="stat-label">Use Cases</div>
       </div>
       <div class="stat">
@@ -93,7 +99,7 @@
       </div>
       <div class="footer-section">
         <h4>Contact</h4>
-        <p>Atlanta, GA<br/>(770) 376-0606<br/>info@invokeinc.com</p>
+        <p>Atlanta, GA<br/>(770) 376-0606<br/><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="85ecebe3eac5ecebf3eaeee0ecebe6abe6eae8">[email&#160;protected]</a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -101,10 +107,22 @@
     </div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     let allUseCases = [];
     let currentCategory = 'all';
     let searchQuery = '';
+
+    // Language Toggle Logic
+    const langToggles = document.querySelectorAll('.lang-toggle span');
+    langToggles.forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        // Remove active class from all
+        langToggles.forEach(t => t.classList.remove('active'));
+        // Add active class to clicked
+        toggle.classList.add('active');
+        // Future: Add logic here to actually switch content language
+      });
+    });
 
     // Load use cases
     async function loadUseCases() {
@@ -113,7 +131,7 @@
         allUseCases = await response.json();
         
         // Update total count
-        document.getElementById('total-use-cases').textContent = allUseCases.length;
+        document.getElementById('total-use-cases').textContent = allUseCases.length + '+';
         
         // Extract unique categories
         const categories = [...new Set(allUseCases.map(uc => uc.category))].sort();

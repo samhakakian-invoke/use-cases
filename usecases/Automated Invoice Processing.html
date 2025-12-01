@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Automated Invoice Processing</title>
+  <meta name="use-case-name" content="Automated Invoice Processing" />
+  <meta name="use-case-category" content="Finance" />
+  <meta name="description" content="AI-powered invoice automation that eliminates manual data entry and accelerates AP processing with 75% time savings and intelligent validation across all document formats." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="stylesheet" href="../generator/usecase_style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="./" class="logo">
+        <img src="../images/invoke-logo.svg" alt="INVOKE" />
+      </a>
+      <nav class="nav-links">
+        <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
+        <a href="../index.html">SOLUTIONS</a>
+        <a href="https://www.invokepublic.com">INDUSTRIES</a>
+        <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
+        <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
+      </nav>
+      <div class="lang-toggle">
+        <span class="active" data-lang="en">EN</span>
+        <span data-lang="fr">FR</span>
+      </div>
+    </div>
+  </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background-image: url('../images/photos/paperwork.jpg');">
+      <div class="container hero__inner">
+        <div class="hero__kicker">Finance & Accounts Payable</div>
+        <h1 class="hero__title">Automated Invoice Processing</h1>
+        <p class="hero__subtitle">
+          AI-powered invoice automation that eliminates manual data entry and accelerates AP processing with 75% time savings and intelligent validation across all document formats.
+        </p>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- PROBLEM/CHALLENGE SECTION -->
+    <section class="section problem">
+      <div class="container">
+        <h2 class="problem__heading">Drowning in invoice processing chaos?</h2>
+        <p class="problem__intro">
+          Your customers and vendors send invoices in every format imaginable—emails with plain text, Excel spreadsheets, PDFs in countless layouts. Each one requires manual review, data entry, and validation. Your AP team spends hours on repetitive work that drains productivity and increases error risk.
+        </p>
+        <div class="problem__list-wrapper">
+          <ul class="problem__list">
+            <li><strong>Multiple Format Chaos:</strong> Invoices arrive via email, PDF, Excel, scanned documents, and electronic formats—each requiring different handling approaches.</li>
+            <li><strong>Manual Data Entry:</strong> Staff manually key in invoice data field by field, consuming 75% of their time on low-value repetitive work.</li>
+            <li><strong>Error-Prone Processing:</strong> Manual transcription leads to payment errors, vendor disputes, and compliance issues that damage relationships and cost money.</li>
+            <li><strong>System Integration Challenges:</strong> Existing AP systems aren't equipped to handle diverse document formats or adapt to changing business rules without costly customization.</li>
+            <li><strong>Scalability Limitations:</strong> As invoice volumes grow, your team can't keep pace without hiring more staff, creating unsustainable cost increases.</li>
+            <li><strong>Customer Follow-Up Burden:</strong> Incomplete or unclear invoices require manual outreach to vendors for clarification, adding days to payment cycles.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="section how-it-works">
+      <div class="container">
+        <h2 class="section__title">How it works</h2>
+        <div class="process-diagram">
+          <h3>Intelligent Automation: From chaos to streamlined processing</h3>
+          
+          <!-- VISUAL DIAGRAM -->
+          <svg viewBox="0 0 1200 500" style="width: 100%; height: auto; margin: 2rem 0;">
+            <!-- Background -->
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#f36a3d"/>
+              </marker>
+              <filter id="shadow">
+                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+              </filter>
+            </defs>
+            
+            <!-- Input Sources (Left Side) -->
+            <g id="input-sources">
+              <!-- Email invoices -->
+              <rect x="30" y="80" width="160" height="60" fill="white" stroke="#e0e0e0" stroke-width="2" rx="8" filter="url(#shadow)"/>
+              <text x="110" y="110" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Email Invoices</text>
+              <text x="110" y="128" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Plain text & attachments</text>
+              
+              <!-- PDF invoices -->
+              <rect x="30" y="160" width="160" height="60" fill="white" stroke="#e0e0e0" stroke-width="2" rx="8" filter="url(#shadow)"/>
+              <text x="110" y="190" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">PDF Documents</text>
+              <text x="110" y="208" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">All formats & layouts</text>
+              
+              <!-- Excel/CSV -->
+              <rect x="30" y="240" width="160" height="60" fill="white" stroke="#e0e0e0" stroke-width="2" rx="8" filter="url(#shadow)"/>
+              <text x="110" y="270" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Excel Sheets</text>
+              <text x="110" y="288" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Structured data</text>
+              
+              <!-- Scanned docs -->
+              <rect x="30" y="320" width="160" height="60" fill="white" stroke="#e0e0e0" stroke-width="2" rx="8" filter="url(#shadow)"/>
+              <text x="110" y="350" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Scanned Images</text>
+              <text x="110" y="368" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">OCR processing</text>
+              
+              <!-- Arrows from inputs to ARIA -->
+              <path d="M 200 110 Q 280 110, 340 200" stroke="#f36a3d" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+              <path d="M 200 190 Q 260 190, 340 210" stroke="#f36a3d" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+              <path d="M 200 270 Q 260 270, 340 240" stroke="#f36a3d" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+              <path d="M 200 350 Q 280 350, 340 260" stroke="#f36a3d" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+            </g>
+            
+            <!-- ARIA Processing Engine (Center) -->
+            <g id="aria-engine">
+              <rect x="340" y="140" width="280" height="160" fill="#1a1a1a" stroke="#f36a3d" stroke-width="4" rx="12" filter="url(#shadow)"/>
+              <text x="480" y="170" text-anchor="middle" font-family="Lato" font-size="18" font-weight="bold" fill="white">ARIA Processing</text>
+              
+              <!-- AI Extraction -->
+              <circle cx="380" cy="210" r="6" fill="#f36a3d"/>
+              <text x="395" y="215" font-family="Lato" font-size="13" fill="white">AI Document Extraction</text>
+              
+              <!-- Agentic Orchestration -->
+              <circle cx="380" cy="240" r="6" fill="#f36a3d"/>
+              <text x="395" y="245" font-family="Lato" font-size="13" fill="white">Agentic AI Orchestration</text>
+              
+              <!-- Validation -->
+              <circle cx="380" cy="270" r="6" fill="#f36a3d"/>
+              <text x="395" y="275" font-family="Lato" font-size="13" fill="white">Business Rule Validation</text>
+            </g>
+            
+            <!-- Outputs (Right Side) -->
+            <g id="outputs">
+              <!-- System Integration -->
+              <rect x="680" y="100" width="200" height="70" fill="white" stroke="#e0e0e0" stroke-width="2" rx="8" filter="url(#shadow)"/>
+              <text x="780" y="130" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">ERP/AP Systems</text>
+              <text x="780" y="148" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Seamless integration</text>
+              <text x="780" y="162" text-anchor="middle" font-family="Lato" font-size="11" fill="#f36a3d" font-weight="600">✓ Auto-posted</text>
+              
+              <!-- Dashboard -->
+              <rect x="680" y="190" width="200" height="70" fill="white" stroke="#e0e0e0" stroke-width="2" rx="8" filter="url(#shadow)"/>
+              <text x="780" y="220" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Management Dashboard</text>
+              <text x="780" y="238" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Real-time visibility</text>
+              <text x="780" y="252" text-anchor="middle" font-family="Lato" font-size="11" fill="#f36a3d" font-weight="600">✓ Analytics & reports</text>
+              
+              <!-- Exception Handling -->
+              <rect x="680" y="280" width="200" height="70" fill="white" stroke="#e0e0e0" stroke-width="2" rx="8" filter="url(#shadow)"/>
+              <text x="780" y="310" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Exception Queue</text>
+              <text x="780" y="328" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Smart routing</text>
+              <text x="780" y="342" text-anchor="middle" font-family="Lato" font-size="11" fill="#f36a3d" font-weight="600">✓ Approval workflows</text>
+              
+              <!-- Arrows from ARIA to outputs -->
+              <path d="M 630 200 L 670 135" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
+              <path d="M 630 230 L 670 225" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
+              <path d="M 630 260 L 670 315" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
+            </g>
+            
+            <!-- Customer Communication (Bottom) -->
+            <g id="customer-comm">
+              <rect x="920" y="200" width="250" height="90" fill="#fff9f5" stroke="#f36a3d" stroke-width="2" rx="8" filter="url(#shadow)" stroke-dasharray="5,5"/>
+              <text x="1045" y="225" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold" fill="#f36a3d">Customer Communication</text>
+              <text x="1045" y="245" text-anchor="middle" font-family="Lato" font-size="12" fill="#666">Intelligent updates</text>
+              <text x="1045" y="263" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">• Validation requests</text>
+              <text x="1045" y="278" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">• Status notifications</text>
+              
+              <!-- Arrow from outputs to customer comm -->
+              <path d="M 890 225 L 910 225" stroke="#f36a3d" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+            </g>
+            
+            <!-- Labels -->
+            <text x="110" y="45" text-anchor="middle" font-family="Lato" font-size="15" font-weight="700" fill="#666">INVOICE SOURCES</text>
+            <text x="480" y="115" text-anchor="middle" font-family="Lato" font-size="15" font-weight="700" fill="#666">INTELLIGENT PROCESSING</text>
+            <text x="780" y="75" text-anchor="middle" font-family="Lato" font-size="15" font-weight="700" fill="#666">AUTOMATED OUTPUTS</text>
+          </svg>
+          
+          <!-- SEPARATOR -->
+          <div style="border-top: 2px solid #e0e0e0; margin: 3rem 0 2rem 0; position: relative;">
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;">PROCESS DETAILS</div>
+          </div>
+          
+          <!-- PROCESS TEXT BOXES -->
+          <div class="process-flow">
+            <div class="process-box">
+              <h4>Invoice Sources</h4>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">Multiple Input Channels</p>
+              <ul style="margin-top: 1rem;">
+                <li>Email with attachments or plain text</li>
+                <li>PDF documents in any format or layout</li>
+                <li>Excel spreadsheets and CSV files</li>
+                <li>Scanned paper invoices via OCR</li>
+              </ul>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-box center">
+              <h4>Intelligent Automation</h4>
+              <ul style="margin-top: 1.5rem;">
+                <li>AI-powered document extraction learns from every invoice</li>
+                <li>Agentic orchestration applies business rules automatically</li>
+                <li>Intelligent validation catches errors before posting</li>
+                <li>Seamless integration with existing AP systems</li>
+                <li>Exception routing to appropriate approvers</li>
+              </ul>
+              <p style="margin-top: 1.5rem;"><strong>Best-of-breed technology stack continuously adapts to your evolving needs</strong></p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-box">
+              <h4>Automated Outcomes</h4>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">✓ Streamlined AP Operations</p>
+              <ul style="margin-top: 1rem;">
+                <li>Auto-posted invoices to ERP systems</li>
+                <li>Real-time dashboards and analytics</li>
+                <li>Intelligent customer communication</li>
+                <li>Exception handling workflows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- SOLUTION FEATURES SECTION -->
+    <section class="section differentiators">
+      <div class="container">
+        <h2 class="section__title">Why Is Our Solution Different?</h2>
+        <p class="section__subtitle">
+          ARIA for Invoice Processing combines best-of-breed technologies in a unique approach that delivers optimal results, higher automation rates, and quick adaptability without software release delays.
+        </p>
+        <div class="diff-grid">
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/machine-learning-01.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">AI Document Extraction</h3>
+            <p class="diff-card__body">
+              Advanced data extraction capability reads invoices in all formats and continuously learns from each document, improving accuracy over time without manual template configuration.
+            </p>
+          </article>
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/automation-services.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">Agentic AI Orchestration</h3>
+            <p class="diff-card__body">
+              Embedded software agents ensure any business rule can be addressed and the solution integrates seamlessly with any internal or external system you need, without custom coding.
+            </p>
+          </article>
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/user-experience-design.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">Intuitive User Experience</h3>
+            <p class="diff-card__body">
+              The ARIA Hyper Automation platform provides a user-friendly web-based solution for reporting, approvals, and exception handling that's easily extensible to other business processes.
+            </p>
+          </article>
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/notification-user.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">Customer Communication</h3>
+            <p class="diff-card__body">
+              Intelligent customer communication proactively updates vendors and allows for validation and correction of submitted invoices, avoiding manual follow-up and accelerating payment cycles.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- VALUE/RESULTS SECTION -->
+    <section class="section value">
+      <div class="container">
+        <h2 class="section__title">Value Achieved</h2>
+        <p class="section__subtitle">
+          Invoice processing automation creates immediate and measurable value across your AP operations.
+        </p>
+        <div class="value-grid">
+          <div class="value-card">
+            <div class="value-card__value">75%</div>
+            <div class="value-card__label">Reduction in processing time</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__value">&lt; 9 Mo</div>
+            <div class="value-card__label">Payback period</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__value">😊</div>
+            <div class="value-card__label">Happy employees refocused on higher-value work</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__value">Scalable</div>
+            <div class="value-card__label">Easily extends to other business processes</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="cta-band__title">Ready to Transform Your Invoice Processing?</h2>
+        <p class="cta-band__subtitle">
+          Join leading organizations that have eliminated manual invoice processing. Contact us today for a personalized demo and transparent pricing based on your invoice volume.
+        </p>
+        <a href="/cdn-cgi/l/email-protection#1d74737b725d74736b72767874737e337e7270" class="btn btn--primary">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-brand__logo">
+              <img src="../images/invoke-logo.svg" alt="INVOKE" />
+            </div>
+            <p class="footer-brand__text">
+              Atlanta, GA &bull; (770) 376-0606<br />
+              <a href="/cdn-cgi/l/email-protection#4d24232b220d24233b22262824232e632e2220"><span class="__cf_email__" data-cfemail="4920272f260920273f26222c20272a672a2624">[email&#160;protected]</span></a>
+            </p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <div class="footer-links__group-title">Company</div>
+              <ul>
+                <li><a class="footer-link" href="https://www.invokeinc.com/aboutus.html">About</a></li>
+                <li><a class="footer-link" href="../index.html">Solutions</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="footer-links__group-title">Resources</div>
+              <ul>
+                <li><a class="footer-link" href="#careers">Careers</a></li>
+                <li><a class="footer-link" href="https://www.invokeinc.com/contact.html">Contact us</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="footer-links__group-title">Legal</div>
+              <ul>
+                <li><a class="footer-link" href="#privacy">Privacy Policy</a></li>
+                <li><a class="footer-link" href="#vulnerability">Vulnerability Disclosure</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div><span>Copyright &copy; 2024 INVOKE Inc. All rights reserved.</span></div>
+          <div><a href="https://www.linkedin.com" aria-label="LinkedIn" class="footer-badge">in</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const langToggles = document.querySelectorAll('.nav__lang span');
+      langToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          langToggles.forEach(t => t.classList.remove('is-active'));
+          this.classList.add('is-active');
+        });
+      });
+
+      const menuToggle = document.querySelector('.nav__menu-toggle');
+      const nav = document.querySelector('.nav');
+      if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('is-open');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

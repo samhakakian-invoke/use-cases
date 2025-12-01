@@ -1,20 +1,62 @@
 [
   {
-    "name": "Intelligent Production Scheduling | INVOKE",
+    "slug": "ARIA Medicaid Verification",
+    "name": "ARIA for Medicaid Eligibility Verification",
+    "category": "Healthcare",
+    "description": "Automate patient Medicaid eligibility verification for any state. Reduce processing time by 95% and eliminate manual errors with ARIA."
+  },
+  {
+    "slug": "Cash Advance Automation",
+    "name": "Automated Cash Application",
+    "category": "Finance",
+    "description": "Automate 70%+ of your cash application process with real-time matching, intelligent exception handling, and seamless ERP integration that turns hours of manual work into minutes."
+  },
+  {
+    "slug": "Factoring Automation",
+    "name": "Automated Factoring Execution",
+    "category": "Finance",
+    "description": "Transform your factoring business with intelligent automation that streamlines invoice processing, minimizes fraud risk, and automates 70% of operations."
+  },
+  {
+    "slug": "Automated Invoice Processing",
+    "name": "Automated Invoice Processing",
+    "category": "Finance",
+    "description": "AI-powered invoice automation that eliminates manual data entry and accelerates AP processing with 75% time savings and intelligent validation across all document formats."
+  },
+  {
+    "slug": "Automated Purchase Order Processing",
+    "name": "Automated Purchase Order Processing",
+    "category": "Supply Chain",
+    "description": "ARIA for Purchase Orders is an intelligent digital assistant that extracts data from any sales order format to automate ERP entry, reducing processing time by 72%."
+  },
+  {
+    "slug": "Automated WERCS Compliance",
+    "name": "Automated WERCS Compliance",
+    "category": "Compliance",
+    "description": "Automate WERCS registration with intelligent data extraction and RPA to ensure accuracy, speed up product launches, and reduce manual effort by 70%."
+  },
+  {
+    "slug": "Lemon Law",
+    "name": "Intelligent Lemon Law Automation",
+    "category": "Legal",
+    "description": "Automate lemon law intake and case management with AI chatbots, instant VIN analysis, and automated workflows to win more cases without adding staff."
+  },
+  {
     "slug": "Intelligent Production Scheduling",
-    "category": "RPA",
-    "description": "AI & automation use case."
+    "name": "Intelligent Production Scheduling Optimization",
+    "category": "Manufacturing",
+    "description": "AI solves multi-variable optimization across factory constraints in real-time to maximize throughput and minimize changeover costs."
   },
   {
-    "name": "Predictive Demand Forecasting | INVOKE",
     "slug": "Predictive Demand Forecasting",
-    "category": "RPA",
-    "description": "AI & automation use case."
+    "name": "Predictive Demand Forecasting",
+    "category": "Supply Chain",
+    "description": "AI-driven demand forecasting that ingests market signals to automate production planning, reducing inventory costs and preventing stockouts."
   },
   {
-    "name": "Predictive Equipment Maintenance | INVOKE",
     "slug": "Predictive Equipment Maintenance",
-    "category": "RPA",
-    "description": "AI & automation use case."
+    "name": "Predictive Maintenance for Packaging",
+    "category": "Manufacturing",
+    "description": "AI models monitor machine telemetry to detect early failure patterns, automating work orders and preventing costly production line stoppages."
   }
 ]

@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <!-- 
-  INSTRUCTION: Replace with use case specific title 
-  Format: "[Use Case Name] | INVOKE"
-  Example: "Predictive Maintenance for Packaging | INVOKE"
+  INSTRUCTION: Replace these meta tags with use case information
   -->
-  <title>Predictive Equipment Maintenance | INVOKE</title>
+  <title>Predictive Maintenance for Packaging</title>
+  <meta name="use-case-name" content="Predictive Maintenance for Packaging" />
+  <meta name="use-case-category" content="Manufacturing" />
+  <meta name="description" content="AI models monitor machine telemetry to detect early failure patterns, automating work orders and preventing costly production line stoppages." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <link rel="stylesheet" href="../generator/usecase_style.css" />
@@ -15,31 +16,32 @@
 <body>
   <div class="page-wrapper">
     <!-- HEADER -->
-    <header class="site-header">
-      <div class="container site-header__inner">
-        <a href="../index.html" class="logo">
-          <img src="../images/invoke-logo.svg" alt="INVOKE" />
-        </a>
-        <nav class="nav">
-          <a href="../index.html" class="nav__link">Solutions</a>
-          <a href="https://www.invokeinc.com/aboutus.html" class="nav__link">About</a>
-          <a href="https://www.invokeinc.com/contact.html" class="nav__link">Contact</a>
-          <div class="nav__lang">
-            <span class="is-active" data-lang="en">EN</span>
-            <span data-lang="fr">FR</span>
-          </div>
-        </nav>
-        <button class="nav__menu-toggle">☰</button>
+  <header class="header">
+    <div class="header-inner">
+      <a href="./" class="logo">
+        <img src="../images/invoke-logo.svg" alt="INVOKE" />
+      </a>
+      <nav class="nav-links">
+        <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
+        <a href="../index.html">SOLUTIONS</a>
+        <a href="https://www.invokepublic.com">INDUSTRIES</a>
+        <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
+        <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
+      </nav>
+      <div class="lang-toggle">
+        <span class="active" data-lang="en">EN</span>
+        <span data-lang="fr">FR</span>
       </div>
-    </header>
+    </div>
+  </header>
 
     <!-- HERO SECTION -->
     <section class="hero" style="background-image: url('../images/photos/auto.jpg');">
       <div class="container hero__inner">
         <div class="hero__kicker">Manufacturing & Operations</div>
-        <h1 class="hero__title">Predictive Equipment Maintenance</h1>
+        <h1 class="hero__title">Predictive Maintenance for Packaging</h1>
         <p class="hero__subtitle">
-          Eliminate unplanned downtime for packaging and filling lines with AI that detects failure patterns early and automates repair workflows.
+          Monitor machine health in real-time to predict failures, automate spare parts ordering, and prevent costly line downtime.
         </p>
       </div>
     </section>
@@ -52,16 +54,16 @@
     <!-- PROBLEM/CHALLENGE SECTION -->
     <section class="section problem">
       <div class="container">
-        <h2 class="problem__heading">Is equipment downtime killing your OEE?</h2>
+        <h2 class="problem__heading">Unplanned downtime stopping production?</h2>
         <p class="problem__intro">
-          Maintenance programs are often time-based or reactive. When critical packaged goods equipment fails, it causes entire plant throughput to collapse.
+          Maintenance programs are often reactive or time-based. When critical filling or packaging equipment fails unexpectedly, the entire plant's throughput collapses.
         </p>
         <div class="problem__list-wrapper">
           <ul class="problem__list">
-            <li><strong>Unplanned Stoppage:</strong> Failures in capping, filling, or labeling stop the entire production line.</li>
-            <li><strong>Reactive Maintenance:</strong> Waiting for things to break is expensive and inefficient.</li>
-            <li><strong>Throughput Loss:</strong> Every minute of downtime directly reduces total plant output.</li>
-            <li><strong>Shortened Lifespan:</strong> Failure to detect early issues leads to severe damage and reduced asset life.</li>
+            <li><strong>Unplanned Stoppages:</strong> Failures in cappers, fillers, or wrappers halt the entire production line instantly.</li>
+            <li><strong>Reactive Model:</strong> Time-based maintenance misses early warning signs of degradation.</li>
+            <li><strong>Throughput Loss:</strong> Every minute of downtime results in permanent capacity loss and missed shipments.</li>
+            <li><strong>Asset Degradation:</strong> Lack of early detection shortens the total lifespan of expensive capital equipment.</li>
           </ul>
         </div>
       </div>
@@ -77,37 +79,75 @@
       <div class="container">
         <h2 class="section__title">How it works</h2>
         <div class="process-diagram">
-          <h3>Intelligent Automation: Proactive monitoring for zero unplanned downtime</h3>
+          <h3>Intelligent Automation: Telemetry-Driven Asset Health</h3>
+          
+          <!-- VISUAL DIAGRAM SECTION -->
+          <svg viewBox="0 0 1000 350" style="width: 100%; height: auto; margin: 2rem 0;">
+            <!-- Input Node -->
+            <rect x="50" y="125" width="220" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
+            <text x="160" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">EQUIPMENT SENSORS</text>
+            <text x="160" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#666">Vibration, Temp, Amps</text>
+            
+            <!-- Arrow 1 -->
+            <path d="M 270 175 L 350 175" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
+            
+            <!-- AI Node -->
+            <rect x="370" y="100" width="260" height="150" fill="#1a1a1a" stroke="#f36a3d" stroke-width="3" rx="10"/>
+            <text x="500" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="16" font-weight="bold" fill="white">PREDICTIVE MONITOR</text>
+            <text x="500" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#ccc">Failure Pattern Detection</text>
+            
+            <!-- Arrow 2 -->
+            <path d="M 630 175 L 710 175" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
+            
+            <!-- Output Node -->
+            <rect x="730" y="125" width="220" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
+            <text x="840" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">AUTOMATED RESPONSE</text>
+            <text x="840" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#666">Work Order & Parts</text>
+            
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#f36a3d"/>
+              </marker>
+            </defs>
+          </svg>
+          
+          <!-- SEPARATOR BETWEEN DIAGRAM AND TEXT BOXES -->
+          <div style="border-top: 2px solid #e0e0e0; margin: 3rem 0 2rem 0; position: relative;">
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;">PROCESS DETAILS</div>
+          </div>
+          
+          <!-- PROCESS TEXT BOXES -->
           <div class="process-flow">
             <div class="process-box">
-              <h4>Asset Telemetry</h4>
+              <h4>Machine Telemetry</h4>
               <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">Real-time Sensor Data</p>
               <ul style="margin-top: 1rem;">
-                <li>Vibration & Temperature</li>
-                <li>Amperage Readings</li>
-                <li>Machine Telemetry</li>
-                <li>Historical Patterns</li>
+                <li>Vibration Monitoring</li>
+                <li>Temperature Readings</li>
+                <li>Amperage Levels</li>
+                <li>PLC Error Logs</li>
               </ul>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box center">
               <h4>Intelligent Automation</h4>
               <ul style="margin-top: 1.5rem;">
-                <li>Failure Pattern Detection</li>
+                <li>Anomaly Detection</li>
+                <li>Failure Pattern Matching</li>
                 <li>Automated Work Orders</li>
                 <li>Spare Parts Ordering</li>
-                <li>Technician Dispatching</li>
               </ul>
-              <p style="margin-top: 1.5rem;"><strong>Predictive Maintenance AI</strong></p>
+              <p style="margin-top: 1.5rem;"><strong>IoT & Predictive Analytics</strong></p>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box">
-              <h4>Operational Results</h4>
-              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">✓ Reliable Uptime</p>
+              <h4>Reliability Output</h4>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">✓ Continuous Uptime</p>
               <ul style="margin-top: 1rem;">
-                <li>Consistent Throughput</li>
-                <li>Extended Asset Life</li>
-                <li>Optimized Maintenance Labor</li>
+                <li>Dispatched Technicians</li>
+                <li>Pre-emptive Repair</li>
+                <li>Line Rescheduling</li>
+                <li>Extended Life</li>
               </ul>
             </div>
           </div>
@@ -123,45 +163,45 @@
     <!-- SOLUTION FEATURES SECTION -->
     <section class="section differentiators">
       <div class="container">
-        <h2 class="section__title">Solution Features</h2>
+        <h2 class="section__title">Key Features</h2>
         <p class="section__subtitle">
-          Keep your filling and packaging lines running smoothly with intelligent asset protection.
+          Secure your production capabilities with 24/7 intelligent asset monitoring.
         </p>
         <div class="diff-grid">
           <article class="diff-card">
             <div class="diff-card__icon">
-              <img src="../images/icons/protect-critical-assets.svg" alt="" style="width: 28px; height: 28px;" />
+              <img src="../images/icons/connected-nodes-to-the-cloud.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Early Detection</h3>
+            <h3 class="diff-card__title">IoT Monitoring</h3>
             <p class="diff-card__body">
-              Monitors telemetry to detect early failure patterns before they cause a breakdown.
+              Seamlessly connects to existing machine sensors and PLC data streams for real-time visibility.
             </p>
           </article>
           <article class="diff-card">
             <div class="diff-card__icon">
-              <img src="../images/icons/automation-services.svg" alt="" style="width: 28px; height: 28px;" />
+              <img src="../images/icons/notification-user.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
             <h3 class="diff-card__title">Auto-Dispatch</h3>
             <p class="diff-card__body">
-              Routes work orders, orders spare parts, and dispatches technicians automatically.
+              Instantly notifies the right technician and orders necessary parts before the machine fails.
             </p>
           </article>
           <article class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/chart-bubble-line.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Lifecycle Analytics</h3>
+            <h3 class="diff-card__title">Pattern Recognition</h3>
             <p class="diff-card__body">
-              Tracks asset health over time to optimize long-term maintenance strategies.
+              Detects subtle vibration or heat patterns that indicate specific component wear or impending failure.
             </p>
           </article>
           <article class="diff-card">
             <div class="diff-card__icon">
-              <img src="../images/icons/innovate.svg" alt="" style="width: 28px; height: 28px;" />
+              <img src="../images/icons/protect-critical-assets.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Smart Rescheduling</h3>
+            <h3 class="diff-card__title">Asset Health</h3>
             <p class="diff-card__body">
-              Instantly reschedules line capacity to accommodate necessary maintenance windows.
+              Extends the operational lifespan of critical capital equipment by preventing catastrophic failures.
             </p>
           </article>
         </div>
@@ -178,24 +218,24 @@
       <div class="container">
         <h2 class="section__title">Expected Results</h2>
         <p class="section__subtitle">
-          Achieve measurable improvements in uptime, OEE, and asset longevity.
+          Maximize asset utilization and ensure consistent production throughput.
         </p>
         <div class="value-grid">
           <div class="value-card">
-            <div class="value-card__value">20–50%</div>
+            <div class="value-card__value">50%</div>
             <div class="value-card__label">Reduction in unplanned downtime</div>
           </div>
           <div class="value-card">
-            <div class="value-card__value">5–12%</div>
+            <div class="value-card__value">12%</div>
             <div class="value-card__label">OEE improvement</div>
           </div>
           <div class="value-card">
-            <div class="value-card__value">2–5 Years</div>
+            <div class="value-card__value">2-5 Yrs</div>
             <div class="value-card__label">Extended asset lifespan</div>
           </div>
           <div class="value-card">
-            <div class="value-card__value">Proactive</div>
-            <div class="value-card__label">Maintenance strategy</div>
+            <div class="value-card__value">24/7</div>
+            <div class="value-card__label">Continuous equipment monitoring</div>
           </div>
         </div>
       </div>
@@ -204,11 +244,11 @@
     <!-- CTA BAND -->
     <section class="cta-band">
       <div class="container">
-        <h2 class="cta-band__title">Stop reacting to failures—prevent them.</h2>
+        <h2 class="cta-band__title">Stop downtime before it starts</h2>
         <p class="cta-band__subtitle">
-          Contact us to implement AI-driven predictive maintenance for your critical equipment.
+          Switch from reactive to predictive maintenance and secure your production lines. Contact us to get started.
         </p>
-        <a href="mailto:info@invokeinc.com" class="btn btn--primary">Contact Us</a>
+        <a href="/cdn-cgi/l/email-protection#066f686069466f6870696d636f68652865696b" class="btn btn--primary">Contact Us</a>
       </div>
     </section>
 
@@ -222,7 +262,7 @@
             </div>
             <p class="footer-brand__text">
               Atlanta, GA &bull; (770) 376-0606<br />
-              <a href="mailto:info@invokeinc.com">info@invokeinc.com</a>
+              <a href="/cdn-cgi/l/email-protection#b0d9ded6dff0d9ded6dfdbd5d9ded39ed3dfdd"><span class="__cf_email__" data-cfemail="6c05020a032c05021a03070905020f420f0301">[email&#160;protected]</span></a>
             </p>
           </div>
           <div class="footer-links">
@@ -257,15 +297,20 @@
     </footer>
   </div>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     document.addEventListener('DOMContentLoaded', function() {
       const langToggles = document.querySelectorAll('.nav__lang span');
       langToggles.forEach(toggle => {
-        toggle.addEventListener('click', function() {
-          const lang = this.getAttribute('data-lang');
+        toggle.addEventListener('click', () => {
           langToggles.forEach(t => t.classList.remove('is-active'));
-          this.classList.add('is-active');
+          toggle.classList.add('is-active');
         });
+      });
+      
+      const menuToggle = document.querySelector('.nav__menu-toggle');
+      const nav = document.querySelector('.nav');
+      menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('is-visible');
       });
     });
   </script>

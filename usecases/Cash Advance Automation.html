@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Automated Cash Application</title>
+  <meta name="use-case-name" content="Automated Cash Application" />
+  <meta name="use-case-category" content="Finance" />
+  <meta name="description" content="Automate 70%+ of your cash application process with real-time matching, intelligent exception handling, and seamless ERP integration that turns hours of manual work into minutes." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <link rel="stylesheet" href="../generator/usecase_style.css" />
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="./" class="logo">
+        <img src="../images/invoke-logo.svg" alt="INVOKE" />
+      </a>
+      <nav class="nav-links">
+        <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
+        <a href="../index.html">SOLUTIONS</a>
+        <a href="https://www.invokepublic.com">INDUSTRIES</a>
+        <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
+        <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
+      </nav>
+      <div class="lang-toggle">
+        <span class="active" data-lang="en">EN</span>
+        <span data-lang="fr">FR</span>
+      </div>
+    </div>
+  </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="background-image: url('../images/photos/finance.jpg');">
+      <div class="container hero__inner">
+        <div class="hero__kicker">Finance & Accounts Receivable</div>
+        <h1 class="hero__title">Automated Cash Application</h1>
+        <p class="hero__subtitle">
+          Automate 70%+ of your cash application process with real-time matching, intelligent exception handling, and seamless ERP integration that turns hours of manual work into minutes.
+        </p>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- PROBLEM/CHALLENGE SECTION -->
+    <section class="section problem">
+      <div class="container">
+        <h2 class="problem__heading">Struggling with manual cash application?</h2>
+        <p class="problem__intro">
+          Automating cash application has been an elusive objective for years. Your AR team manually matches payments from multiple sources to open invoices, spending hours reconciling accounts while cash sits unapplied. Complex payment scenarios and system limitations force time-consuming workarounds that delay cash posting and frustrate your team.
+        </p>
+        <div class="problem__list-wrapper">
+          <ul class="problem__list">
+            <li><strong>Manual Payment Matching:</strong> Staff spend hours each day manually matching incoming payments to open invoices across multiple systems and payment channels.</li>
+            <li><strong>Multiple Data Sources:</strong> Payments arrive via wire transfer, ACH, credit card, checks, and lockbox—each requiring different handling and data extraction methods.</li>
+            <li><strong>Complex Payment Scenarios:</strong> Partial payments, overpayments, underpayments, and multi-invoice payments create matching challenges that existing systems can't handle automatically.</li>
+            <li><strong>Delayed Cash Posting:</strong> Manual processes mean cash sits unapplied for days, impacting working capital visibility and Days Sales Outstanding (DSO) metrics.</li>
+            <li><strong>Time-Consuming Exceptions:</strong> When automated matching fails, staff must hunt through multiple systems to resolve discrepancies, consuming valuable time on low-value work.</li>
+            <li><strong>Limited System Integration:</strong> Legacy cash application tools don't integrate in real-time with your ERP, creating data synchronization issues and requiring duplicate data entry.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="section how-it-works">
+      <div class="container">
+        <h2 class="section__title">How it works</h2>
+        <div class="process-diagram">
+          <h3>Intelligent Automation: Less work, more cash. It's that simple.</h3>
+          
+          <!-- VISUAL DIAGRAM - 6-Step Linear Process -->
+          <svg viewBox="0 0 1400 400" style="width: 100%; height: auto; margin: 2rem 0;">
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#f36a3d"/>
+              </marker>
+              <filter id="shadow">
+                <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+              </filter>
+            </defs>
+            
+            <!-- Step 1: Collect Cash -->
+            <g id="step1">
+              <rect x="20" y="120" width="180" height="160" fill="white" stroke="#f36a3d" stroke-width="3" rx="10" filter="url(#shadow)"/>
+              <circle cx="110" cy="150" r="20" fill="#f36a3d"/>
+              <text x="110" y="157" text-anchor="middle" font-family="Lato" font-size="18" font-weight="bold" fill="white">1</text>
+              <text x="110" y="195" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Collect Cash</text>
+              <text x="110" y="215" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Automatic collection</text>
+              <text x="110" y="230" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">from all sources:</text>
+              <text x="110" y="245" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">• Wires & ACH</text>
+              <text x="110" y="258" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">• Lockbox</text>
+              <text x="110" y="271" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">• Credit cards</text>
+            </g>
+            
+            <!-- Arrow 1 to 2 -->
+            <path d="M 210 200 L 235 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
+            
+            <!-- Step 2: Structure Data -->
+            <g id="step2">
+              <rect x="245" y="120" width="180" height="160" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10" filter="url(#shadow)"/>
+              <circle cx="335" cy="150" r="20" fill="#f36a3d"/>
+              <text x="335" y="157" text-anchor="middle" font-family="Lato" font-size="18" font-weight="bold" fill="white">2</text>
+              <text x="335" y="195" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Structure Data</text>
+              <text x="335" y="215" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Normalize payment</text>
+              <text x="335" y="230" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">information & extract</text>
+              <text x="335" y="245" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">open invoices from</text>
+              <text x="335" y="260" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">ERP system(s)</text>
+            </g>
+            
+            <!-- Arrow 2 to 3 -->
+            <path d="M 435 200 L 460 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
+            
+            <!-- Step 3: Match Payments -->
+            <g id="step3">
+              <rect x="470" y="120" width="180" height="160" fill="#1a1a1a" stroke="#f36a3d" stroke-width="3" rx="10" filter="url(#shadow)"/>
+              <circle cx="560" cy="150" r="20" fill="#f36a3d"/>
+              <text x="560" y="157" text-anchor="middle" font-family="Lato" font-size="18" font-weight="bold" fill="white">3</text>
+              <text x="560" y="195" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold" fill="white">Match Payments</text>
+              <text x="560" y="215" text-anchor="middle" font-family="Lato" font-size="11" fill="#ccc">Intelligent matching</text>
+              <text x="560" y="230" text-anchor="middle" font-family="Lato" font-size="10" fill="#ccc">with business rules:</text>
+              <text x="560" y="245" text-anchor="middle" font-family="Lato" font-size="10" fill="#ccc">• Full payments</text>
+              <text x="560" y="258" text-anchor="middle" font-family="Lato" font-size="10" fill="#ccc">• Partial payments</text>
+              <text x="560" y="271" text-anchor="middle" font-family="Lato" font-size="10" fill="#ccc">• Over/under pays</text>
+            </g>
+            
+            <!-- Arrow 3 to 4 -->
+            <path d="M 660 200 L 685 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
+            
+            <!-- Step 4: Handle Exceptions -->
+            <g id="step4">
+              <rect x="695" y="120" width="180" height="160" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10" filter="url(#shadow)"/>
+              <circle cx="785" cy="150" r="20" fill="#f36a3d"/>
+              <text x="785" y="157" text-anchor="middle" font-family="Lato" font-size="18" font-weight="bold" fill="white">4</text>
+              <text x="785" y="195" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Exceptions</text>
+              <text x="785" y="215" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Centralized queue</text>
+              <text x="785" y="230" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">for fast resolution</text>
+              <text x="785" y="245" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">with full context</text>
+              <text x="785" y="260" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">and search</text>
+            </g>
+            
+            <!-- Arrow 4 to 5 -->
+            <path d="M 885 200 L 910 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
+            
+            <!-- Step 5: Apply Cash -->
+            <g id="step5">
+              <rect x="920" y="120" width="180" height="160" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10" filter="url(#shadow)"/>
+              <circle cx="1010" cy="150" r="20" fill="#f36a3d"/>
+              <text x="1010" y="157" text-anchor="middle" font-family="Lato" font-size="18" font-weight="bold" fill="white">5</text>
+              <text x="1010" y="195" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Apply Cash</text>
+              <text x="1010" y="215" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Real-time posting</text>
+              <text x="1010" y="230" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">to backend ERP</text>
+              <text x="1010" y="245" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">system(s) with full</text>
+              <text x="1010" y="260" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">audit trail</text>
+            </g>
+            
+            <!-- Arrow 5 to 6 -->
+            <path d="M 1110 200 L 1135 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
+            
+            <!-- Step 6: Log & Communicate -->
+            <g id="step6">
+              <rect x="1145" y="120" width="180" height="160" fill="white" stroke="#f36a3d" stroke-width="3" rx="10" filter="url(#shadow)"/>
+              <circle cx="1235" cy="150" r="20" fill="#f36a3d"/>
+              <text x="1235" y="157" text-anchor="middle" font-family="Lato" font-size="18" font-weight="bold" fill="white">6</text>
+              <text x="1235" y="195" text-anchor="middle" font-family="Lato" font-size="14" font-weight="bold">Log & Notify</text>
+              <text x="1235" y="215" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Complete records</text>
+              <text x="1235" y="230" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">for review and</text>
+              <text x="1235" y="245" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">automated customer</text>
+              <text x="1235" y="260" text-anchor="middle" font-family="Lato" font-size="10" fill="#666">communication</text>
+            </g>
+            
+            <!-- Bottom Flow Indicator -->
+            <rect x="20" y="310" width="1305" height="50" fill="#fff9f5" stroke="#f36a3d" stroke-width="2" rx="8" stroke-dasharray="5,5"/>
+            <text x="672" y="335" text-anchor="middle" font-family="Lato" font-size="13" font-weight="bold" fill="#f36a3d">End-to-End Automation: From Payment Receipt to Cash Posted</text>
+            <text x="672" y="352" text-anchor="middle" font-family="Lato" font-size="11" fill="#666">Real-time integration with your ERP • Automated business rules • Intelligent exception handling</text>
+          </svg>
+          
+          <!-- SEPARATOR -->
+          <div style="border-top: 2px solid #e0e0e0; margin: 3rem 0 2rem 0; position: relative;">
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;">PROCESS DETAILS</div>
+          </div>
+          
+          <!-- PROCESS TEXT BOXES -->
+          <div class="process-flow">
+            <div class="process-box">
+              <h4>Payment Sources</h4>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">All Cash Channels</p>
+              <ul style="margin-top: 1rem;">
+                <li>Wire transfers and ACH payments</li>
+                <li>Lockbox deposits and remittances</li>
+                <li>Credit card and online payments</li>
+                <li>Check scans and EDI transactions</li>
+              </ul>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-box center">
+              <h4>Intelligent Automation</h4>
+              <ul style="margin-top: 1.5rem;">
+                <li>Automatic data structuring and invoice extraction</li>
+                <li>AI-powered matching with complex business rules</li>
+                <li>Real-time ERP integration for instant validation</li>
+                <li>Smart exception routing with full context</li>
+                <li>Automated cash posting and reconciliation</li>
+              </ul>
+              <p style="margin-top: 1.5rem;"><strong>70%+ automation rate with the flexibility to handle even the most complex payment scenarios</strong></p>
+            </div>
+            <div class="process-arrow">→</div>
+            <div class="process-box">
+              <h4>Automated Outcomes</h4>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">✓ Cash Applied in Real-Time</p>
+              <ul style="margin-top: 1rem;">
+                <li>Instant cash posting to ERP systems</li>
+                <li>Complete audit trail and logging</li>
+                <li>Automated customer notifications</li>
+                <li>Improved DSO and working capital visibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- SOLUTION FEATURES SECTION -->
+    <section class="section differentiators">
+      <div class="container">
+        <h2 class="section__title">Why Is Our Solution Different?</h2>
+        <p class="section__subtitle">
+          ARIA for Cash Application doesn't just match payments—it automates the entire end-to-end process with real-time integration, intelligent matching, and a powerful user experience.
+        </p>
+        <div class="diff-grid">
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/speedometer.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">Real-Time Integration</h3>
+            <p class="diff-card__body">
+              Direct real-time integration with your ERP systems allows you to post cash immediately and have accurate information at hand when handling exceptions, eliminating data sync issues.
+            </p>
+          </article>
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/ai-robustness.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">Complex Matching</h3>
+            <p class="diff-card__body">
+              Advanced AI matching engine handles even the most complex scenarios including partial payments, overpayments, underpayments, and multi-invoice payments that other systems can't automate.
+            </p>
+          </article>
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/user-experience-design.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">Superior User Experience</h3>
+            <p class="diff-card__body">
+              Centralized exception queue with powerful search and full payment context allows your team to resolve exceptions in minutes instead of hours, dramatically improving productivity.
+            </p>
+          </article>
+          <article class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/process.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title">End-to-End Value</h3>
+            <p class="diff-card__body">
+              ARIA focuses on minimizing your work by automating the complete process from payment collection to cash posting, not just the matching step—delivering true end-to-end automation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="section-divider">
+      <img src="../images/invoke-circle-divider.svg" alt="" />
+    </div>
+
+    <!-- VALUE/RESULTS SECTION -->
+    <section class="section value">
+      <div class="container">
+        <h2 class="section__title">Value Achieved</h2>
+        <p class="section__subtitle">
+          Automated cash application delivers measurable impact on your working capital and team productivity.
+        </p>
+        <div class="value-grid">
+          <div class="value-card">
+            <div class="value-card__value">70%+</div>
+            <div class="value-card__label">End-to-end process automation</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__value">Real-time</div>
+            <div class="value-card__label">Cash posting to ERP systems</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__value">Minutes</div>
+            <div class="value-card__label">Exception resolution time (vs. hours)</div>
+          </div>
+          <div class="value-card">
+            <div class="value-card__value">Improved</div>
+            <div class="value-card__label">DSO and working capital visibility</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="cta-band__title">Ready to Automate Your Cash Application?</h2>
+        <p class="cta-band__subtitle">
+          Finally, a solution that works with your systems and applies your business rules and workflow. Discover how you can automate 70% or more of your cash application process with volume-based pricing that scales with your needs.
+        </p>
+        <a href="/cdn-cgi/l/email-protection#1d74737b725d74736b72767874737e337e7270" class="btn btn--primary">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-brand__logo">
+              <img src="../images/invoke-logo.svg" alt="INVOKE" />
+            </div>
+            <p class="footer-brand__text">
+              Atlanta, GA &bull; (770) 376-0606<br />
+              <a href="/cdn-cgi/l/email-protection#4d24232b220d24233b22262824232e632e2220"><span class="__cf_email__" data-cfemail="4920272f260920273f26222c20272a672a2624">[email&#160;protected]</span></a>
+            </p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <div class="footer-links__group-title">Company</div>
+              <ul>
+                <li><a class="footer-link" href="https://www.invokeinc.com/aboutus.html">About</a></li>
+                <li><a class="footer-link" href="../index.html">Solutions</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="footer-links__group-title">Resources</div>
+              <ul>
+                <li><a class="footer-link" href="#careers">Careers</a></li>
+                <li><a class="footer-link" href="https://www.invokeinc.com/contact.html">Contact us</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="footer-links__group-title">Legal</div>
+              <ul>
+                <li><a class="footer-link" href="#privacy">Privacy Policy</a></li>
+                <li><a class="footer-link" href="#vulnerability">Vulnerability Disclosure</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div><span>Copyright &copy; 2024 INVOKE Inc. All rights reserved.</span></div>
+          <div><a href="https://www.linkedin.com" aria-label="LinkedIn" class="footer-badge">in</a></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const langToggles = document.querySelectorAll('.nav__lang span');
+      langToggles.forEach(toggle => {
+        toggle.addEventListener('click', function() {
+          langToggles.forEach(t => t.classList.remove('is-active'));
+          this.classList.add('is-active');
+        });
+      });
+
+      const menuToggle = document.querySelector('.nav__menu-toggle');
+      const nav = document.querySelector('.nav');
+      if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function() {
+          nav.classList.toggle('is-open');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
