@@ -61,6 +61,10 @@ color: #aeaeae;
 }
 
 /* Language Toggle */
+.lang-icon {
+height: 50px;
+}
+
 .lang-toggle {
 display: flex;
 gap: 5px;
@@ -68,8 +72,8 @@ align-items: center;
 }
 
 .lang-toggle span {
-padding: 5px 10px;
-font-size: 12px;
+padding: 5px 5px;
+font-size: 10px;
 font-weight: 600;
 text-transform: uppercase;
 cursor: pointer;
@@ -306,51 +310,106 @@ color: #666;
 }
 
 /* Footer */
+.footer-wrap {
+  background: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 60px 30px 30px;
+  margin-top: 100px;
+}
+
 .footer {
-background: #1a1a1a;
-color: rgba(255, 255, 255, 0.7);
-padding: 50px 30px 30px;
-margin-top: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-content {
-max-width: 1200px;
-margin: 0 auto;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 40px;
-margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 40px;
 }
 
-.footer-section h4 {
-color: #ffffff;
-font-weight: 700;
-margin-bottom: 15px;
-font-size: 14px;
-text-transform: uppercase;
-letter-spacing: 1px;
+.footer-logo {
+  flex-shrink: 0;
 }
 
-.footer-section a {
-color: rgba(255, 255, 255, 0.7);
-text-decoration: none;
-display: block;
-margin-bottom: 10px;
-transition: color 0.2s;
-font-size: 14px;
+.footer-contact {
+  flex-shrink: 0;
 }
 
-.footer-section a:hover {
-color: #f36a3d;
+.footer-contact p {
+  margin: 0;
+  color: #666;
+  font-size: 11px;
+  line-height: 1.6;
 }
 
-.footer-bottom {
-max-width: 1200px;
-margin: 30px auto 0;
-padding-top: 30px;
-border-top: 1px solid rgba(255, 255, 255, 0.1);
-text-align: center;
-font-size: 13px;
+.footer-contact a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #f36a3d;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 11px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #f36a3d;
+}
+
+.footer-social {
+  margin-left: auto;
+}
+
+.footer-social a {
+  color: #999;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: #f36a3d;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 40px 0 20px;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright p {
+  margin: 0;
+  color: #666;
+  font-size: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-social {
+    margin-left: 0;
+  }
 }
 
 /* Responsive */
