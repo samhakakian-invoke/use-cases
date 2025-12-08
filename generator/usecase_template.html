@@ -3,19 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <!-- 
+  ══════════════════════════════════════════════════════════════════════
+  BILINGUAL USE CASE TEMPLATE - ENGLISH/FRENCH
+  ══════════════════════════════════════════════════════════════════════
+  
   INSTRUCTION: Replace these meta tags with use case information
   
-  NAME: The full use case title (e.g., "Predictive Demand Forecasting")
-  SLUG: Auto-generated from filename, don't include in template
-  CATEGORY: Industry or function (e.g., "Supply Chain", "Finance", "Manufacturing", "Healthcare", "Legal", "HR")
-  DESCRIPTION: Brief 1-2 sentence description (150-240 characters)
+  For BILINGUAL support, provide BOTH English (_EN) and French (_FR) versions.
   
-  These meta tags are used by update_usecases.py to generate the homepage JSON
+  META TAGS (English only - for homepage generation):
+  - {{USE_CASE_TITLE_EN}} - Full use case title (e.g., "Predictive Demand Forecasting")
+  - {{USE_CASE_CATEGORY_EN}} - Industry/function (e.g., "Supply Chain", "Finance", "Manufacturing", "Healthcare", "Legal", "HR")
+  - {{USE_CASE_DESCRIPTION_EN}} - Brief 1-2 sentence description (150-240 characters)
+  
+  These meta tags are used by update_usecases.py to generate the homepage JSON.
+  The homepage only uses English values, but the page content is fully bilingual.
+  
+  SLUG: Auto-generated from filename by Python script - don't include in template
   -->
-  <title>{{USE_CASE_TITLE}}</title>
-  <meta name="use-case-name" content="{{USE_CASE_TITLE}}" />
-  <meta name="use-case-category" content="{{USE_CASE_CATEGORY}}" />
-  <meta name="description" content="{{USE_CASE_DESCRIPTION}}" />
+  <title>{{USE_CASE_TITLE_EN}} | INVOKE</title>
+  <meta name="use-case-name" content="{{USE_CASE_TITLE_EN}}" />
+  <meta name="use-case-category" content="{{USE_CASE_CATEGORY_EN}}" />
+  <meta name="description" content="{{USE_CASE_DESCRIPTION_EN}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <link rel="stylesheet" href="../generator/usecase_style.css" />
@@ -23,51 +32,68 @@
 <body>
   <div class="page-wrapper">
     <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="https://invokeinc.com" class="logo">
-        <img src="../images/invoke-logo.svg" alt="INVOKE" />
-      </a>
-      <nav class="nav-links">
-        <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
-        <a href="../index.html">SOLUTIONS</a>
-        <a href="https://www.invokepublic.com">INDUSTRIES</a>
-        <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
-        <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
-      </nav>
-      <div class="lang-toggle">
-        <img src="../images/lang.png" alt="lang" class="lang-icon"/>
-        <span class="active" data-lang="en">EN</span>
-        <span data-lang="fr">FR</span>
+    <header class="header">
+      <div class="header-inner">
+        <a href="https://invokeinc.com" class="logo">
+          <img src="../images/invoke-logo.svg" alt="INVOKE" />
+        </a>
+        <nav class="nav-links">
+          <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
+          <a href="../index.html">SOLUTIONS</a>
+          <a href="https://www.invokepublic.com">INDUSTRIES</a>
+          <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
+          <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
+        </nav>
+        <div class="lang-toggle">
+          <img src="../images/lang.png" alt="lang" class="lang-icon"/>
+          <span class="lang-btn active" data-lang="en">EN</span>
+          <span class="lang-btn" data-lang="fr">FR</span>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <!-- HERO SECTION -->
     <!-- 
-    INSTRUCTION: Select the most appropriate background image from available photos:
+    ══════════════════════════════════════════════════════════════════════
+    HERO SECTION INSTRUCTIONS
+    ══════════════════════════════════════════════════════════════════════
+    
+    STEP 1: Select the most appropriate background image from available photos:
     - ../images/photos/agreement_or_legal.jpg (Legal/compliance use cases)
     - ../images/photos/auto.jpg (Automotive/manufacturing use cases)
     - ../images/photos/business_meeting.jpg (Business strategy/management use cases)
-    - ../images/photos/calculating.jpg (analytics use cases)
-    - ../images/photos/cash_kid_with_money.jpg (Finance use cases)
+    - ../images/photos/calculating.jpg (Finance/analytics use cases)
+    - ../images/photos/cash_kid_with_money.jpg (Consumer finance use cases)
     - ../images/photos/dr_with_clipboard.jpg (Healthcare/medical use cases)
     - ../images/photos/finance.jpg (Financial services use cases)
     - ../images/photos/medical.png (Healthcare/clinical use cases)
     - ../images/photos/paperwork.jpg (Document processing/administrative use cases)
     - ../images/photos/shipping_and_logistics.jpg (Supply chain/logistics use cases)
     
-    Replace {{HERO_IMAGE}} with the selected image path
-    Replace {{INDUSTRY_CATEGORY}} with: "Intelligent Automation & Digital Transformation" OR specific industry like "Supply Chain & Logistics" or "Healthcare Solutions"
-    Replace {{USE_CASE_TITLE}} with the main heading (2-5 words)
-    Replace {{USE_CASE_DESCRIPTION}} with a 1-2 sentence description of the use case and its value proposition
+    STEP 2: Fill in these variables (BOTH EN and FR):
+    - {{HERO_IMAGE}} - Selected image path (same for both languages)
+    - {{INDUSTRY_CATEGORY_EN}} - Industry label like "Supply Chain & Logistics" or "Healthcare Solutions"
+    - {{INDUSTRY_CATEGORY_FR}} - French version: "Chaîne d'approvisionnement et logistique"
+    - {{USE_CASE_TITLE_EN}} - Main heading (2-5 words in English)
+    - {{USE_CASE_TITLE_FR}} - Main heading (2-5 words in French)
+    - {{USE_CASE_DESCRIPTION_EN}} - 1-2 sentence value proposition (English)
+    - {{USE_CASE_DESCRIPTION_FR}} - 1-2 sentence value proposition (French)
+    
+    The page uses data-lang-en and data-lang-fr attributes to toggle between languages.
     -->
     <section class="hero" style="background-image: url('{{HERO_IMAGE}}');">
       <div class="container hero__inner">
-        <div class="hero__kicker">{{INDUSTRY_CATEGORY}}</div>
-        <h1 class="hero__title">{{USE_CASE_TITLE}}</h1>
-        <p class="hero__subtitle">
-          {{USE_CASE_DESCRIPTION}}
+        <div class="hero__kicker" data-lang-en>{{INDUSTRY_CATEGORY_EN}}</div>
+        <div class="hero__kicker" data-lang-fr style="display:none;">{{INDUSTRY_CATEGORY_FR}}</div>
+        
+        <h1 class="hero__title" data-lang-en>{{USE_CASE_TITLE_EN}}</h1>
+        <h1 class="hero__title" data-lang-fr style="display:none;">{{USE_CASE_TITLE_FR}}</h1>
+        
+        <p class="hero__subtitle" data-lang-en>
+          {{USE_CASE_DESCRIPTION_EN}}
+        </p>
+        <p class="hero__subtitle" data-lang-fr style="display:none;">
+          {{USE_CASE_DESCRIPTION_FR}}
         </p>
       </div>
     </section>
@@ -79,24 +105,47 @@
 
     <!-- PROBLEM/CHALLENGE SECTION -->
     <!-- 
-    INSTRUCTION: 
-    Replace {{CHALLENGE_HEADING}} with a question or statement about the problem (e.g., "Struggling with inventory forecasting?")
-    Replace {{CHALLENGE_INTRO}} with 1-2 sentences introducing the challenges
-    Replace {{CHALLENGE_ITEMS}} with 4-6 bullet points describing specific challenges
-    Each bullet should have:
-    - A bolded challenge name followed by a colon
-    - A brief description of the challenge
-    Format: <li><strong>Challenge Name:</strong> Description of the challenge.</li>
+    ══════════════════════════════════════════════════════════════════════
+    CHALLENGE SECTION INSTRUCTIONS
+    ══════════════════════════════════════════════════════════════════════
+    
+    Replace the following variables (BOTH EN and FR):
+    
+    - {{CHALLENGE_HEADING_EN}} - Question/statement about the problem
+      Example EN: "Struggling with inventory forecasting?"
+      Example FR: "Vous avez du mal avec les prévisions d'inventaire ?"
+    
+    - {{CHALLENGE_INTRO_EN}} / {{CHALLENGE_INTRO_FR}} - 1-2 sentences introducing the challenges
+    
+    - {{CHALLENGE_ITEMS_EN}} / {{CHALLENGE_ITEMS_FR}} - 4-6 bullet points describing specific challenges
+    
+    Format for each bullet point (same in both languages):
+    <li><strong>Challenge Name:</strong> Description of the challenge and its impact.</li>
+    
+    Example EN:
+    <li><strong>Inaccurate Forecasts:</strong> Manual forecasting leads to 30% error rates, causing costly stockouts and overstock situations.</li>
+    
+    Example FR:
+    <li><strong>Prévisions inexactes :</strong> Les prévisions manuelles entraînent un taux d'erreur de 30 %, causant des ruptures de stock et des situations de surstock coûteuses.</li>
     -->
     <section class="section problem">
       <div class="container">
-        <h2 class="problem__heading">{{CHALLENGE_HEADING}}</h2>
-        <p class="problem__intro">
-          {{CHALLENGE_INTRO}}
+        <h2 class="problem__heading" data-lang-en>{{CHALLENGE_HEADING_EN}}</h2>
+        <h2 class="problem__heading" data-lang-fr style="display:none;">{{CHALLENGE_HEADING_FR}}</h2>
+        
+        <p class="problem__intro" data-lang-en>
+          {{CHALLENGE_INTRO_EN}}
         </p>
+        <p class="problem__intro" data-lang-fr style="display:none;">
+          {{CHALLENGE_INTRO_FR}}
+        </p>
+        
         <div class="problem__list-wrapper">
-          <ul class="problem__list">
-            {{CHALLENGE_ITEMS}}
+          <ul class="problem__list" data-lang-en>
+            {{CHALLENGE_ITEMS_EN}}
+          </ul>
+          <ul class="problem__list" data-lang-fr style="display:none;">
+            {{CHALLENGE_ITEMS_FR}}
           </ul>
         </div>
       </div>
@@ -109,109 +158,151 @@
 
     <!-- HOW IT WORKS SECTION -->
     <!-- 
-    INSTRUCTION:
+    ══════════════════════════════════════════════════════════════════════
+    HOW IT WORKS SECTION INSTRUCTIONS
+    ══════════════════════════════════════════════════════════════════════
+    
     This section has TWO parts:
     
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     PART 1: VISUAL PROCESS DIAGRAM (Optional but recommended)
-    - Create a custom SVG diagram showing the automation workflow
-    - Choose from 6 diagram types: Linear Flow, Multi-Input Pipeline, Cycle, Decision Tree, Hub & Spoke, or Layered Architecture
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    
+    Create a custom SVG diagram showing the automation workflow.
+    
+    Choose from 6 diagram types:
+    1. Linear Flow - Simple sequential: Input → Processing → Output
+    2. Multi-Input Pipeline - Multiple sources converging: Source A/B/C → Processing → Output
+    3. Cycle Diagram - Continuous loop: Monitor → Analyze → Act → Feedback Loop
+    4. Decision Tree - Branching logic: Input → Decision → Yes/No → Different outputs
+    5. Hub & Spoke - Central system with connections to multiple endpoints
+    6. Layered Architecture - Stacked tiers (UI / Logic / Data)
+    
+    Design Guidelines:
     - Use INVOKE orange (#f36a3d) for arrows and emphasis
     - Keep it simple: 3-7 main elements
-    - See generator/LLM_INSTRUCTIONS.md for complete diagram guide and examples
-    - If you don't want a diagram, delete the entire <svg>...</svg> block and the separator
+    - Use viewBox for responsiveness: viewBox="0 0 1000 400"
+    - Label boxes clearly (2-4 words per box)
+    - See generator/LLM_INSTRUCTIONS.md for complete examples
     
+    Example SVG structure:
+    <svg viewBox="0 0 1000 400" style="width: 100%; height: auto; margin: 2rem 0;">
+      <rect x="50" y="150" width="200" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
+      <text x="150" y="205" text-anchor="middle" font-family="Lato" font-size="16" font-weight="bold">Input</text>
+      
+      <path d="M 270 200 L 350 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
+      
+      <rect x="370" y="150" width="260" height="100" fill="#1a1a1a" stroke="#f36a3d" stroke-width="3" rx="10"/>
+      <text x="500" y="205" text-anchor="middle" font-family="Lato" font-size="16" font-weight="bold" fill="white">AI Processing</text>
+      
+      <path d="M 650 200 L 730 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
+      
+      <rect x="750" y="150" width="200" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
+      <text x="850" y="205" text-anchor="middle" font-family="Lato" font-size="16" font-weight="bold">Output</text>
+      
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+          <polygon points="0 0, 10 3, 0 6" fill="#f36a3d"/>
+        </marker>
+      </defs>
+    </svg>
+    
+    If you don't want a diagram, delete the SVG block and the separator below.
+    
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    SEPARATOR (Required if using visual diagram)
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    
+    Labeled divider between diagram and text boxes.
+    Shows "PROCESS DETAILS" in English, "DÉTAILS DU PROCESSUS" in French.
+    Do not modify the separator HTML structure.
+    
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     PART 2: PROCESS TEXT BOXES (Required)
-    - Three boxes showing: Input → Automation → Output
-    - Fill in the variables as described below
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     
-    SEPARATOR (Required if using visual diagram):
-    - Labeled divider between diagram and text boxes
-    - Clearly separates visual from detailed text
-    - Do not modify the separator HTML
+    Three boxes showing: Input → Automation → Output
+    Fill in these variables (BOTH EN and FR):
     
-    Replace {{SOLUTION_SUBTITLE}} with brief explanation (1 sentence)
-    
-    For the process flow boxes, customize these 3 boxes:
+    SUBTITLE:
+    - {{SOLUTION_SUBTITLE_EN}} - Brief explanation (1 sentence) of what the solution does
+    - {{SOLUTION_SUBTITLE_FR}} - French version
     
     INPUT BOX:
-    - Replace {{INPUT_HEADING}} with what data/sources are used (e.g., "Data Sources", "Input Systems")
-    - Replace {{INPUT_DESCRIPTION}} with brief label (e.g., "Historical Data", "Multiple Sources")
-    - Replace {{INPUT_ITEMS}} with 3-4 <li> items of specific inputs
-    Format: <li>Item name</li>
+    - {{INPUT_HEADING_EN}} / {{INPUT_HEADING_FR}} - e.g., "Data Sources" / "Sources de données"
+    - {{INPUT_DESCRIPTION_EN}} / {{INPUT_DESCRIPTION_FR}} - Brief label, e.g., "Historical Data" / "Données historiques"
+    - {{INPUT_ITEMS_EN}} / {{INPUT_ITEMS_FR}} - 3-4 list items of specific inputs
+      Format: <li>Item name</li>
+      Example EN: <li>Sales history</li><li>Market trends</li><li>Seasonality data</li>
+      Example FR: <li>Historique des ventes</li><li>Tendances du marché</li><li>Données de saisonnalité</li>
     
     CENTER BOX (Automation):
-    - Replace {{AUTOMATION_ITEMS}} with 4-5 <li> items describing the automation technologies/processes
-    - Replace {{AUTOMATION_DETAIL}} with a brief explanation of the key technology or process
+    - {{AUTOMATION_ITEMS_EN}} / {{AUTOMATION_ITEMS_FR}} - 4-5 list items describing automation technologies/processes
+      Format: <li>Technology or process name</li>
+    - {{AUTOMATION_DETAIL_EN}} / {{AUTOMATION_DETAIL_FR}} - Brief explanation of key technology
     
     OUTPUT BOX:
-    - Replace {{OUTPUT_HEADING}} with what is produced (e.g., "Key Benefits", "Deliverables")
-    - Replace {{OUTPUT_LABEL}} with the main system/output (e.g., "✓ Forecasting Dashboard")
-    - Replace {{OUTPUT_ITEMS}} with 3-4 <li> items of specific outcomes/benefits
+    - {{OUTPUT_HEADING_EN}} / {{OUTPUT_HEADING_FR}} - e.g., "Key Benefits" / "Avantages clés"
+    - {{OUTPUT_LABEL_EN}} / {{OUTPUT_LABEL_FR}} - Main deliverable, e.g., "✓ Forecasting Dashboard" / "✓ Tableau de bord prédictif"
+    - {{OUTPUT_ITEMS_EN}} / {{OUTPUT_ITEMS_FR}} - 3-4 list items of specific outcomes/benefits
     -->
     <section class="section how-it-works">
       <div class="container">
-        <h2 class="section__title">How it works</h2>
+        <h2 class="section__title" data-lang-en>How it works</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Comment ça marche</h2>
+        
         <div class="process-diagram">
-          <h3>Intelligent Automation: {{SOLUTION_SUBTITLE}}</h3>
+          <h3 data-lang-en>Intelligent Automation: {{SOLUTION_SUBTITLE_EN}}</h3>
+          <h3 data-lang-fr style="display:none;">Automatisation intelligente : {{SOLUTION_SUBTITLE_FR}}</h3>
           
           <!-- VISUAL DIAGRAM SECTION (Optional - Delete if not using) -->
-          <!-- 
-          INSTRUCTION: Replace this placeholder with your custom SVG diagram
-          Example structure:
-          
-          <svg viewBox="0 0 1000 400" style="width: 100%; height: auto; margin: 2rem 0;">
-            <rect x="50" y="150" width="200" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
-            <text x="150" y="205" text-anchor="middle" font-family="Lato" font-size="16" font-weight="bold">Input</text>
-            
-            <path d="M 270 200 L 350 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
-            
-            <rect x="370" y="150" width="260" height="100" fill="#1a1a1a" stroke="#f36a3d" stroke-width="3" rx="10"/>
-            <text x="500" y="205" text-anchor="middle" font-family="Lato" font-size="16" font-weight="bold" fill="white">AI Processing</text>
-            
-            <path d="M 650 200 L 730 200" stroke="#f36a3d" stroke-width="4" marker-end="url(#arrowhead)"/>
-            
-            <rect x="750" y="150" width="200" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
-            <text x="850" y="205" text-anchor="middle" font-family="Lato" font-size="16" font-weight="bold">Output</text>
-            
-            <defs>
-              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                <polygon points="0 0, 10 3, 0 6" fill="#f36a3d"/>
-              </marker>
-            </defs>
-          </svg>
-          
-          See generator/LLM_INSTRUCTIONS.md for complete diagram examples
-          -->
+          <!-- Insert your custom SVG diagram here -->
           
           <!-- SEPARATOR BETWEEN DIAGRAM AND TEXT BOXES -->
           <!-- REQUIRED if using visual diagram above - DELETE if no diagram -->
           <div style="border-top: 2px solid #e0e0e0; margin: 3rem 0 2rem 0; position: relative;">
-            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;">PROCESS DETAILS</div>
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;" data-lang-en>PROCESS DETAILS</div>
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; display:none;" data-lang-fr>DÉTAILS DU PROCESSUS</div>
           </div>
           
           <!-- PROCESS TEXT BOXES (Three boxes with details) -->
           <div class="process-flow">
             <div class="process-box">
-              <h4>{{INPUT_HEADING}}</h4>
-              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">{{INPUT_DESCRIPTION}}</p>
-              <ul style="margin-top: 1rem;">
-                {{INPUT_ITEMS}}
+              <h4 data-lang-en>{{INPUT_HEADING_EN}}</h4>
+              <h4 data-lang-fr style="display:none;">{{INPUT_HEADING_FR}}</h4>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;" data-lang-en>{{INPUT_DESCRIPTION_EN}}</p>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem; display:none;" data-lang-fr>{{INPUT_DESCRIPTION_FR}}</p>
+              <ul style="margin-top: 1rem;" data-lang-en>
+                {{INPUT_ITEMS_EN}}
+              </ul>
+              <ul style="margin-top: 1rem; display:none;" data-lang-fr>
+                {{INPUT_ITEMS_FR}}
               </ul>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box center">
-              <h4>Intelligent Automation</h4>
-              <ul style="margin-top: 1.5rem;">
-                {{AUTOMATION_ITEMS}}
+              <h4 data-lang-en>Intelligent Automation</h4>
+              <h4 data-lang-fr style="display:none;">Automatisation intelligente</h4>
+              <ul style="margin-top: 1.5rem;" data-lang-en>
+                {{AUTOMATION_ITEMS_EN}}
               </ul>
-              <p style="margin-top: 1.5rem;"><strong>{{AUTOMATION_DETAIL}}</strong></p>
+              <ul style="margin-top: 1.5rem; display:none;" data-lang-fr>
+                {{AUTOMATION_ITEMS_FR}}
+              </ul>
+              <p style="margin-top: 1.5rem;" data-lang-en><strong>{{AUTOMATION_DETAIL_EN}}</strong></p>
+              <p style="margin-top: 1.5rem; display:none;" data-lang-fr><strong>{{AUTOMATION_DETAIL_FR}}</strong></p>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box">
-              <h4>{{OUTPUT_HEADING}}</h4>
-              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">{{OUTPUT_LABEL}}</p>
-              <ul style="margin-top: 1rem;">
-                {{OUTPUT_ITEMS}}
+              <h4 data-lang-en>{{OUTPUT_HEADING_EN}}</h4>
+              <h4 data-lang-fr style="display:none;">{{OUTPUT_HEADING_FR}}</h4>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;" data-lang-en>{{OUTPUT_LABEL_EN}}</p>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666; display:none;" data-lang-fr>{{OUTPUT_LABEL_FR}}</p>
+              <ul style="margin-top: 1rem;" data-lang-en>
+                {{OUTPUT_ITEMS_EN}}
+              </ul>
+              <ul style="margin-top: 1rem; display:none;" data-lang-fr>
+                {{OUTPUT_ITEMS_FR}}
               </ul>
             </div>
           </div>
@@ -226,92 +317,106 @@
 
     <!-- SOLUTION FEATURES SECTION -->
     <!-- 
-    INSTRUCTION:
-    Replace {{FEATURES_TITLE}} with heading (e.g., "Why Choose Our Solution?", "Key Capabilities")
-    Replace {{FEATURES_SUBTITLE}} with 1-2 sentences about what makes the solution unique
+    ══════════════════════════════════════════════════════════════════════
+    FEATURES SECTION INSTRUCTIONS
+    ══════════════════════════════════════════════════════════════════════
     
-    For each feature card (create 4 cards):
-    - Select appropriate icon from available icons (see list below)
-    - Replace {{FEATURE_ICON_N}} with icon path
-    - Replace {{FEATURE_TITLE_N}} with feature name (2-4 words)
-    - Replace {{FEATURE_DESCRIPTION_N}} with 1-2 sentence description
+    Replace these variables (BOTH EN and FR):
+    - {{FEATURES_TITLE_EN}} / {{FEATURES_TITLE_FR}} - Heading like "Why Choose Our Solution?" / "Pourquoi choisir notre solution ?"
+    - {{FEATURES_SUBTITLE_EN}} / {{FEATURES_SUBTITLE_FR}} - 1-2 sentences about what makes solution unique
     
-    AVAILABLE ICONS (choose most relevant):
-    - ../images/icons/ai-robustness.svg (AI/ML capabilities)
-    - ../images/icons/automation-services.svg (Automation features)
-    - ../images/icons/chart-bubble-line.svg (Analytics/reporting)
-    - ../images/icons/chart-custom.svg (Custom analytics)
-    - ../images/icons/chart-multi-type.svg (Multi-dimensional analysis)
-    - ../images/icons/cloud-upload.svg (Cloud integration)
-    - ../images/icons/connect.svg (Integration capabilities)
-    - ../images/icons/connected-nodes-to-the-cloud.svg (Connected systems)
-    - ../images/icons/customer-service.svg (User support)
-    - ../images/icons/devops.svg (Development/operations)
-    - ../images/icons/goals.svg (Goal achievement)
-    - ../images/icons/growth.svg (Business growth)
-    - ../images/icons/innovate.svg (Innovation)
-    - ../images/icons/insights.svg (Data insights)
-    - ../images/icons/it-infrastructure-software.svg (IT infrastructure)
-    - ../images/icons/key-users.svg (User management)
-    - ../images/icons/machine-learning-01.svg (ML capabilities)
-    - ../images/icons/machine-learning-06.svg (Advanced ML)
-    - ../images/icons/network-services.svg (Network/connectivity)
-    - ../images/icons/notification-user.svg (Alerts/notifications)
-    - ../images/icons/presentation.svg (Reporting/dashboards)
-    - ../images/icons/process.svg (Process optimization)
-    - ../images/icons/protect-critical-assets.svg (Security)
-    - ../images/icons/reduced-cost.svg (Cost reduction)
-    - ../images/icons/reset-settings.svg (Configuration)
-    - ../images/icons/server-operating-systems.svg (System architecture)
-    - ../images/icons/speedometer.svg (Performance/speed)
-    - ../images/icons/strategy-play.svg (Strategic planning)
-    - ../images/icons/user-analytics.svg (User analytics)
-    - ../images/icons/user-experience-design.svg (UX/design)
-    - ../images/icons/video-chat.svg (Collaboration)
+    For each feature card (create 4 cards total):
+    1. Select appropriate icon from available icons (icon path is same for both languages)
+    2. Replace {{FEATURE_ICON_N}} with icon path
+    3. Replace {{FEATURE_TITLE_N_EN}} / {{FEATURE_TITLE_N_FR}} with feature name (2-4 words)
+    4. Replace {{FEATURE_DESCRIPTION_N_EN}} / {{FEATURE_DESCRIPTION_N_FR}} with 1-2 sentence description
+    
+    AVAILABLE ICONS (all in ../images/icons/):
+    - ai-robustness.svg (AI/ML capabilities)
+    - automation-services.svg (Automation features)
+    - chart-bubble-line.svg (Analytics/reporting)
+    - chart-custom.svg (Custom analytics)
+    - chart-multi-type.svg (Multi-dimensional analysis)
+    - cloud-upload.svg (Cloud integration)
+    - connect.svg (Integration capabilities)
+    - connected-nodes-to-the-cloud.svg (Connected systems)
+    - customer-service.svg (User support)
+    - devops.svg (Development/operations)
+    - goals.svg (Goal achievement)
+    - growth.svg (Business growth)
+    - innovate.svg (Innovation)
+    - insights.svg (Data insights)
+    - it-infrastructure-software.svg (IT infrastructure)
+    - key-users.svg (User management)
+    - machine-learning-01.svg (ML capabilities)
+    - machine-learning-06.svg (Advanced ML)
+    - network-services.svg (Network/connectivity)
+    - notification-user.svg (Alerts/notifications)
+    - presentation.svg (Reporting/dashboards)
+    - process.svg (Process optimization)
+    - protect-critical-assets.svg (Security)
+    - reduced-cost.svg (Cost reduction)
+    - reset-settings.svg (Configuration)
+    - server-operating-systems.svg (System architecture)
+    - speedometer.svg (Performance/speed)
+    - strategy-play.svg (Strategic planning)
+    - user-analytics.svg (User analytics)
+    - user-experience-design.svg (UX/design)
+    - video-chat.svg (Collaboration)
+    Plus 10+ more industry-specific icons (hospital, bank, capitol, cargo, delivery-truck, forklift, etc.)
     -->
     <section class="section differentiators">
       <div class="container">
-        <h2 class="section__title">{{FEATURES_TITLE}}</h2>
-        <p class="section__subtitle">
-          {{FEATURES_SUBTITLE}}
-        </p>
+        <h2 class="section__title" data-lang-en>{{FEATURES_TITLE_EN}}</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">{{FEATURES_TITLE_FR}}</h2>
+        
+        <p class="section__subtitle" data-lang-en>{{FEATURES_SUBTITLE_EN}}</p>
+        <p class="section__subtitle" data-lang-fr style="display:none;">{{FEATURES_SUBTITLE_FR}}</p>
+        
         <div class="diff-grid">
-          <article class="diff-card">
+          <!-- Feature Card 1 -->
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="{{FEATURE_ICON_1}}" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">{{FEATURE_TITLE_1}}</h3>
-            <p class="diff-card__body">
-              {{FEATURE_DESCRIPTION_1}}
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>{{FEATURE_TITLE_1_EN}}</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">{{FEATURE_TITLE_1_FR}}</h3>
+            <p class="diff-card__body" data-lang-en>{{FEATURE_DESCRIPTION_1_EN}}</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">{{FEATURE_DESCRIPTION_1_FR}}</p>
+          </div>
+          
+          <!-- Feature Card 2 -->
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="{{FEATURE_ICON_2}}" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">{{FEATURE_TITLE_2}}</h3>
-            <p class="diff-card__body">
-              {{FEATURE_DESCRIPTION_2}}
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>{{FEATURE_TITLE_2_EN}}</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">{{FEATURE_TITLE_2_FR}}</h3>
+            <p class="diff-card__body" data-lang-en>{{FEATURE_DESCRIPTION_2_EN}}</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">{{FEATURE_DESCRIPTION_2_FR}}</p>
+          </div>
+          
+          <!-- Feature Card 3 -->
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="{{FEATURE_ICON_3}}" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">{{FEATURE_TITLE_3}}</h3>
-            <p class="diff-card__body">
-              {{FEATURE_DESCRIPTION_3}}
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>{{FEATURE_TITLE_3_EN}}</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">{{FEATURE_TITLE_3_FR}}</h3>
+            <p class="diff-card__body" data-lang-en>{{FEATURE_DESCRIPTION_3_EN}}</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">{{FEATURE_DESCRIPTION_3_FR}}</p>
+          </div>
+          
+          <!-- Feature Card 4 -->
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="{{FEATURE_ICON_4}}" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">{{FEATURE_TITLE_4}}</h3>
-            <p class="diff-card__body">
-              {{FEATURE_DESCRIPTION_4}}
-            </p>
-          </article>
+            <h3 class="diff-card__title" data-lang-en>{{FEATURE_TITLE_4_EN}}</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">{{FEATURE_TITLE_4_FR}}</h3>
+            <p class="diff-card__body" data-lang-en>{{FEATURE_DESCRIPTION_4_EN}}</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">{{FEATURE_DESCRIPTION_4_FR}}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -323,105 +428,156 @@
 
     <!-- VALUE/RESULTS SECTION -->
     <!-- 
-    INSTRUCTION:
-    Replace {{VALUE_TITLE}} with heading (e.g., "Expected Results", "Value Delivered")
-    Replace {{VALUE_SUBTITLE}} with 1 sentence about the impact
+    ══════════════════════════════════════════════════════════════════════
+    VALUE METRICS SECTION INSTRUCTIONS
+    ══════════════════════════════════════════════════════════════════════
     
-    For each value card (4 cards total):
-    - Replace {{VALUE_METRIC_N}} with a metric (percentage, number, or word like "Scalable")
-    - Replace {{VALUE_LABEL_N}} with description of what the metric represents
+    Replace these variables (BOTH EN and FR):
+    - {{VALUE_TITLE_EN}} / {{VALUE_TITLE_FR}} - e.g., "Expected Results" / "Résultats attendus"
+    - {{VALUE_SUBTITLE_EN}} / {{VALUE_SUBTITLE_FR}} - One sentence on business impact
     
-    Examples:
-    - 85% | Forecast accuracy improvement
-    - 40% | Reduction in stockouts
-    - $2M | Annual cost savings
-    - Real-time | Decision-making capability
+    For each value card (create 4 cards total):
+    - {{VALUE_METRIC_N}} - The metric itself (same for both languages)
+      Examples: "70%", "$2M", "50 hours", "Real-time"
+      Numbers and symbols stay the same in both languages
+    
+    - {{VALUE_LABEL_N_EN}} / {{VALUE_LABEL_N_FR}} - What the metric represents
+      Example EN: "Reduction in processing time"
+      Example FR: "Réduction du temps de traitement"
+    
+    Metric Guidelines:
+    - Use realistic, achievable numbers (60-90% range for improvements)
+    - Include a mix of percentages, dollar amounts, time savings, and qualitative benefits
+    - Be specific: "85% accuracy" not "High accuracy"
+    - Keep metrics consistent with challenge section promises
+    
+    Example Metrics:
+    - Percentages: "85%", "40%", "99.9%"
+    - Dollar amounts: "$2M", "$500K", "$750K"
+    - Time: "50 hours/week", "3 days", "Real-time"
+    - Qualitative: "24/7", "100% audit-ready", "Scalable"
     -->
     <section class="section value">
       <div class="container">
-        <h2 class="section__title">{{VALUE_TITLE}}</h2>
-        <p class="section__subtitle">
-          {{VALUE_SUBTITLE}}
-        </p>
+        <h2 class="section__title" data-lang-en>{{VALUE_TITLE_EN}}</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">{{VALUE_TITLE_FR}}</h2>
+        
+        <p class="section__subtitle" data-lang-en>{{VALUE_SUBTITLE_EN}}</p>
+        <p class="section__subtitle" data-lang-fr style="display:none;">{{VALUE_SUBTITLE_FR}}</p>
+        
         <div class="value-grid">
           <div class="value-card">
             <div class="value-card__value">{{VALUE_METRIC_1}}</div>
-            <div class="value-card__label">{{VALUE_LABEL_1}}</div>
+            <div class="value-card__label" data-lang-en>{{VALUE_LABEL_1_EN}}</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">{{VALUE_LABEL_1_FR}}</div>
           </div>
           <div class="value-card">
             <div class="value-card__value">{{VALUE_METRIC_2}}</div>
-            <div class="value-card__label">{{VALUE_LABEL_2}}</div>
+            <div class="value-card__label" data-lang-en>{{VALUE_LABEL_2_EN}}</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">{{VALUE_LABEL_2_FR}}</div>
           </div>
           <div class="value-card">
             <div class="value-card__value">{{VALUE_METRIC_3}}</div>
-            <div class="value-card__label">{{VALUE_LABEL_3}}</div>
+            <div class="value-card__label" data-lang-en>{{VALUE_LABEL_3_EN}}</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">{{VALUE_LABEL_3_FR}}</div>
           </div>
           <div class="value-card">
             <div class="value-card__value">{{VALUE_METRIC_4}}</div>
-            <div class="value-card__label">{{VALUE_LABEL_4}}</div>
+            <div class="value-card__label" data-lang-en>{{VALUE_LABEL_4_EN}}</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">{{VALUE_LABEL_4_FR}}</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA BAND -->
+    <!-- CTA SECTION -->
     <!-- 
-    INSTRUCTION:
-    Replace {{CTA_TITLE}} with call-to-action heading
-    Replace {{CTA_SUBTITLE}} with 1-2 sentences encouraging contact
+    ══════════════════════════════════════════════════════════════════════
+    CALL TO ACTION SECTION INSTRUCTIONS
+    ══════════════════════════════════════════════════════════════════════
+    
+    Replace these variables (BOTH EN and FR):
+    - {{CTA_TITLE_EN}} / {{CTA_TITLE_FR}} - Call to action heading
+      Example EN: "Ready to Transform Your Operations?"
+      Example FR: "Prêt à transformer vos opérations ?"
+    
+    - {{CTA_SUBTITLE_EN}} / {{CTA_SUBTITLE_FR}} - 1-2 sentences encouraging contact
+      Example EN: "Let's discuss how intelligent automation can solve your specific challenges and deliver measurable results."
+      Example FR: "Discutons de la façon dont l'automatisation intelligente peut résoudre vos défis spécifiques et fournir des résultats mesurables."
+    
+    The "Contact Us" button text is handled automatically in both languages.
     -->
     <section class="cta-band">
       <div class="container">
-        <h2 class="cta-band__title">{{CTA_TITLE}}</h2>
-        <p class="cta-band__subtitle">
-          {{CTA_SUBTITLE}}
-        </p>
-        <a href="/cdn-cgi/l/email-protection#1d74737b725d74736b72767874737e337e7270" class="btn btn--primary">Contact Us</a>
+        <h2 class="cta-band__title" data-lang-en>{{CTA_TITLE_EN}}</h2>
+        <h2 class="cta-band__title" data-lang-fr style="display:none;">{{CTA_TITLE_FR}}</h2>
+        
+        <p class="cta-band__subtitle" data-lang-en>{{CTA_SUBTITLE_EN}}</p>
+        <p class="cta-band__subtitle" data-lang-fr style="display:none;">{{CTA_SUBTITLE_FR}}</p>
+        
+        <a href="https://www.invokeinc.com/contact.html" class="btn btn--primary" data-lang-en>Contact Us</a>
+        <a href="https://www.invokeinc.com/contact.html" class="btn btn--primary" data-lang-fr style="display:none;">Contactez-nous</a>
       </div>
     </section>
 
     <!-- FOOTER -->
- <!-- Footer -->
-<div class="footer-wrap">
-  <div class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/invoke-logo.svg" alt="INVOKE" />
-        </a>
+    <div class="footer-wrap">
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="https://invokeinc.com" class="logo">
+              <img src="../images/invoke-logo.svg" alt="INVOKE" />
+            </a>
+          </div>
+          
+          <div class="footer-contact">
+            <p>Atlanta, GA, (770) 376-0606<br>
+            <a href="mailto:info@invokeinc.com">info@invokeinc.com</a></p>
+          </div>
+          
+          <div class="footer-links">
+            <a href="https://www.invokeinc.com/careers.html">Careers</a>
+            <a href="https://www.invokeinc.com/contact.html">Contact us</a>
+          </div>
+          
+          <div class="footer-links">
+            <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
+            <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
+          </div>
+          
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/invoke-inc" target="_blank">
+              <img src="../images/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        
+        <hr>
+        
+        <div class="footer-copyright">
+          <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
+        </div>
       </div>
-      
-      <div class="footer-contact">
-        <p>Atlanta, GA, (770) 376-0606<br>
-        <a href="mailto:info@invokeinc.com">info@invokeinc.com</a></p>
-      </div>
-      
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/careers.html">Careers</a>
-        <a href="https://www.invokeinc.com/contact.html">Contact us</a>
-      </div>
-      
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
-        <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
-      </div>
-      
-      <div class="footer-social">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/linkedin.png" alt="LinkedIn" />
-        </a>
-      </div>
-    </div>
-    
-    <hr>
-    
-    <div class="footer-copyright">
-      <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
     </div>
   </div>
-</div>
 
-  <!-- Language Toggle Script -->
+  <!-- 
+  ══════════════════════════════════════════════════════════════════════
+  LANGUAGE TOGGLE JAVASCRIPT
+  ══════════════════════════════════════════════════════════════════════
+  
+  This script handles the EN/FR language toggle functionality.
+  
+  How it works:
+  1. Listens for clicks on .lang-btn elements (EN and FR buttons in header)
+  2. When clicked, updates active button state (orange background)
+  3. Shows all elements with data-lang-en or data-lang-fr based on selection
+  4. Updates HTML lang attribute for accessibility
+  5. Saves preference to localStorage for next visit
+  6. On page load, checks localStorage and restores saved language preference
+  
+  Do not modify this script unless you understand the bilingual system.
+  -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const langBtns = document.querySelectorAll('.lang-btn');
@@ -429,15 +585,29 @@
       langBtns.forEach(btn => {
         btn.addEventListener('click', function() {
           const lang = this.getAttribute('data-lang');
+          
+          // Update active state on buttons
           langBtns.forEach(b => b.classList.remove('active'));
           this.classList.add('active');
-          document.querySelectorAll('[data-lang-en]').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
-          document.querySelectorAll('[data-lang-fr]').forEach(el => el.style.display = lang === 'fr' ? '' : 'none');
+          
+          // Show/hide content based on language
+          document.querySelectorAll('[data-lang-en]').forEach(el => {
+            el.style.display = lang === 'en' ? '' : 'none';
+          });
+          
+          document.querySelectorAll('[data-lang-fr]').forEach(el => {
+            el.style.display = lang === 'fr' ? '' : 'none';
+          });
+          
+          // Update HTML lang attribute for screen readers
           document.documentElement.setAttribute('lang', lang);
+          
+          // Save preference to localStorage
           localStorage.setItem('preferredLanguage', lang);
         });
       });
       
+      // Load saved language preference on page load
       const savedLang = localStorage.getItem('preferredLanguage');
       if (savedLang) {
         const btn = document.querySelector(`.lang-btn[data-lang="${savedLang}"]`);

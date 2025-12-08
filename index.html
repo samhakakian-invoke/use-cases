@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./index_style.css" />
 </head>
 <body>
-    <!-- Header -->
+  <!-- Header -->
   <header class="header">
     <div class="header-inner">
       <a href="https://invokeinc.com" class="logo">
@@ -15,23 +15,26 @@
       </a>
       <nav class="nav-links">
         <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
-        <a href="../index.html">SOLUTIONS</a>
+        <a href="./index.html">SOLUTIONS</a>
         <a href="https://www.invokepublic.com">INDUSTRIES</a>
         <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
         <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
       </nav>
       <div class="lang-toggle">
         <img src="./images/lang.png" alt="lang" class="lang-icon"/>
-        <span class="active" data-lang="en">EN</span>
-        <span data-lang="fr">FR</span>
+        <span class="lang-btn active" data-lang="en">EN</span>
+        <span class="lang-btn" data-lang="fr">FR</span>
       </div>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Intelligent Automation Solutions</h1>
-    <p>Explore proven automation use cases that deliver measurable results across industries and business functions.</p>
+    <h1 data-lang-en>Intelligent Automation Solutions</h1>
+    <h1 data-lang-fr style="display:none;">Solutions d'automatisation intelligente</h1>
+    
+    <p data-lang-en>Explore proven automation use cases that deliver measurable results across industries and business functions.</p>
+    <p data-lang-fr style="display:none;">Explorez des cas d'utilisation d'automatisation éprouvés qui offrent des résultats mesurables dans tous les secteurs et fonctions d'entreprise.</p>
   </section>
 
   <!-- Search and Filter -->
@@ -42,10 +45,11 @@
         id="search-input" 
         class="search-input" 
         placeholder="Search use cases by name, industry, or keyword..."
+        data-placeholder-en="Search use cases by name, industry, or keyword..."
+        data-placeholder-fr="Rechercher des cas d'utilisation par nom, secteur ou mot-clé..."
       />
       <div class="filter-group" id="category-filters">
-        <button class="filter-btn active" data-category="all">All</button>
-        <!-- Categories will be added dynamically -->
+        <!-- All buttons will be created here with proper event handlers -->
       </div>
     </div>
   </section>
@@ -55,19 +59,23 @@
     <div class="stats-container">
       <div class="stat">
         <div class="stat-value" id="total-use-cases">0+</div>
-        <div class="stat-label">Use Cases</div>
+        <div class="stat-label" data-lang-en>Use Cases</div>
+        <div class="stat-label" data-lang-fr style="display:none;">Cas d'utilisation</div>
       </div>
       <div class="stat">
         <div class="stat-value">70%+</div>
-        <div class="stat-label">Avg Efficiency Gain</div>
+        <div class="stat-label" data-lang-en>Avg Efficiency Gain</div>
+        <div class="stat-label" data-lang-fr style="display:none;">Gain d'efficacité moyen</div>
       </div>
       <div class="stat">
         <div class="stat-value">90%+</div>
-        <div class="stat-label">Faster Processing</div>
+        <div class="stat-label" data-lang-en>Faster Processing</div>
+        <div class="stat-label" data-lang-fr style="display:none;">Traitement plus rapide</div>
       </div>
       <div class="stat">
         <div class="stat-value">100%</div>
-        <div class="stat-label">Audit-Ready</div>
+        <div class="stat-label" data-lang-en>Audit-Ready</div>
+        <div class="stat-label" data-lang-fr style="display:none;">Prêt pour l'audit</div>
       </div>
     </div>
   </section>
@@ -75,72 +83,125 @@
   <!-- Use Cases Grid -->
   <section class="use-cases-section">
     <div class="section-header">
-      <h2>Browse Solutions</h2>
-      <p class="result-count" id="result-count">Loading use cases...</p>
+      <h2 data-lang-en>Browse Solutions</h2>
+      <h2 data-lang-fr style="display:none;">Parcourir les solutions</h2>
+      
+      <p class="result-count" id="result-count-en" data-lang-en>Loading use cases...</p>
+      <p class="result-count" id="result-count-fr" data-lang-fr style="display:none;">Chargement des cas d'utilisation...</p>
     </div>
     <div class="use-cases-grid" id="use-cases-grid">
-      <div class="loading">Loading use cases...</div>
+      <div class="loading" data-lang-en>Loading use cases...</div>
+      <div class="loading" data-lang-fr style="display:none;">Chargement des cas d'utilisation...</div>
     </div>
   </section>
 
- <!-- Footer -->
- <!-- Footer -->
-<div class="footer-wrap">
-  <div class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/invoke-logo.svg" alt="INVOKE" />
-        </a>
+  <!-- Footer -->
+  <div class="footer-wrap">
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="https://invokeinc.com" class="logo">
+            <img src="./images/invoke-logo.svg" alt="INVOKE" />
+          </a>
+        </div>
+        
+        <div class="footer-contact">
+          <p>Atlanta, GA, (770) 376-0606<br>
+          <a href="mailto:info@invokeinc.com">info@invokeinc.com</a></p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="https://www.invokeinc.com/careers.html">Careers</a>
+          <a href="https://www.invokeinc.com/contact.html">Contact us</a>
+        </div>
+        
+        <div class="footer-links">
+          <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
+          <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/invoke-inc" target="_blank">
+            <img src="./images/linkedin.png" alt="LinkedIn" />
+          </a>
+        </div>
       </div>
       
-      <div class="footer-contact">
-        <p>Atlanta, GA, (770) 376-0606<br>
-        <a href="mailto:info@invokeinc.com">info@invokeinc.com</a></p>
-      </div>
+      <hr>
       
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/careers.html">Careers</a>
-        <a href="https://www.invokeinc.com/contact.html">Contact us</a>
+      <div class="footer-copyright">
+        <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
       </div>
-      
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
-        <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
-      </div>
-      
-      <div class="footer-social">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/linkedin.png" alt="LinkedIn" />
-        </a>
-      </div>
-    </div>
-    
-    <hr>
-    
-    <div class="footer-copyright">
-      <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
     </div>
   </div>
-</div>
 
-
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     let allUseCases = [];
     let currentCategory = 'all';
     let searchQuery = '';
+    let currentLang = 'en';
+
+    // Category translations
+    const categoryTranslations = {
+      'Supply Chain': { en: 'Supply Chain', fr: 'Chaîne d\'approvisionnement' },
+      'Finance': { en: 'Finance', fr: 'Finance' },
+      'Manufacturing': { en: 'Manufacturing', fr: 'Fabrication' },
+      'Healthcare': { en: 'Healthcare', fr: 'Santé' },
+      'Legal': { en: 'Legal', fr: 'Juridique' },
+      'HR': { en: 'HR', fr: 'RH' },
+      'Compliance': { en: 'Compliance', fr: 'Conformité' },
+      'Customer Service': { en: 'Customer Service', fr: 'Service client' },
+      'Operations': { en: 'Operations', fr: 'Opérations' },
+      'IT & DevOps': { en: 'IT & DevOps', fr: 'IT & DevOps' },
+      'Marketing': { en: 'Marketing', fr: 'Marketing' },
+      'Sales': { en: 'Sales', fr: 'Ventes' }
+    };
 
     // Language Toggle Logic
-    const langToggles = document.querySelectorAll('.lang-toggle span');
-    langToggles.forEach(toggle => {
-      toggle.addEventListener('click', () => {
-        // Remove active class from all
-        langToggles.forEach(t => t.classList.remove('active'));
-        // Add active class to clicked
-        toggle.classList.add('active');
-        // Future: Add logic here to actually switch content language
+    const langBtns = document.querySelectorAll('.lang-btn');
+    langBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const lang = this.getAttribute('data-lang');
+        currentLang = lang;
+        
+        // Update active state
+        langBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Show/hide content based on language
+        document.querySelectorAll('[data-lang-en]').forEach(el => {
+          el.style.display = lang === 'en' ? '' : 'none';
+        });
+        
+        document.querySelectorAll('[data-lang-fr]').forEach(el => {
+          el.style.display = lang === 'fr' ? '' : 'none';
+        });
+        
+        // Update search placeholder
+        const searchInput = document.getElementById('search-input');
+        if (lang === 'en') {
+          searchInput.placeholder = searchInput.getAttribute('data-placeholder-en');
+        } else {
+          searchInput.placeholder = searchInput.getAttribute('data-placeholder-fr');
+        }
+        
+        // Update HTML lang attribute
+        document.documentElement.setAttribute('lang', lang);
+        
+        // Redisplay use cases with new language
+        filterAndDisplay();
+        
+        // Save preference
+        localStorage.setItem('preferredLanguage', lang);
       });
     });
+
+    // Load saved language preference
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang) {
+      const btn = document.querySelector(`.lang-btn[data-lang="${savedLang}"]`);
+      if (btn) btn.click();
+    }
 
     // Load use cases
     async function loadUseCases() {
@@ -154,15 +215,47 @@
         // Extract unique categories
         const categories = [...new Set(allUseCases.map(uc => uc.category))].sort();
         
-        // Add category filter buttons
+        // Create filter buttons
         const filterGroup = document.getElementById('category-filters');
+        
+        // Create "All" buttons (EN and FR)
+        const btnAllEn = document.createElement('button');
+        btnAllEn.className = 'filter-btn active';
+        btnAllEn.textContent = 'All';
+        btnAllEn.dataset.category = 'all';
+        btnAllEn.setAttribute('data-lang-en', '');
+        btnAllEn.addEventListener('click', () => filterByCategory('all', btnAllEn));
+        filterGroup.appendChild(btnAllEn);
+        
+        const btnAllFr = document.createElement('button');
+        btnAllFr.className = 'filter-btn active';
+        btnAllFr.textContent = 'Tous';
+        btnAllFr.dataset.category = 'all';
+        btnAllFr.setAttribute('data-lang-fr', '');
+        btnAllFr.style.display = 'none';
+        btnAllFr.addEventListener('click', () => filterByCategory('all', btnAllFr));
+        filterGroup.appendChild(btnAllFr);
+        
+        // Create category buttons (bilingual)
         categories.forEach(category => {
-          const btn = document.createElement('button');
-          btn.className = 'filter-btn';
-          btn.textContent = category;
-          btn.dataset.category = category;
-          btn.addEventListener('click', () => filterByCategory(category, btn));
-          filterGroup.appendChild(btn);
+          // English button
+          const btnEn = document.createElement('button');
+          btnEn.className = 'filter-btn';
+          btnEn.textContent = categoryTranslations[category]?.en || category;
+          btnEn.dataset.category = category;
+          btnEn.setAttribute('data-lang-en', '');
+          btnEn.addEventListener('click', () => filterByCategory(category, btnEn));
+          filterGroup.appendChild(btnEn);
+          
+          // French button
+          const btnFr = document.createElement('button');
+          btnFr.className = 'filter-btn';
+          btnFr.textContent = categoryTranslations[category]?.fr || category;
+          btnFr.dataset.category = category;
+          btnFr.setAttribute('data-lang-fr', '');
+          btnFr.style.display = 'none';
+          btnFr.addEventListener('click', () => filterByCategory(category, btnFr));
+          filterGroup.appendChild(btnFr);
         });
         
         // Display all use cases
@@ -170,8 +263,9 @@
         
       } catch (error) {
         console.error('Error loading use cases:', error);
-        document.getElementById('use-cases-grid').innerHTML = 
-          '<div class="no-results"><h3>Unable to load use cases</h3><p>Please try again later.</p></div>';
+        const gridEn = '<div class="no-results"><h3>Unable to load use cases</h3><p>Please try again later.</p></div>';
+        const gridFr = '<div class="no-results"><h3>Impossible de charger les cas d\'utilisation</h3><p>Veuillez réessayer plus tard.</p></div>';
+        document.getElementById('use-cases-grid').innerHTML = currentLang === 'en' ? gridEn : gridFr;
       }
     }
 
@@ -179,9 +273,21 @@
     function filterByCategory(category, button) {
       currentCategory = category;
       
-      // Update active button
-      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      // Update active button for current language
+      const langButtons = document.querySelectorAll(`.filter-btn[data-lang-${currentLang}]`);
+      langButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
+      
+      // Also update the corresponding button in other language
+      const otherLang = currentLang === 'en' ? 'fr' : 'en';
+      const otherButtons = document.querySelectorAll(`.filter-btn[data-lang-${otherLang}]`);
+      otherButtons.forEach(btn => {
+        if (btn.dataset.category === category) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
       
       // Filter and display
       filterAndDisplay();
@@ -217,28 +323,63 @@
     // Display use cases
     function displayUseCases(useCases) {
       const grid = document.getElementById('use-cases-grid');
-      const resultCount = document.getElementById('result-count');
+      const resultCountEn = document.getElementById('result-count-en');
+      const resultCountFr = document.getElementById('result-count-fr');
       
       if (useCases.length === 0) {
-        grid.innerHTML = `
-          <div class="no-results">
+        const noResultsEn = `
+          <div class="no-results" data-lang-en>
             <h3>No results found</h3>
             <p>Try adjusting your search or filters</p>
           </div>
         `;
-        resultCount.textContent = 'No results found';
+        const noResultsFr = `
+          <div class="no-results" data-lang-fr style="display:none;">
+            <h3>Aucun résultat trouvé</h3>
+            <p>Essayez d'ajuster votre recherche ou vos filtres</p>
+          </div>
+        `;
+        grid.innerHTML = noResultsEn + noResultsFr;
+        
+        // Update visibility based on current language
+        grid.querySelectorAll('[data-lang-en]').forEach(el => {
+          el.style.display = currentLang === 'en' ? '' : 'none';
+        });
+        grid.querySelectorAll('[data-lang-fr]').forEach(el => {
+          el.style.display = currentLang === 'fr' ? '' : 'none';
+        });
+        
+        resultCountEn.textContent = 'No results found';
+        resultCountFr.textContent = 'Aucun résultat trouvé';
         return;
       }
       
-      resultCount.textContent = `Showing ${useCases.length} use case${useCases.length !== 1 ? 's' : ''}`;
+      // Update result counts
+      const countEn = `Showing ${useCases.length} use case${useCases.length !== 1 ? 's' : ''}`;
+      const countFr = `Affichage de ${useCases.length} cas d'utilisation`;
+      resultCountEn.textContent = countEn;
+      resultCountFr.textContent = countFr;
       
-      grid.innerHTML = useCases.map(uc => `
-        <a href="./usecases/${uc.slug}.html" class="use-case-card">
-          <span class="card-category">${uc.category}</span>
-          <h3 class="card-title">${uc.name}</h3>
-          <p class="card-description">${uc.description}</p>
-        </a>
-      `).join('');
+      // Generate cards
+      grid.innerHTML = useCases.map(uc => {
+        const categoryLabel = categoryTranslations[uc.category] || { en: uc.category, fr: uc.category };
+        return `
+          <a href="./usecases/${uc.slug}.html" class="use-case-card">
+            <span class="card-category" data-lang-en>${categoryLabel.en}</span>
+            <span class="card-category" data-lang-fr style="display:none;">${categoryLabel.fr}</span>
+            <h3 class="card-title">${uc.name}</h3>
+            <p class="card-description">${uc.description}</p>
+          </a>
+        `;
+      }).join('');
+      
+      // Update visibility based on current language
+      grid.querySelectorAll('[data-lang-en]').forEach(el => {
+        el.style.display = currentLang === 'en' ? '' : 'none';
+      });
+      grid.querySelectorAll('[data-lang-fr]').forEach(el => {
+        el.style.display = currentLang === 'fr' ? '' : 'none';
+      });
     }
 
     // Initialize

@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- 
-  INSTRUCTION: Replace these meta tags with use case information
-  -->
-  <title>Automated Factoring Execution</title>
+  <title>Automated Factoring Execution | INVOKE</title>
   <meta name="use-case-name" content="Automated Factoring Execution" />
   <meta name="use-case-category" content="Finance" />
   <meta name="description" content="Transform your factoring business with intelligent automation that streamlines invoice processing, minimizes fraud risk, and automates 70% of operations." />
@@ -15,93 +12,103 @@
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="https://invokeinc.com" class="logo">
-        <img src="../images/invoke-logo.svg" alt="INVOKE" />
-      </a>
-      <nav class="nav-links">
-        <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
-        <a href="../index.html">SOLUTIONS</a>
-        <a href="https://www.invokepublic.com">INDUSTRIES</a>
-        <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
-        <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
-      </nav>
-      <div class="lang-toggle">
-        <img src="../images/lang.png" alt="lang" class="lang-icon"/>
-        <span class="active" data-lang="en">EN</span>
-        <span data-lang="fr">FR</span>
+    <header class="header">
+      <div class="header-inner">
+        <a href="https://invokeinc.com" class="logo">
+          <img src="../images/invoke-logo.svg" alt="INVOKE" />
+        </a>
+        <nav class="nav-links">
+          <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
+          <a href="../index.html">SOLUTIONS</a>
+          <a href="https://www.invokepublic.com">INDUSTRIES</a>
+          <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
+          <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
+        </nav>
+        <div class="lang-toggle">
+          <img src="../images/lang.png" alt="lang" class="lang-icon"/>
+          <span class="lang-btn active" data-lang="en">EN</span>
+          <span class="lang-btn" data-lang="fr">FR</span>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-    <!-- HERO SECTION -->
     <section class="hero" style="background-image: url('../images/photos/finance.jpg');">
       <div class="container hero__inner">
-        <div class="hero__kicker">Financial Services Automation</div>
-        <h1 class="hero__title">Automated Factoring Execution</h1>
-        <p class="hero__subtitle">
+        <div class="hero__kicker" data-lang-en>Financial Services Automation</div>
+        <div class="hero__kicker" data-lang-fr style="display:none;">Automatisation des services financiers</div>
+        
+        <h1 class="hero__title" data-lang-en>Automated Factoring Execution</h1>
+        <h1 class="hero__title" data-lang-fr style="display:none;">Exécution automatisée de l'affacturage</h1>
+        
+        <p class="hero__subtitle" data-lang-en>
           Transform your factoring business into a highly automated, efficient engine. Minimize risk, accelerate payments, and scale without friction.
+        </p>
+        <p class="hero__subtitle" data-lang-fr style="display:none;">
+          Transformez votre activité d'affacturage en un moteur hautement automatisé et efficace. Minimisez les risques, accélérez les paiements et évoluez sans friction.
         </p>
       </div>
     </section>
 
-    <!-- DIVIDER -->
     <div class="section-divider">
       <img src="../images/invoke-circle-divider.svg" alt="" />
     </div>
 
-    <!-- PROBLEM/CHALLENGE SECTION -->
     <section class="section problem">
       <div class="container">
-        <h2 class="problem__heading">Is manual processing slowing down funding?</h2>
-        <p class="problem__intro">
+        <h2 class="problem__heading" data-lang-en>Is manual processing slowing down funding?</h2>
+        <h2 class="problem__heading" data-lang-fr style="display:none;">Le traitement manuel ralentit-il le financement ?</h2>
+        
+        <p class="problem__intro" data-lang-en>
           Running a factoring business can be messy and risky. Manual verifications, slow evaluations, and fraud risks create bottlenecks that frustrate customers and limit growth.
         </p>
+        <p class="problem__intro" data-lang-fr style="display:none;">
+          Gérer une entreprise d'affacturage peut être complexe et risqué. Les vérifications manuelles, les évaluations lentes et les risques de fraude créent des goulots d'étranglement qui frustrent les clients et limitent la croissance.
+        </p>
+        
         <div class="problem__list-wrapper">
-          <ul class="problem__list">
+          <ul class="problem__list" data-lang-en>
             <li><strong>High Operational Risk:</strong> Manual checks on debtors and carriers leave gaps for fraud and compliance issues.</li>
             <li><strong>Slow Execution:</strong> Delays in front-end evaluation and back-end payments drive customers to competitors.</li>
             <li><strong>Inefficient Scaling:</strong> Increasing volume currently means increasing headcount and processing costs.</li>
             <li><strong>Process Friction:</strong> Customers need quick answers; manual validation slows down the purchasing process.</li>
           </ul>
+          <ul class="problem__list" data-lang-fr style="display:none;">
+            <li><strong>Risque opérationnel élevé :</strong> Les vérifications manuelles sur les débiteurs et les transporteurs laissent des failles pour la fraude et les problèmes de conformité.</li>
+            <li><strong>Exécution lente :</strong> Les retards dans l'évaluation initiale et les paiements finaux poussent les clients vers la concurrence.</li>
+            <li><strong>Mise à l'échelle inefficace :</strong> L'augmentation du volume signifie actuellement une augmentation des effectifs et des coûts de traitement.</li>
+            <li><strong>Friction des processus :</strong> Les clients ont besoin de réponses rapides ; la validation manuelle ralentit le processus d'achat.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- DIVIDER -->
     <div class="section-divider">
       <img src="../images/invoke-circle-divider.svg" alt="" />
     </div>
 
-    <!-- HOW IT WORKS SECTION -->
     <section class="section how-it-works">
       <div class="container">
-        <h2 class="section__title">How it works</h2>
+        <h2 class="section__title" data-lang-en>How it works</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Comment ça marche</h2>
+        
         <div class="process-diagram">
-          <h3>Intelligent Automation: From Invoice to Funding</h3>
+          <h3 data-lang-en>Intelligent Automation: From Invoice to Funding</h3>
+          <h3 data-lang-fr style="display:none;">Automatisation intelligente : De la facture au financement</h3>
           
-          <!-- VISUAL DIAGRAM SECTION -->
           <svg viewBox="0 0 1000 350" style="width: 100%; height: auto; margin: 2rem 0;">
-            <!-- Input Node -->
             <rect x="50" y="125" width="220" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
             <text x="160" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">INVOICE ENTRY</text>
             <text x="160" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#666">FactorSoft Integration</text>
             
-            <!-- Arrow 1 -->
             <path d="M 270 175 L 350 175" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
             
-            <!-- AI Node -->
             <rect x="370" y="100" width="260" height="150" fill="#1a1a1a" stroke="#f36a3d" stroke-width="3" rx="10"/>
             <text x="500" y="155" text-anchor="middle" font-family="Lato, sans-serif" font-size="16" font-weight="bold" fill="white">AUTOMATED VALIDATION</text>
             <text x="500" y="180" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#ccc">Risk & Credit Checks</text>
             <text x="500" y="200" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#ccc">Load Verification</text>
             
-            <!-- Arrow 2 -->
             <path d="M 630 175 L 710 175" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
             
-            <!-- Output Node -->
             <rect x="730" y="125" width="220" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
             <text x="840" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">RAPID FUNDING</text>
             <text x="840" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#666">Payments & Collections</text>
@@ -113,43 +120,66 @@
             </defs>
           </svg>
           
-          <!-- SEPARATOR BETWEEN DIAGRAM AND TEXT BOXES -->
           <div style="border-top: 2px solid #e0e0e0; margin: 3rem 0 2rem 0; position: relative;">
-            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;">PROCESS DETAILS</div>
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;" data-lang-en>PROCESS DETAILS</div>
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; display:none;" data-lang-fr>DÉTAILS DU PROCESSUS</div>
           </div>
           
-          <!-- PROCESS TEXT BOXES -->
           <div class="process-flow">
             <div class="process-box">
-              <h4>Submission Inputs</h4>
-              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">Data Ingestion</p>
-              <ul style="margin-top: 1rem;">
+              <h4 data-lang-en>Submission Inputs</h4>
+              <h4 data-lang-fr style="display:none;">Entrées de soumission</h4>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;" data-lang-en>Data Ingestion</p>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem; display:none;" data-lang-fr>Ingestion de données</p>
+              <ul style="margin-top: 1rem;" data-lang-en>
                 <li>Invoice Submission</li>
                 <li>Debtor Information</li>
                 <li>Carrier Load Docs</li>
                 <li>FactorSoft Data</li>
               </ul>
+              <ul style="margin-top: 1rem; display:none;" data-lang-fr>
+                <li>Soumission des factures</li>
+                <li>Informations sur le débiteur</li>
+                <li>Documents de chargement transporteur</li>
+                <li>Données FactorSoft</li>
+              </ul>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box center">
-              <h4>Intelligent Automation</h4>
-              <ul style="margin-top: 1.5rem;">
+              <h4 data-lang-en>Intelligent Automation</h4>
+              <h4 data-lang-fr style="display:none;">Automatisation intelligente</h4>
+              <ul style="margin-top: 1.5rem;" data-lang-en>
                 <li>Credit Risk Validation</li>
                 <li>Fraud Detection</li>
                 <li>Purchase Validation</li>
                 <li>Collection Workflow</li>
               </ul>
-              <p style="margin-top: 1.5rem;"><strong>Compliance & Execution Engine</strong></p>
+              <ul style="margin-top: 1.5rem; display:none;" data-lang-fr>
+                <li>Validation du risque de crédit</li>
+                <li>Détection de la fraude</li>
+                <li>Validation des achats</li>
+                <li>Flux de recouvrement</li>
+              </ul>
+              <p style="margin-top: 1.5rem;" data-lang-en><strong>Compliance & Execution Engine</strong></p>
+              <p style="margin-top: 1.5rem; display:none;" data-lang-fr><strong>Moteur de conformité et d'exécution</strong></p>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box">
-              <h4>Business Output</h4>
-              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">✓ Scalable Growth</p>
-              <ul style="margin-top: 1rem;">
+              <h4 data-lang-en>Business Output</h4>
+              <h4 data-lang-fr style="display:none;">Sortie commerciale</h4>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;" data-lang-en>✓ Scalable Growth</p>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666; display:none;" data-lang-fr>✓ Croissance évolutive</p>
+              <ul style="margin-top: 1rem;" data-lang-en>
                 <li>Outbound Payments</li>
                 <li>Reduced Operations Cost</li>
                 <li>Faster Purchasing</li>
                 <li>Minimized Risk</li>
+              </ul>
+              <ul style="margin-top: 1rem; display:none;" data-lang-fr>
+                <li>Paiements sortants</li>
+                <li>Coûts opérationnels réduits</li>
+                <li>Achats plus rapides</li>
+                <li>Risque minimisé</li>
               </ul>
             </div>
           </div>
@@ -157,160 +187,181 @@
       </div>
     </section>
 
-    <!-- DIVIDER -->
     <div class="section-divider">
       <img src="../images/invoke-circle-divider.svg" alt="" />
     </div>
 
-    <!-- SOLUTION FEATURES SECTION -->
     <section class="section differentiators">
       <div class="container">
-        <h2 class="section__title">Key Capabilities</h2>
-        <p class="section__subtitle">
-          Leverage your existing systems to build a scalable, risk-averse factoring program with superior speed.
-        </p>
+        <h2 class="section__title" data-lang-en>Key Capabilities</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Capacités clés</h2>
+        
+        <p class="section__subtitle" data-lang-en>Leverage your existing systems to build a scalable, risk-averse factoring program with superior speed.</p>
+        <p class="section__subtitle" data-lang-fr style="display:none;">Tirez parti de vos systèmes existants pour créer un programme d'affacturage évolutif, sans risque et d'une rapidité supérieure.</p>
+        
         <div class="diff-grid">
-          <article class="diff-card">
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/protect-critical-assets.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Risk & Compliance</h3>
-            <p class="diff-card__body">
-              Automated validation processes minimize fraud risk. Debtor and carrier credit risk checks are 99% automated.
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>Risk & Compliance</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Risque et conformité</h3>
+            <p class="diff-card__body" data-lang-en>Automated validation processes minimize fraud risk. Debtor and carrier credit risk checks are 99% automated.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Les processus de validation automatisés minimisent le risque de fraude. Les vérifications de crédit des débiteurs et transporteurs sont automatisées à 99 %.</p>
+          </div>
+          
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/process.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Process Efficiency</h3>
-            <p class="diff-card__body">
-              Achieve 45% hands-free invoice submission and 99% automated load verification, reducing cost to process significantly.
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>Process Efficiency</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Efficacité des processus</h3>
+            <p class="diff-card__body" data-lang-en>Achieve 45% hands-free invoice submission and 99% automated load verification, reducing cost to process significantly.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Obtenez 45 % de soumission de factures mains libres et 99 % de vérification de charge automatisée, réduisant considérablement les coûts de traitement.</p>
+          </div>
+          
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/reduced-cost.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Automated Payments</h3>
-            <p class="diff-card__body">
-              Speed up execution with 99% automated outbound payments and 70% automated inbound payment matching.
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>Automated Payments</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Paiements automatisés</h3>
+            <p class="diff-card__body" data-lang-en>Speed up execution with 99% automated outbound payments and 70% automated inbound payment matching.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Accélérez l'exécution avec 99 % de paiements sortants automatisés et 70 % de lettrage des paiements entrants automatisés.</p>
+          </div>
+          
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/chart-bubble-line.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Analytics & Insights</h3>
-            <p class="diff-card__body">
-              Gain flexible, real-time insights into your portfolio performance, helping you make data-driven decisions instantly.
-            </p>
-          </article>
+            <h3 class="diff-card__title" data-lang-en>Analytics & Insights</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Analytique et perspectives</h3>
+            <p class="diff-card__body" data-lang-en>Gain flexible, real-time insights into your portfolio performance, helping you make data-driven decisions instantly.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Obtenez des informations flexibles et en temps réel sur la performance de votre portefeuille, vous aidant à prendre des décisions basées sur les données instantanément.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- DIVIDER -->
     <div class="section-divider">
       <img src="../images/invoke-circle-divider.svg" alt="" />
     </div>
 
-    <!-- VALUE/RESULTS SECTION -->
     <section class="section value">
       <div class="container">
-        <h2 class="section__title">Proven Impact</h2>
-        <p class="section__subtitle">
-          Drive efficiency and speed across your entire factoring lifecycle.
-        </p>
+        <h2 class="section__title" data-lang-en>Proven Impact</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Impact prouvé</h2>
+        
+        <p class="section__subtitle" data-lang-en>Drive efficiency and speed across your entire factoring lifecycle.</p>
+        <p class="section__subtitle" data-lang-fr style="display:none;">Générez efficacité et rapidité tout au long de votre cycle de vie d'affacturage.</p>
+        
         <div class="value-grid">
           <div class="value-card">
             <div class="value-card__value">70%</div>
-            <div class="value-card__label">Automated operations</div>
+            <div class="value-card__label" data-lang-en>Automated operations</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Opérations automatisées</div>
           </div>
           <div class="value-card">
             <div class="value-card__value">99%</div>
-            <div class="value-card__label">Automated risk checks</div>
+            <div class="value-card__label" data-lang-en>Automated risk checks</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Contrôles de risque automatisés</div>
           </div>
           <div class="value-card">
             <div class="value-card__value">Real-time</div>
-            <div class="value-card__label">Flexible analytics</div>
+            <div class="value-card__label" data-lang-en>Flexible analytics</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Analytique flexible</div>
           </div>
           <div class="value-card">
             <div class="value-card__value">Scalable</div>
-            <div class="value-card__label">Growth without added risk</div>
+            <div class="value-card__label" data-lang-en>Growth without added risk</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Croissance sans risque ajouté</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA BAND -->
     <section class="cta-band">
       <div class="container">
-        <h2 class="cta-band__title">Speed up your purchasing process</h2>
-        <p class="cta-band__subtitle">
-          Don't let manual processes hold back your growth. Automate your factoring business with Invoke today.
-        </p>
-        <a href="/cdn-cgi/l/email-protection#066f686069466f6870696d636f68652865696b" class="btn btn--primary">Contact Us</a>
+        <h2 class="cta-band__title" data-lang-en>Speed up your purchasing process</h2>
+        <h2 class="cta-band__title" data-lang-fr style="display:none;">Accélérez votre processus d'achat</h2>
+        
+        <p class="cta-band__subtitle" data-lang-en>Don't let manual processes hold back your growth. Automate your factoring business with Invoke today.</p>
+        <p class="cta-band__subtitle" data-lang-fr style="display:none;">Ne laissez pas les processus manuels freiner votre croissance. Automatisez votre activité d'affacturage avec Invoke dès aujourd'hui.</p>
+        
+        <a href="https://www.invokeinc.com/contact.html" class="btn btn--primary" data-lang-en>Contact Us</a>
+        <a href="https://www.invokeinc.com/contact.html" class="btn btn--primary" data-lang-fr style="display:none;">Contactez-nous</a>
       </div>
     </section>
 
-    <!-- FOOTER -->
-     <!-- Footer -->
-<div class="footer-wrap">
-  <div class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/invoke-logo.svg" alt="INVOKE" />
-        </a>
+    <div class="footer-wrap">
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="https://invokeinc.com" class="logo">
+              <img src="../images/invoke-logo.svg" alt="INVOKE" />
+            </a>
+          </div>
+          
+          <div class="footer-contact">
+            <p>Atlanta, GA, (770) 376-0606<br>
+            <a href="mailto:info@invokeinc.com">info@invokeinc.com</a></p>
+          </div>
+          
+          <div class="footer-links">
+            <a href="https://www.invokeinc.com/careers.html">Careers</a>
+            <a href="https://www.invokeinc.com/contact.html">Contact us</a>
+          </div>
+          
+          <div class="footer-links">
+            <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
+            <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
+          </div>
+          
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/invoke-inc" target="_blank">
+              <img src="../images/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        
+        <hr>
+        
+        <div class="footer-copyright">
+          <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
+        </div>
       </div>
-      
-      <div class="footer-contact">
-        <p>Atlanta, GA, (770) 376-0606<br>
-        <a href="mailto:info@invokeinc.com">info@invokeinc.com</a></p>
-      </div>
-      
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/careers.html">Careers</a>
-        <a href="https://www.invokeinc.com/contact.html">Contact us</a>
-      </div>
-      
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
-        <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
-      </div>
-      
-      <div class="footer-social">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/linkedin.png" alt="LinkedIn" />
-        </a>
-      </div>
-    </div>
-    
-    <hr>
-    
-    <div class="footer-copyright">
-      <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
     </div>
   </div>
-</div>
 
-
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const langToggles = document.querySelectorAll('.nav__lang span');
-      langToggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          langToggles.forEach(t => t.classList.remove('is-active'));
-          toggle.classList.add('is-active');
+      const langBtns = document.querySelectorAll('.lang-btn');
+      
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const lang = this.getAttribute('data-lang');
+          
+          langBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          
+          document.querySelectorAll('[data-lang-en]').forEach(el => {
+            el.style.display = lang === 'en' ? '' : 'none';
+          });
+          
+          document.querySelectorAll('[data-lang-fr]').forEach(el => {
+            el.style.display = lang === 'fr' ? '' : 'none';
+          });
+          
+          document.documentElement.setAttribute('lang', lang);
+          localStorage.setItem('preferredLanguage', lang);
         });
       });
       
-      const menuToggle = document.querySelector('.nav__menu-toggle');
-      const nav = document.querySelector('.nav');
-      menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('is-visible');
-      });
+      const savedLang = localStorage.getItem('preferredLanguage');
+      if (savedLang) {
+        const btn = document.querySelector(`.lang-btn[data-lang="${savedLang}"]`);
+        if (btn) btn.click();
+      }
     });
   </script>
 </body>

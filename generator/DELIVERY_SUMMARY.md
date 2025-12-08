@@ -73,8 +73,7 @@
 └─────────────────────────────────────────────────────────────────────────┘
 
   1. Prompt LLM:
-     "Using generator/usecase_template.html and 
-      generator/LLM_INSTRUCTIONS.md, create a use case for..."
+     "Using usecase_template.html and LLM_INSTRUCTIONS.md, create a use case for..."
 
   2. Save output:
      usecases/[your-use-case].html

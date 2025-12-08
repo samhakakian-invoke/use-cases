@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- 
-  INSTRUCTION: Replace these meta tags with use case information
-  -->
-  <title>ARIA for Medicaid Eligibility Verification</title>
+  <title>ARIA for Medicaid Eligibility Verification | INVOKE</title>
   <meta name="use-case-name" content="ARIA for Medicaid Eligibility Verification" />
   <meta name="use-case-category" content="Healthcare" />
   <meta name="description" content="Automate patient Medicaid eligibility verification for any state. Reduce processing time by 95% and eliminate manual errors with ARIA." />
@@ -15,93 +12,103 @@
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="https://invokeinc.com" class="logo">
-        <img src="../images/invoke-logo.svg" alt="INVOKE" />
-      </a>
-      <nav class="nav-links">
-        <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
-        <a href="../index.html">SOLUTIONS</a>
-        <a href="https://www.invokepublic.com">INDUSTRIES</a>
-        <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
-        <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
-      </nav>
-      <div class="lang-toggle">
-        <img src="../images/lang.png" alt="lang" class="lang-icon"/>
-        <span class="active" data-lang="en">EN</span>
-        <span data-lang="fr">FR</span>
+    <header class="header">
+      <div class="header-inner">
+        <a href="https://invokeinc.com" class="logo">
+          <img src="../images/invoke-logo.svg" alt="INVOKE" />
+        </a>
+        <nav class="nav-links">
+          <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
+          <a href="../index.html">SOLUTIONS</a>
+          <a href="https://www.invokepublic.com">INDUSTRIES</a>
+          <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
+          <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
+        </nav>
+        <div class="lang-toggle">
+          <img src="../images/lang.png" alt="lang" class="lang-icon"/>
+          <span class="lang-btn active" data-lang="en">EN</span>
+          <span class="lang-btn" data-lang="fr">FR</span>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-    <!-- HERO SECTION -->
     <section class="hero" style="background-image: url('../images/photos/dr_with_clipboard.jpg');">
       <div class="container hero__inner">
-        <div class="hero__kicker">Healthcare Automation</div>
-        <h1 class="hero__title">ARIA for Medicaid Eligibility Verification</h1>
-        <p class="hero__subtitle">
+        <div class="hero__kicker" data-lang-en>Healthcare Automation</div>
+        <div class="hero__kicker" data-lang-fr style="display:none;">Automatisation des soins de santé</div>
+        
+        <h1 class="hero__title" data-lang-en>ARIA for Medicaid Eligibility Verification</h1>
+        <h1 class="hero__title" data-lang-fr style="display:none;">ARIA pour la vérification d'éligibilité Medicaid</h1>
+        
+        <p class="hero__subtitle" data-lang-en>
           A powerful SaaS solution that automates labor-intensive patient eligibility verification for any state, integrating seamlessly with your existing systems.
+        </p>
+        <p class="hero__subtitle" data-lang-fr style="display:none;">
+          Une solution SaaS puissante qui automatise la vérification d'éligibilité des patients à forte intensité de main-d'œuvre pour n'importe quel État, s'intégrant parfaitement à vos systèmes existants.
         </p>
       </div>
     </section>
 
-    <!-- DIVIDER -->
     <div class="section-divider">
       <img src="../images/invoke-circle-divider.svg" alt="" />
     </div>
 
-    <!-- PROBLEM/CHALLENGE SECTION -->
     <section class="section problem">
       <div class="container">
-        <h2 class="problem__heading">Is manual verification draining your resources?</h2>
-        <p class="problem__intro">
+        <h2 class="problem__heading" data-lang-en>Is manual verification draining your resources?</h2>
+        <h2 class="problem__heading" data-lang-fr style="display:none;">La vérification manuelle épuise-t-elle vos ressources ?</h2>
+        
+        <p class="problem__intro" data-lang-en>
           Medicaid Eligibility Verification is labor-intensive. Validating against state websites for new and ongoing patients is a nightmare, and delays often result in denied claims.
         </p>
+        <p class="problem__intro" data-lang-fr style="display:none;">
+          La vérification d'éligibilité Medicaid est laborieuse. Valider sur les sites web des États pour les nouveaux patients et ceux en cours est un cauchemar, et les retards entraînent souvent des refus de demandes.
+        </p>
+        
         <div class="problem__list-wrapper">
-          <ul class="problem__list">
+          <ul class="problem__list" data-lang-en>
             <li><strong>Resource Drain:</strong> Hospitals dedicate significant resources to daily manual checks instead of patient care.</li>
             <li><strong>Portal Fatigue:</strong> Bouncing between multiple state websites makes it hard for processors to maintain accuracy.</li>
             <li><strong>High Denial Risk:</strong> Delays in the manual process often lead to claims being denied due to timing issues.</li>
             <li><strong>Complex Forms:</strong> Manual teams struggle to process complex paperwork, such as forms for long-term care patients.</li>
           </ul>
+          <ul class="problem__list" data-lang-fr style="display:none;">
+            <li><strong>Épuisement des ressources :</strong> Les hôpitaux consacrent des ressources importantes aux vérifications manuelles quotidiennes au lieu des soins aux patients.</li>
+            <li><strong>Fatigue des portails :</strong> Passer d'un site web d'État à l'autre rend difficile le maintien de la précision pour les agents.</li>
+            <li><strong>Risque de refus élevé :</strong> Les retards dans le processus manuel entraînent souvent le refus des demandes en raison de problèmes de délai.</li>
+            <li><strong>Formulaires complexes :</strong> Les équipes manuelles peinent à traiter les documents complexes, tels que les formulaires pour les soins de longue durée.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- DIVIDER -->
     <div class="section-divider">
       <img src="../images/invoke-circle-divider.svg" alt="" />
     </div>
 
-    <!-- HOW IT WORKS SECTION -->
     <section class="section how-it-works">
       <div class="container">
-        <h2 class="section__title">How it works</h2>
+        <h2 class="section__title" data-lang-en>How it works</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Comment ça marche</h2>
+        
         <div class="process-diagram">
-          <h3>Intelligent Automation: Automated State Verification</h3>
+          <h3 data-lang-en>Intelligent Automation: Automated State Verification</h3>
+          <h3 data-lang-fr style="display:none;">Automatisation intelligente : Vérification d'État automatisée</h3>
           
-          <!-- VISUAL DIAGRAM SECTION -->
           <svg viewBox="0 0 1000 350" style="width: 100%; height: auto; margin: 2rem 0;">
-            <!-- Input Node -->
             <rect x="50" y="125" width="220" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
             <text x="160" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">HOSPITAL SYSTEM</text>
             <text x="160" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#666">Patient Data Source</text>
             
-            <!-- Arrow 1 -->
             <path d="M 270 175 L 350 175" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
             
-            <!-- AI Node -->
             <rect x="370" y="100" width="260" height="150" fill="#1a1a1a" stroke="#f36a3d" stroke-width="3" rx="10"/>
             <text x="500" y="155" text-anchor="middle" font-family="Lato, sans-serif" font-size="16" font-weight="bold" fill="white">ARIA CLOUD ENGINE</text>
             <text x="500" y="180" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#ccc">State Website Connection</text>
             <text x="500" y="200" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#ccc">OCR & RPA Validation</text>
             
-            <!-- Arrow 2 -->
             <path d="M 630 175 L 710 175" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
             
-            <!-- Output Node -->
             <rect x="730" y="125" width="220" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
             <text x="840" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">VERIFIED STATUS</text>
             <text x="840" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#666">Updated Records</text>
@@ -113,43 +120,66 @@
             </defs>
           </svg>
           
-          <!-- SEPARATOR BETWEEN DIAGRAM AND TEXT BOXES -->
           <div style="border-top: 2px solid #e0e0e0; margin: 3rem 0 2rem 0; position: relative;">
-            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;">PROCESS DETAILS</div>
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;" data-lang-en>PROCESS DETAILS</div>
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; display:none;" data-lang-fr>DÉTAILS DU PROCESSUS</div>
           </div>
           
-          <!-- PROCESS TEXT BOXES -->
           <div class="process-flow">
             <div class="process-box">
-              <h4>Patient Intake</h4>
-              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">Data Collection</p>
-              <ul style="margin-top: 1rem;">
+              <h4 data-lang-en>Patient Intake</h4>
+              <h4 data-lang-fr style="display:none;">Admission des patients</h4>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;" data-lang-en>Data Collection</p>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem; display:none;" data-lang-fr>Collecte de données</p>
+              <ul style="margin-top: 1rem;" data-lang-en>
                 <li>New Admissions</li>
                 <li>Recurring Patients</li>
                 <li>Long-term Care Forms</li>
                 <li>System Integration</li>
               </ul>
+              <ul style="margin-top: 1rem; display:none;" data-lang-fr>
+                <li>Nouvelles admissions</li>
+                <li>Patients récurrents</li>
+                <li>Formulaires de soins de longue durée</li>
+                <li>Intégration système</li>
+              </ul>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box center">
-              <h4>ARIA SaaS Solution</h4>
-              <ul style="margin-top: 1.5rem;">
+              <h4 data-lang-en>ARIA SaaS Solution</h4>
+              <h4 data-lang-fr style="display:none;">Solution SaaS ARIA</h4>
+              <ul style="margin-top: 1.5rem;" data-lang-en>
                 <li>State Portal Connector</li>
                 <li>OCR Form Processing</li>
                 <li>Ongoing Monitoring</li>
                 <li>Centralized Portal</li>
               </ul>
-              <p style="margin-top: 1.5rem;"><strong>Automated Eligibility Checks</strong></p>
+              <ul style="margin-top: 1.5rem; display:none;" data-lang-fr>
+                <li>Connecteur de portail d'État</li>
+                <li>Traitement de formulaires OCR</li>
+                <li>Surveillance continue</li>
+                <li>Portail centralisé</li>
+              </ul>
+              <p style="margin-top: 1.5rem;" data-lang-en><strong>Automated Eligibility Checks</strong></p>
+              <p style="margin-top: 1.5rem; display:none;" data-lang-fr><strong>Contrôles d'éligibilité automatisés</strong></p>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box">
-              <h4>Verification Output</h4>
-              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">✓ Clean Data</p>
-              <ul style="margin-top: 1rem;">
+              <h4 data-lang-en>Verification Output</h4>
+              <h4 data-lang-fr style="display:none;">Résultat de vérification</h4>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;" data-lang-en>✓ Clean Data</p>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666; display:none;" data-lang-fr>✓ Données propres</p>
+              <ul style="margin-top: 1rem;" data-lang-en>
                 <li>Accurate Eligibility</li>
                 <li>Reduced Denials</li>
                 <li>Drill-down Visibility</li>
                 <li>Lower Costs</li>
+              </ul>
+              <ul style="margin-top: 1rem; display:none;" data-lang-fr>
+                <li>Éligibilité précise</li>
+                <li>Refus réduits</li>
+                <li>Visibilité détaillée</li>
+                <li>Coûts réduits</li>
               </ul>
             </div>
           </div>
@@ -157,160 +187,181 @@
       </div>
     </section>
 
-    <!-- DIVIDER -->
     <div class="section-divider">
       <img src="../images/invoke-circle-divider.svg" alt="" />
     </div>
 
-    <!-- SOLUTION FEATURES SECTION -->
     <section class="section differentiators">
       <div class="container">
-        <h2 class="section__title">Key Features</h2>
-        <p class="section__subtitle">
-          ARIA integrates with any application to automate the eligibility process to the maximum extent.
-        </p>
+        <h2 class="section__title" data-lang-en>Key Features</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Fonctionnalités clés</h2>
+        
+        <p class="section__subtitle" data-lang-en>ARIA integrates with any application to automate the eligibility process to the maximum extent.</p>
+        <p class="section__subtitle" data-lang-fr style="display:none;">ARIA s'intègre à n'importe quelle application pour automatiser au maximum le processus d'éligibilité.</p>
+        
         <div class="diff-grid">
-          <article class="diff-card">
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/speedometer.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Incredible Speed</h3>
-            <p class="diff-card__body">
-              Reduce eligibility processing time by 95%, allowing your team to focus on higher-value tasks.
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>Incredible Speed</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Vitesse incroyable</h3>
+            <p class="diff-card__body" data-lang-en>Reduce eligibility processing time by 95%, allowing your team to focus on higher-value tasks.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Réduisez le temps de traitement de l'éligibilité de 95 %, permettant à votre équipe de se concentrer sur des tâches à plus haute valeur ajoutée.</p>
+          </div>
+          
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/connect.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Universal Integration</h3>
-            <p class="diff-card__body">
-              Connects seamlessly with ANY hospital application or system to receive patient data and return status.
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>Universal Integration</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Intégration universelle</h3>
+            <p class="diff-card__body" data-lang-en>Connects seamlessly with ANY hospital application or system to receive patient data and return status.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Se connecte de manière transparente à TOUTE application ou système hospitalier pour recevoir des données patients et renvoyer le statut.</p>
+          </div>
+          
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/process.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Complex Forms</h3>
-            <p class="diff-card__body">
-              Leverages OCR and AI to process complex documentation, including forms for long-term care patients.
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>Complex Forms</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Formulaires complexes</h3>
+            <p class="diff-card__body" data-lang-en>Leverages OCR and AI to process complex documentation, including forms for long-term care patients.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Exploite l'OCR et l'IA pour traiter une documentation complexe, y compris les formulaires pour les patients en soins de longue durée.</p>
+          </div>
+          
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/cloud-upload.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Cloud SaaS</h3>
-            <p class="diff-card__body">
-              A click-and-go, cloud-based managed service supported by experts in an SLA-driven model.
-            </p>
-          </article>
+            <h3 class="diff-card__title" data-lang-en>Cloud SaaS</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">SaaS Cloud</h3>
+            <p class="diff-card__body" data-lang-en>A click-and-go, cloud-based managed service supported by experts in an SLA-driven model.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Un service géré basé sur le cloud, clé en main, soutenu par des experts dans un modèle basé sur des SLA.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- DIVIDER -->
     <div class="section-divider">
       <img src="../images/invoke-circle-divider.svg" alt="" />
     </div>
 
-    <!-- VALUE/RESULTS SECTION -->
     <section class="section value">
       <div class="container">
-        <h2 class="section__title">Value Delivered</h2>
-        <p class="section__subtitle">
-          Remove accidental errors and move towards full accuracy with automated verification.
-        </p>
+        <h2 class="section__title" data-lang-en>Value Delivered</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Valeur livrée</h2>
+        
+        <p class="section__subtitle" data-lang-en>Remove accidental errors and move towards full accuracy with automated verification.</p>
+        <p class="section__subtitle" data-lang-fr style="display:none;">Éliminez les erreurs accidentelles et progressez vers une précision totale avec la vérification automatisée.</p>
+        
         <div class="value-grid">
           <div class="value-card">
             <div class="value-card__value">95%</div>
-            <div class="value-card__label">Faster processing time</div>
+            <div class="value-card__label" data-lang-en>Faster processing time</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Temps de traitement plus rapide</div>
           </div>
           <div class="value-card">
             <div class="value-card__value">High</div>
-            <div class="value-card__label">Accuracy improvement</div>
+            <div class="value-card__label" data-lang-en>Accuracy improvement</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Amélioration de la précision</div>
           </div>
           <div class="value-card">
             <div class="value-card__value">SaaS</div>
-            <div class="value-card__label">Cloud-based model</div>
+            <div class="value-card__label" data-lang-en>Cloud-based model</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Modèle basé sur le cloud</div>
           </div>
           <div class="value-card">
             <div class="value-card__value">Any State</div>
-            <div class="value-card__label">Universal coverage</div>
+            <div class="value-card__label" data-lang-en>Universal coverage</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Couverture universelle</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA BAND -->
     <section class="cta-band">
       <div class="container">
-        <h2 class="cta-band__title">Automate eligibility verification today</h2>
-        <p class="cta-band__subtitle">
-          ARIA integrates with your systems to streamline Medicaid verification. Talk to us to learn more.
-        </p>
-        <a href="/cdn-cgi/l/email-protection#573e393138173e3921383c323e39347934383a" class="btn btn--primary">Contact Us</a>
+        <h2 class="cta-band__title" data-lang-en>Automate eligibility verification today</h2>
+        <h2 class="cta-band__title" data-lang-fr style="display:none;">Automatisez la vérification d'éligibilité aujourd'hui</h2>
+        
+        <p class="cta-band__subtitle" data-lang-en>ARIA integrates with your systems to streamline Medicaid verification. Talk to us to learn more.</p>
+        <p class="cta-band__subtitle" data-lang-fr style="display:none;">ARIA s'intègre à vos systèmes pour rationaliser la vérification Medicaid. Parlez-nous pour en savoir plus.</p>
+        
+        <a href="https://www.invokeinc.com/contact.html" class="btn btn--primary" data-lang-en>Contact Us</a>
+        <a href="https://www.invokeinc.com/contact.html" class="btn btn--primary" data-lang-fr style="display:none;">Contactez-nous</a>
       </div>
     </section>
 
- <!-- Footer -->
- <!-- Footer -->
-<div class="footer-wrap">
-  <div class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/invoke-logo.svg" alt="INVOKE" />
-        </a>
+    <div class="footer-wrap">
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="https://invokeinc.com" class="logo">
+              <img src="../images/invoke-logo.svg" alt="INVOKE" />
+            </a>
+          </div>
+          
+          <div class="footer-contact">
+            <p>Atlanta, GA, (770) 376-0606<br>
+            <a href="mailto:info@invokeinc.com">info@invokeinc.com</a></p>
+          </div>
+          
+          <div class="footer-links">
+            <a href="https://www.invokeinc.com/careers.html">Careers</a>
+            <a href="https://www.invokeinc.com/contact.html">Contact us</a>
+          </div>
+          
+          <div class="footer-links">
+            <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
+            <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
+          </div>
+          
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/invoke-inc" target="_blank">
+              <img src="../images/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        
+        <hr>
+        
+        <div class="footer-copyright">
+          <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
+        </div>
       </div>
-      
-      <div class="footer-contact">
-        <p>Atlanta, GA, (770) 376-0606<br>
-        <a href="mailto:info@invokeinc.com">info@invokeinc.com</a></p>
-      </div>
-      
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/careers.html">Careers</a>
-        <a href="https://www.invokeinc.com/contact.html">Contact us</a>
-      </div>
-      
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
-        <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
-      </div>
-      
-      <div class="footer-social">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/linkedin.png" alt="LinkedIn" />
-        </a>
-      </div>
-    </div>
-    
-    <hr>
-    
-    <div class="footer-copyright">
-      <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
     </div>
   </div>
-</div>
 
-
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const langToggles = document.querySelectorAll('.nav__lang span');
-      langToggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          langToggles.forEach(t => t.classList.remove('is-active'));
-          toggle.classList.add('is-active');
+      const langBtns = document.querySelectorAll('.lang-btn');
+      
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const lang = this.getAttribute('data-lang');
+          
+          langBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          
+          document.querySelectorAll('[data-lang-en]').forEach(el => {
+            el.style.display = lang === 'en' ? '' : 'none';
+          });
+          
+          document.querySelectorAll('[data-lang-fr]').forEach(el => {
+            el.style.display = lang === 'fr' ? '' : 'none';
+          });
+          
+          document.documentElement.setAttribute('lang', lang);
+          localStorage.setItem('preferredLanguage', lang);
         });
       });
       
-      const menuToggle = document.querySelector('.nav__menu-toggle');
-      const nav = document.querySelector('.nav');
-      menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('is-visible');
-      });
+      const savedLang = localStorage.getItem('preferredLanguage');
+      if (savedLang) {
+        const btn = document.querySelector(`.lang-btn[data-lang="${savedLang}"]`);
+        if (btn) btn.click();
+      }
     });
   </script>
 </body>

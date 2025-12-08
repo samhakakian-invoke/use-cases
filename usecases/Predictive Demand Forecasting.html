@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- 
-  INSTRUCTION: Replace these meta tags with use case information
-  -->
-  <title>Predictive Demand Forecasting</title>
-  <meta name="use-case-name" content="Predictive Demand Forecasting" />
-  <meta name="use-case-category" content="Supply Chain" />
-  <meta name="description" content="AI-driven demand forecasting that ingests market signals to automate production planning, reducing inventory costs and preventing stockouts." />
+  <title>Intelligent Production Scheduling | INVOKE</title>
+  <meta name="use-case-name" content="Intelligent Production Scheduling" />
+  <meta name="use-case-category" content="Manufacturing" />
+  <meta name="description" content="AI-powered production scheduling that solves complex multi-variable optimization in real-time, increasing line throughput by 4-10% and reducing changeover costs by up to 20%." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <link rel="stylesheet" href="../generator/usecase_style.css" />
@@ -16,33 +13,40 @@
 <body>
   <div class="page-wrapper">
     <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="https://invokeinc.com" class="logo">
-        <img src="../images/invoke-logo.svg" alt="INVOKE" />
-      </a>
-      <nav class="nav-links">
-        <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
-        <a href="../index.html">SOLUTIONS</a>
-        <a href="https://www.invokepublic.com">INDUSTRIES</a>
-        <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
-        <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
-      </nav>
-      <div class="lang-toggle">
-        <img src="../images/lang.png" alt="lang" class="lang-icon"/>
-        <span class="active" data-lang="en">EN</span>
-        <span data-lang="fr">FR</span>
+    <header class="header">
+      <div class="header-inner">
+        <a href="https://invokeinc.com" class="logo">
+          <img src="../images/invoke-logo.svg" alt="INVOKE" />
+        </a>
+        <nav class="nav-links">
+          <a href="https://www.invokeinc.com/ai.html">SERVICES</a>
+          <a href="../index.html">SOLUTIONS</a>
+          <a href="https://www.invokepublic.com">INDUSTRIES</a>
+          <a href="https://www.invokeinc.com/aboutus.html">ABOUT</a>
+          <a href="https://www.invokeinc.com/contact.html">CONTACT</a>
+        </nav>
+        <div class="lang-toggle">
+          <img src="../images/lang.png" alt="lang" class="lang-icon"/>
+          <span class="lang-btn active" data-lang="en">EN</span>
+          <span class="lang-btn" data-lang="fr">FR</span>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <!-- HERO SECTION -->
-    <section class="hero" style="background-image: url('../images/photos/shipping_and_logistics.jpg');">
+    <section class="hero" style="background-image: url('../images/photos/auto.jpg');">
       <div class="container hero__inner">
-        <div class="hero__kicker">Supply Chain & Logistics</div>
-        <h1 class="hero__title">Predictive Demand Forecasting</h1>
-        <p class="hero__subtitle">
-          AI models continuously ingest external market signals to generate accurate predictions and automatically adjust factory schedules and inventory.
+        <div class="hero__kicker" data-lang-en>Manufacturing & Operations</div>
+        <div class="hero__kicker" data-lang-fr style="display:none;">Fabrication et opérations</div>
+        
+        <h1 class="hero__title" data-lang-en>Intelligent Production Scheduling</h1>
+        <h1 class="hero__title" data-lang-fr style="display:none;">Ordonnancement intelligent de la production</h1>
+        
+        <p class="hero__subtitle" data-lang-en>
+          Replace tribal knowledge and spreadsheets with AI that solves thousands of non-linear scheduling constraints in real-time — automatically pushing optimized schedules to MES, maintenance, and labor systems.
+        </p>
+        <p class="hero__subtitle" data-lang-fr style="display:none;">
+          Remplacez les connaissances tacites et les tableurs par une IA qui résout des milliers de contraintes d'ordonnancement non linéaires en temps réel — transmettant automatiquement les calendriers optimisés aux systèmes MES, de maintenance et de main-d'œuvre.
         </p>
       </div>
     </section>
@@ -55,16 +59,30 @@
     <!-- PROBLEM/CHALLENGE SECTION -->
     <section class="section problem">
       <div class="container">
-        <h2 class="problem__heading">Struggling with volatile demand cycles?</h2>
-        <p class="problem__intro">
-          Consumer goods manufacturers operate in a volatile environment where traditional, backward-looking forecast models fail to align with real consumption signals.
+        <h2 class="problem__heading" data-lang-en>Are your planners drowning in scheduling complexity?</h2>
+        <h2 class="problem__heading" data-lang-fr style="display:none;">Vos planificateurs sont-ils submergés par la complexité de l'ordonnancement ?</h2>
+        
+        <p class="problem__intro" data-lang-en>
+          Consumer goods manufacturing scheduling is incredibly complex. Changeover costs, machine setup times, batch sequences, allergen controls, packaging line availability, sanitation requirements, and capacity restrictions create thousands of non-linear combinations that humans simply cannot optimize manually.
         </p>
+        <p class="problem__intro" data-lang-fr style="display:none;">
+          L'ordonnancement de la fabrication de biens de consommation est incroyablement complexe. Les coûts de changement, les temps de configuration des machines, les séquences de lots, les contrôles d'allergènes, la disponibilité des lignes d'emballage, les exigences sanitaires et les restrictions de capacité créent des milliers de combinaisons non linéaires que les humains ne peuvent tout simplement pas optimiser manuellement.
+        </p>
+        
         <div class="problem__list-wrapper">
-          <ul class="problem__list">
-            <li><strong>Signal Misalignment:</strong> Traditional models miss real-time signals like weather, web sentiment, and retailer behavior.</li>
-            <li><strong>Inventory Imbalance:</strong> Overproduction causes spoilage and high warehousing costs; underproduction leads to lost shelf space.</li>
-            <li><strong>Operational Friction:</strong> Constant firefighting between sales, supply chain, and plant scheduling teams creates inefficiency.</li>
-            <li><strong>Capital Waste:</strong> Inaccurate forecasting traps working capital in excess inventory or end-of-lifecycle write-downs.</li>
+          <ul class="problem__list" data-lang-en>
+            <li><strong>Tribal Knowledge Dependency:</strong> Scheduling expertise lives in the heads of a few senior planners, creating risk and bottlenecks when they're unavailable.</li>
+            <li><strong>Spreadsheet Limitations:</strong> Excel-based scheduling can't handle the thousands of constraint combinations, leading to suboptimal plans.</li>
+            <li><strong>Excessive Changeover Costs:</strong> Poorly sequenced production runs drive up setup times, sanitation cycles, and material waste.</li>
+            <li><strong>Constant Firefighting:</strong> Planners spend hours producing "good enough" schedules that constantly break, requiring reactive adjustments.</li>
+            <li><strong>Manual Coordination Overhead:</strong> Optimized schedules still require manual handoff to MES, maintenance, and labor teams — introducing delays and errors.</li>
+          </ul>
+          <ul class="problem__list" data-lang-fr style="display:none;">
+            <li><strong>Dépendance aux connaissances tacites :</strong> L'expertise en ordonnancement réside dans la tête de quelques planificateurs seniors, créant des risques et des goulots d'étranglement en leur absence.</li>
+            <li><strong>Limites des tableurs :</strong> L'ordonnancement basé sur Excel ne peut pas gérer les milliers de combinaisons de contraintes, menant à des plans sous-optimaux.</li>
+            <li><strong>Coûts de changement excessifs :</strong> Les séquences de production mal ordonnées augmentent les temps de configuration, les cycles de nettoyage et le gaspillage de matériaux.</li>
+            <li><strong>Gestion de crises constante :</strong> Les planificateurs passent des heures à produire des calendriers « acceptables » qui échouent constamment, nécessitant des ajustements réactifs.</li>
+            <li><strong>Coordination manuelle excessive :</strong> Les calendriers optimisés nécessitent encore un transfert manuel vers les systèmes MES, de maintenance et de main-d'œuvre — introduisant des délais et des erreurs.</li>
           </ul>
         </div>
       </div>
@@ -78,77 +96,144 @@
     <!-- HOW IT WORKS SECTION -->
     <section class="section how-it-works">
       <div class="container">
-        <h2 class="section__title">How it works</h2>
+        <h2 class="section__title" data-lang-en>How it works</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Comment ça marche</h2>
+        
         <div class="process-diagram">
-          <h3>Intelligent Automation: From Signal to Schedule</h3>
+          <h3 data-lang-en>Intelligent Automation: From constraints to optimized execution</h3>
+          <h3 data-lang-fr style="display:none;">Automatisation intelligente : Des contraintes à l'exécution optimisée</h3>
           
-          <!-- VISUAL DIAGRAM SECTION -->
-          <svg viewBox="0 0 1000 350" style="width: 100%; height: auto; margin: 2rem 0;">
-            <!-- Input Node -->
-            <rect x="50" y="125" width="220" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
-            <text x="160" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">EXTERNAL SIGNALS</text>
-            <text x="160" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#666">POS, Weather, Macro Data</text>
-            
-            <!-- Arrow 1 -->
-            <path d="M 270 175 L 350 175" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
-            
-            <!-- AI Node -->
-            <rect x="370" y="100" width="260" height="150" fill="#1a1a1a" stroke="#f36a3d" stroke-width="3" rx="10"/>
-            <text x="500" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="16" font-weight="bold" fill="white">AI FORECASTING ENGINE</text>
-            <text x="500" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#ccc">Multi-horizon prediction</text>
-            
-            <!-- Arrow 2 -->
-            <path d="M 630 175 L 710 175" stroke="#f36a3d" stroke-width="3" marker-end="url(#arrowhead)"/>
-            
-            <!-- Output Node -->
-            <rect x="730" y="125" width="220" height="100" fill="white" stroke="#e0e0e0" stroke-width="2" rx="10"/>
-            <text x="840" y="165" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">AUTOMATED PLAN</text>
-            <text x="840" y="190" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#666">Schedule & Material Orders</text>
-            
+          <!-- VISUAL DIAGRAM -->
+          <svg viewBox="0 0 1000 380" style="width: 100%; height: auto; margin: 2rem 0;">
             <defs>
-              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                <polygon points="0 0, 10 3.5, 0 7" fill="#f36a3d"/>
+              <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <polygon points="0 0, 10 3, 0 6" fill="#f36a3d"/>
               </marker>
             </defs>
+            
+            <!-- Constraint Inputs -->
+            <rect x="30" y="30" width="180" height="320" fill="#f9f9f9" stroke="#e0e0e0" stroke-width="2" rx="10"/>
+            <text x="120" y="55" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">Constraints</text>
+            
+            <rect x="45" y="75" width="150" height="35" fill="white" stroke="#ddd" stroke-width="1" rx="5"/>
+            <text x="120" y="98" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#555">Changeover Costs</text>
+            
+            <rect x="45" y="120" width="150" height="35" fill="white" stroke="#ddd" stroke-width="1" rx="5"/>
+            <text x="120" y="143" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#555">Machine Setup Times</text>
+            
+            <rect x="45" y="165" width="150" height="35" fill="white" stroke="#ddd" stroke-width="1" rx="5"/>
+            <text x="120" y="188" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#555">Batch Sequences</text>
+            
+            <rect x="45" y="210" width="150" height="35" fill="white" stroke="#ddd" stroke-width="1" rx="5"/>
+            <text x="120" y="233" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#555">Allergen Controls</text>
+            
+            <rect x="45" y="255" width="150" height="35" fill="white" stroke="#ddd" stroke-width="1" rx="5"/>
+            <text x="120" y="278" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#555">Line Availability</text>
+            
+            <rect x="45" y="300" width="150" height="35" fill="white" stroke="#ddd" stroke-width="1" rx="5"/>
+            <text x="120" y="323" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#555">Sanitation Schedules</text>
+            
+            <!-- Arrow to AI -->
+            <path d="M 220 190 L 320 190" stroke="#f36a3d" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+            
+            <!-- AI Optimization Engine -->
+            <rect x="340" y="100" width="300" height="180" fill="#1a1a1a" stroke="#f36a3d" stroke-width="3" rx="12"/>
+            <text x="490" y="145" text-anchor="middle" font-family="Lato, sans-serif" font-size="18" font-weight="bold" fill="white">AI Optimization</text>
+            <text x="490" y="175" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#ccc">Multi-Variable Constraint Solving</text>
+            <text x="490" y="200" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#ccc">Real-Time Recalculation</text>
+            <text x="490" y="225" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" fill="#ccc">Sequence Optimization</text>
+            <text x="490" y="260" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#f36a3d">Thousands of combinations solved in seconds</text>
+            
+            <!-- Arrow to Outputs -->
+            <path d="M 650 190 L 750 190" stroke="#f36a3d" stroke-width="4" fill="none" marker-end="url(#arrowhead)"/>
+            
+            <!-- Automated Outputs -->
+            <rect x="770" y="30" width="190" height="320" fill="#f0fff0" stroke="#28a745" stroke-width="2" rx="10"/>
+            <text x="865" y="55" text-anchor="middle" font-family="Lato, sans-serif" font-size="14" font-weight="bold" fill="#333">Automated Push</text>
+            
+            <rect x="785" y="80" width="160" height="55" fill="white" stroke="#28a745" stroke-width="1" rx="5"/>
+            <text x="865" y="103" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" font-weight="bold" fill="#333">MES System</text>
+            <text x="865" y="122" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" fill="#666">Optimized schedule</text>
+            
+            <rect x="785" y="150" width="160" height="55" fill="white" stroke="#28a745" stroke-width="1" rx="5"/>
+            <text x="865" y="173" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" font-weight="bold" fill="#333">Machine Prep</text>
+            <text x="865" y="192" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" fill="#666">Triggered workflows</text>
+            
+            <rect x="785" y="220" width="160" height="55" fill="white" stroke="#28a745" stroke-width="1" rx="5"/>
+            <text x="865" y="243" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" font-weight="bold" fill="#333">Maintenance</text>
+            <text x="865" y="262" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" fill="#666">Prep notifications</text>
+            
+            <rect x="785" y="290" width="160" height="55" fill="white" stroke="#28a745" stroke-width="1" rx="5"/>
+            <text x="865" y="313" text-anchor="middle" font-family="Lato, sans-serif" font-size="12" font-weight="bold" fill="#333">Labor Allocation</text>
+            <text x="865" y="332" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" fill="#666">Operator assignments</text>
           </svg>
           
-          <!-- SEPARATOR BETWEEN DIAGRAM AND TEXT BOXES -->
+          <!-- SEPARATOR -->
           <div style="border-top: 2px solid #e0e0e0; margin: 3rem 0 2rem 0; position: relative;">
-            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;">PROCESS DETAILS</div>
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px;" data-lang-en>PROCESS DETAILS</div>
+            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: white; padding: 0 20px; color: #999; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; display:none;" data-lang-fr>DÉTAILS DU PROCESSUS</div>
           </div>
           
           <!-- PROCESS TEXT BOXES -->
           <div class="process-flow">
             <div class="process-box">
-              <h4>External Signals</h4>
-              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">Input Data Streams</p>
-              <ul style="margin-top: 1rem;">
-                <li>POS Retail Feeds</li>
-                <li>Seasonality & Trends</li>
-                <li>Macro Economic Data</li>
-                <li>Promo Calendars</li>
+              <h4 data-lang-en>Constraint Inputs</h4>
+              <h4 data-lang-fr style="display:none;">Entrées de contraintes</h4>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;" data-lang-en>All Scheduling Variables</p>
+              <p style="margin-top: 1rem; color: #666; font-size: 0.9rem; display:none;" data-lang-fr>Toutes les variables d'ordonnancement</p>
+              <ul style="margin-top: 1rem;" data-lang-en>
+                <li>Changeover costs and times</li>
+                <li>Machine setup requirements</li>
+                <li>Batch sequencing rules</li>
+                <li>Allergen and sanitation controls</li>
+                <li>Line and capacity constraints</li>
+              </ul>
+              <ul style="margin-top: 1rem; display:none;" data-lang-fr>
+                <li>Coûts et temps de changement</li>
+                <li>Exigences de configuration machine</li>
+                <li>Règles de séquençage des lots</li>
+                <li>Contrôles allergènes et sanitaires</li>
+                <li>Contraintes de ligne et de capacité</li>
               </ul>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box center">
-              <h4>Intelligent Automation</h4>
-              <ul style="margin-top: 1.5rem;">
-                <li>Signal Ingestion</li>
-                <li>Demand Sensing</li>
-                <li>Capacity Allocation</li>
-                <li>Workflow Triggers</li>
+              <h4 data-lang-en>Intelligent Automation</h4>
+              <h4 data-lang-fr style="display:none;">Automatisation intelligente</h4>
+              <ul style="margin-top: 1.5rem;" data-lang-en>
+                <li>Multi-variable optimization</li>
+                <li>Non-linear constraint solving</li>
+                <li>Real-time recalculation</li>
+                <li>Sequence optimization algorithms</li>
+                <li>What-if scenario modeling</li>
               </ul>
-              <p style="margin-top: 1.5rem;"><strong>AI Prediction Model</strong></p>
+              <ul style="margin-top: 1.5rem; display:none;" data-lang-fr>
+                <li>Optimisation multi-variables</li>
+                <li>Résolution de contraintes non linéaires</li>
+                <li>Recalcul en temps réel</li>
+                <li>Algorithmes d'optimisation de séquences</li>
+                <li>Modélisation de scénarios hypothétiques</li>
+              </ul>
+              <p style="margin-top: 1.5rem;" data-lang-en><strong>Solves thousands of constraint combinations in seconds, not hours.</strong></p>
+              <p style="margin-top: 1.5rem; display:none;" data-lang-fr><strong>Résout des milliers de combinaisons de contraintes en secondes, pas en heures.</strong></p>
             </div>
             <div class="process-arrow">→</div>
             <div class="process-box">
-              <h4>Strategic Output</h4>
-              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">✓ Optimized Operations</p>
-              <ul style="margin-top: 1rem;">
-                <li>Factory Schedules</li>
-                <li>Raw Material Orders</li>
-                <li>Inventory Balance</li>
-                <li>Stable Planning</li>
+              <h4 data-lang-en>Automated Execution</h4>
+              <h4 data-lang-fr style="display:none;">Exécution automatisée</h4>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;" data-lang-en>✓ Direct System Integration</p>
+              <p style="margin-top: 1rem; font-size: 0.9rem; color: #666; display:none;" data-lang-fr>✓ Intégration directe aux systèmes</p>
+              <ul style="margin-top: 1rem;" data-lang-en>
+                <li>Schedules pushed to MES</li>
+                <li>Machine prep workflows triggered</li>
+                <li>Maintenance teams notified</li>
+                <li>Labor automatically allocated</li>
+              </ul>
+              <ul style="margin-top: 1rem; display:none;" data-lang-fr>
+                <li>Calendriers transmis au MES</li>
+                <li>Flux de préparation machine déclenchés</li>
+                <li>Équipes de maintenance notifiées</li>
+                <li>Main-d'œuvre allouée automatiquement</li>
               </ul>
             </div>
           </div>
@@ -164,47 +249,56 @@
     <!-- SOLUTION FEATURES SECTION -->
     <section class="section differentiators">
       <div class="container">
-        <h2 class="section__title">Why Choose Our Solution?</h2>
-        <p class="section__subtitle">
-          Transform your supply chain from a reactive cost center into a proactive competitive advantage.
-        </p>
+        <h2 class="section__title" data-lang-en>Key Capabilities</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Capacités clés</h2>
+        
+        <p class="section__subtitle" data-lang-en>Our platform replaces manual scheduling with AI optimization that automatically coordinates across production, maintenance, and labor systems.</p>
+        <p class="section__subtitle" data-lang-fr style="display:none;">Notre plateforme remplace l'ordonnancement manuel par une optimisation IA qui coordonne automatiquement la production, la maintenance et les systèmes de main-d'œuvre.</p>
+        
         <div class="diff-grid">
-          <article class="diff-card">
+          <!-- Feature Card 1 -->
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/ai-robustness.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Signal Ingestion</h3>
-            <p class="diff-card__body">
-              Continuously monitors external data like weather, sentiment, and retail feeds to refine forecasts in real-time.
-            </p>
-          </article>
-          <article class="diff-card">
+            <h3 class="diff-card__title" data-lang-en>Multi-Constraint Optimization</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Optimisation multi-contraintes</h3>
+            <p class="diff-card__body" data-lang-en>Solve thousands of non-linear constraint combinations simultaneously — something impossible with spreadsheets or human intuition alone.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Résolvez simultanément des milliers de combinaisons de contraintes non linéaires — quelque chose d'impossible avec des tableurs ou l'intuition humaine seule.</p>
+          </div>
+          
+          <!-- Feature Card 2 -->
+          <div class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/speedometer.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title" data-lang-en>Real-Time Recalculation</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Recalcul en temps réel</h3>
+            <p class="diff-card__body" data-lang-en>When disruptions occur, instantly recalculate optimal schedules rather than spending hours manually adjusting plans.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Lorsque des perturbations surviennent, recalculez instantanément les calendriers optimaux plutôt que de passer des heures à ajuster manuellement les plans.</p>
+          </div>
+          
+          <!-- Feature Card 3 -->
+          <div class="diff-card">
+            <div class="diff-card__icon">
+              <img src="../images/icons/connect.svg" alt="" style="width: 28px; height: 28px;" />
+            </div>
+            <h3 class="diff-card__title" data-lang-en>Direct MES Integration</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Intégration directe au MES</h3>
+            <p class="diff-card__body" data-lang-en>Optimized schedules automatically push to your MES, triggering machine prep, maintenance notifications, and labor assignments without manual handoffs.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Les calendriers optimisés sont automatiquement transmis à votre MES, déclenchant la préparation des machines, les notifications de maintenance et les affectations de main-d'œuvre sans transferts manuels.</p>
+          </div>
+          
+          <!-- Feature Card 4 -->
+          <div class="diff-card">
             <div class="diff-card__icon">
               <img src="../images/icons/process.svg" alt="" style="width: 28px; height: 28px;" />
             </div>
-            <h3 class="diff-card__title">Automated Actions</h3>
-            <p class="diff-card__body">
-              Automatically triggers factory schedule adjustments and material orders without manual intervention.
-            </p>
-          </article>
-          <article class="diff-card">
-            <div class="diff-card__icon">
-              <img src="../images/icons/chart-bubble-line.svg" alt="" style="width: 28px; height: 28px;" />
-            </div>
-            <h3 class="diff-card__title">High Accuracy</h3>
-            <p class="diff-card__body">
-              Replaces static Excel models with dynamic AI learning that adapts to volatility and trend swings.
-            </p>
-          </article>
-          <article class="diff-card">
-            <div class="diff-card__icon">
-              <img src="../images/icons/reduced-cost.svg" alt="" style="width: 28px; height: 28px;" />
-            </div>
-            <h3 class="diff-card__title">Working Capital</h3>
-            <p class="diff-card__body">
-              Drastically reduces capital tied up in slow-moving or excess inventory through precise planning.
-            </p>
-          </article>
+            <h3 class="diff-card__title" data-lang-en>Changeover Minimization</h3>
+            <h3 class="diff-card__title" data-lang-fr style="display:none;">Minimisation des changements</h3>
+            <p class="diff-card__body" data-lang-en">Intelligently sequence production runs to minimize setup times, sanitation cycles, and allergen changeover requirements.</p>
+            <p class="diff-card__body" data-lang-fr style="display:none;">Séquencez intelligemment les cycles de production pour minimiser les temps de configuration, les cycles de nettoyage et les exigences de changement d'allergènes.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -217,99 +311,120 @@
     <!-- VALUE/RESULTS SECTION -->
     <section class="section value">
       <div class="container">
-        <h2 class="section__title">Expected Results</h2>
-        <p class="section__subtitle">
-          Drive tangible financial impact through improved forecast accuracy and operational alignment.
-        </p>
+        <h2 class="section__title" data-lang-en>Expected Results</h2>
+        <h2 class="section__title" data-lang-fr style="display:none;">Résultats attendus</h2>
+        
+        <p class="section__subtitle" data-lang-en>Achieve higher throughput, fewer schedule breaks, and reduced planner cognitive overload.</p>
+        <p class="section__subtitle" data-lang-fr style="display:none;">Atteignez un débit plus élevé, moins de ruptures de calendrier et une réduction de la surcharge cognitive des planificateurs.</p>
+        
         <div class="value-grid">
           <div class="value-card">
-            <div class="value-card__value">15%</div>
-            <div class="value-card__label">Reduction in inventory held</div>
+            <div class="value-card__value">4–10%</div>
+            <div class="value-card__label" data-lang-en>Increase in line throughput</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Augmentation du débit de ligne</div>
           </div>
           <div class="value-card">
-            <div class="value-card__value">40%</div>
-            <div class="value-card__label">Fewer stockout penalties</div>
+            <div class="value-card__value">8–20%</div>
+            <div class="value-card__label" data-lang-en>Reduction in changeover cost/time</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Réduction des coûts/temps de changement</div>
           </div>
           <div class="value-card">
-            <div class="value-card__value">6%</div>
-            <div class="value-card__label">Improvement in gross margin</div>
+            <div class="value-card__value">10–25%</div>
+            <div class="value-card__label" data-lang-en>Reduction in schedule volatility</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Réduction de la volatilité des calendriers</div>
           </div>
           <div class="value-card">
-            <div class="value-card__value">Auto</div>
-            <div class="value-card__label">Elimination of manual consolidation</div>
+            <div class="value-card__value">Real-time</div>
+            <div class="value-card__label" data-lang-en">Schedule optimization and execution</div>
+            <div class="value-card__label" data-lang-fr style="display:none;">Optimisation et exécution des calendriers</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA BAND -->
+    <!-- CTA SECTION -->
     <section class="cta-band">
       <div class="container">
-        <h2 class="cta-band__title">Ready to stabilize your supply chain?</h2>
-        <p class="cta-band__subtitle">
-          Stop guessing and start predicting. Contact us to see how AI demand forecasting can transform your planning.
-        </p>
-        <a href="/cdn-cgi/l/email-protection#066f686069466f6870696d636f68652865696b" class="btn btn--primary">Contact Us</a>
+        <h2 class="cta-band__title" data-lang-en>Ready to Optimize Your Production Scheduling?</h2>
+        <h2 class="cta-band__title" data-lang-fr style="display:none;">Prêt à optimiser votre ordonnancement de production ?</h2>
+        
+        <p class="cta-band__subtitle" data-lang-en>Let's discuss how AI-powered scheduling can increase throughput, reduce changeover friction, and free your planners from manual complexity.</p>
+        <p class="cta-band__subtitle" data-lang-fr style="display:none;">Discutons de la façon dont l'ordonnancement alimenté par l'IA peut augmenter le débit, réduire les frictions de changement et libérer vos planificateurs de la complexité manuelle.</p>
+        
+        <a href="https://www.invokeinc.com/contact.html" class="btn btn--primary" data-lang-en>Contact Us</a>
+        <a href="https://www.invokeinc.com/contact.html" class="btn btn--primary" data-lang-fr style="display:none;">Contactez-nous</a>
       </div>
     </section>
 
     <!-- FOOTER -->
-  <!-- Footer -->
-<div class="footer-wrap">
-  <div class="footer">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/invoke-logo.svg" alt="INVOKE" />
-        </a>
+    <div class="footer-wrap">
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="https://invokeinc.com" class="logo">
+              <img src="../images/invoke-logo.svg" alt="INVOKE" />
+            </a>
+          </div>
+          
+          <div class="footer-contact">
+            <p>Atlanta, GA, (770) 376-0606<br>
+            <a href="/cdn-cgi/l/email-protection#5f363139301f36312930343a36313c713c3032"><span class="__cf_email__" data-cfemail="066f686069466f6870696d636f68652865696b">[email&#160;protected]</span></a></p>
+          </div>
+          
+          <div class="footer-links">
+            <a href="https://www.invokeinc.com/careers.html">Careers</a>
+            <a href="https://www.invokeinc.com/contact.html">Contact us</a>
+          </div>
+          
+          <div class="footer-links">
+            <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
+            <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
+          </div>
+          
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/invoke-inc" target="_blank">
+              <img src="../images/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+        
+        <hr>
+        
+        <div class="footer-copyright">
+          <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
+        </div>
       </div>
-      
-      <div class="footer-contact">
-        <p>Atlanta, GA, (770) 376-0606<br>
-        <a href="mailto:info@invokeinc.com">info@invokeinc.com</a></p>
-      </div>
-      
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/careers.html">Careers</a>
-        <a href="https://www.invokeinc.com/contact.html">Contact us</a>
-      </div>
-      
-      <div class="footer-links">
-        <a href="https://www.invokeinc.com/privacy-policy.html">Privacy Policy</a>
-        <a href="https://www.invokeinc.com/contact-408248.html#/">Vulnerability Disclosure</a>
-      </div>
-      
-      <div class="footer-social">
-        <a href="https://invokeinc.com" class="logo">
-          <img src="../images/linkedin.png" alt="LinkedIn" />
-        </a>
-      </div>
-    </div>
-    
-    <hr>
-    
-    <div class="footer-copyright">
-      <p>Copyright © 2024 INVOKE Inc. All rights reserved.</p>
     </div>
   </div>
-</div>
-
 
   <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     document.addEventListener('DOMContentLoaded', function() {
-      const langToggles = document.querySelectorAll('.nav__lang span');
-      langToggles.forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          langToggles.forEach(t => t.classList.remove('is-active'));
-          toggle.classList.add('is-active');
+      const langBtns = document.querySelectorAll('.lang-btn');
+      
+      langBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const lang = this.getAttribute('data-lang');
+          
+          langBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          
+          document.querySelectorAll('[data-lang-en]').forEach(el => {
+            el.style.display = lang === 'en' ? '' : 'none';
+          });
+          
+          document.querySelectorAll('[data-lang-fr]').forEach(el => {
+            el.style.display = lang === 'fr' ? '' : 'none';
+          });
+          
+          document.documentElement.setAttribute('lang', lang);
+          localStorage.setItem('preferredLanguage', lang);
         });
       });
       
-      const menuToggle = document.querySelector('.nav__menu-toggle');
-      const nav = document.querySelector('.nav');
-      menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('is-visible');
-      });
+      const savedLang = localStorage.getItem('preferredLanguage');
+      if (savedLang) {
+        document.querySelector(`.lang-btn[data-lang="${savedLang}"]`)?.click();
+      }
     });
   </script>
 </body>
